@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 import os
-import base64
 
 WEBSITES = {
     'SSC': {'url': 'https://ssc.gov.in', 'category': 'SSC Jobs', 'location': 'All India'},
@@ -35,7 +34,7 @@ class JobScraper:
                     href = link.get('href', '')
                     if len(title) > 12 and any(k in title.lower() for k in ['notice', 'job', 'vacancy', 'apply', 'recruitment']):
                         if href.startswith('/'): 
-                            href = config['url'].split('//')[0] + '//' + config['url'].split('//')[2] + href
+                            href = config['url'].split('//') + '//' + config['url'].split('//') + href
                         
                         self.jobs.append({
                             'title': title[:150],
@@ -61,6 +60,7 @@ class JobScraper:
                 })
                 
     def post_to_wordpress(self):
+        # We target the custom tracking parameters endpoint to bypass raw root POST blocks
         wp_url = "https://bharatvacancy.com"
         wp_user = os.environ.get('WP_USER')
         wp_pass = os.environ.get('WP_APP_PASS')
@@ -69,22 +69,18 @@ class JobScraper:
             print("Configuration Error: Secrets are missing from GitHub Settings.")
             return
 
-        print("\n📤 Syncing with WordPress database...")
+        print("\n📤 Syncing with WordPress database via Form Parameter authentication...")
         
-        # Build an explicit manual token block to bypass Bluehost proxy stripping
-        credential_string = f"{wp_user}:{wp_pass}"
-        token = base64.b64encode(credential_string.encode('utf-8')).decode('utf-8')
-        
-        custom_headers = {
-            'User-Agent': self.headers['User-Agent'],
-            'Authorization': f'Basic {token}',
-            'X-HTTP-Authorization': f'Basic {token}'  # Fallback header for strict proxy servers
+        # Base headers to bypass simple browser filters
+        request_headers = {
+            'User-Agent': self.headers['User-Agent']
         }
 
         for job in self.jobs:
-            check_url = f"{wp_url}?search={requests.utils.quote(job['title'][:30])}"
+            # Check for duplicates using parameter queries rather than token requests
+            check_url = f"{wp_url}?search={requests.utils.quote(job['title'][:20])}"
             try:
-                check_res = requests.get(check_url, headers=custom_headers, timeout=10)
+                check_res = requests.get(check_url, headers=request_headers, timeout=10)
                 if check_res.status_code == 200 and len(check_res.json()) > 0:
                     print(f" ⏭️ Already Posted: {job['title'][:40]}...")
                     continue
@@ -99,9 +95,18 @@ class JobScraper:
             <p><a href='{job['url']}' target='_blank' style='background:#0073aa;color:#fff;padding:12px 24px;text-decoration:none;border-radius:4px;display:inline-block;font-weight:bold;'>Click Here to Apply & View Details</a></p>
             """
             
-            payload = {'title': job['title'], 'content': content_html, 'status': 'publish'}
+            # Pass authorization explicitly inside the payload body matrix
+            payload = {
+                'title': job['title'],
+                'content': content_html,
+                'status': 'publish',
+                'username': wp_user,
+                'password': wp_pass
+            }
+            
             try:
-                res = requests.post(wp_url, headers=custom_headers, json=payload, timeout=15)
+                # We use standard form data processing here
+                res = requests.post(wp_url, headers=request_headers, data=payload, timeout=15)
                 if res.status_code == 201:
                     print(f"  ✓ Live Published: {job['title'][:40]}...")
                 else:
