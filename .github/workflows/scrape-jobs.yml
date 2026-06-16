@@ -2,10 +2,7 @@ name: Scrape Government Jobs
 
 on:
   schedule:
-    # Runs at 6:00 AM IST (12:30 AM UTC) every day
     - cron: '30 0 * * *'
-  
-  # Also allow manual trigger
   workflow_dispatch:
 
 jobs:
@@ -24,23 +21,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install requests beautifulsoup4
     
-    - name: Run job scraper
+    - name: Run job scraper and auto post
+      env:
+        WP_USER: ${{ secrets.WP_USER }}
+        WP_APP_PASS: ${{ secrets.WP_APP_PASS }}
       run: python job_scraper.py
-    
-    - name: Commit and push results
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add jobs_data.json
-        git commit -m "Update jobs data - $(date)" || true
-        git push
-      continue-on-error: true
-    
-    - name: Send to webhook (optional)
-      run: |
-        curl -X POST ${{ secrets.WEBHOOK_URL }} \
-          -H 'Content-type: application/json' \
-          -d '{"text":"✓ Job scraping completed"}' || true
-      if: always()
