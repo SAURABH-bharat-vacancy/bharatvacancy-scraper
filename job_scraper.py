@@ -42,6 +42,8 @@ SKIP_KEYWORDS = [
     "option-cum-preference", "option cum preference", "corrigendum",
     "withdrawal", "postpone", "reschedul", "declaration of result",
     "uploading of", "marks and", "writ petition", "court case",
+    "schedule of examination", "time table", "time-table",
+    "examination schedule", "exam schedule",
 ]
 
 # A notice is likely a real recruitment opening if its title mentions these.
@@ -147,23 +149,36 @@ def main():
     # Sort so the likely-new-jobs sit at the very top for easy review.
     rows.sort(key=lambda r: r["type_guess"])
 
-    out = "ssc_jobs.csv"
-    fields = ["type_guess", "title", "company", "location", "category",
-              "job_type", "application_link", "notice_date", "description"]
-    with open(out, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+    # File 1: full review file (every notice + the type_guess column) for your eyes.
+    review_file = "ssc_jobs.csv"
+    review_fields = ["type_guess", "title", "company", "location", "category",
+                     "job_type", "application_link", "notice_date", "description"]
+    with open(review_file, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=review_fields)
         w.writeheader()
         w.writerows(rows)
+
+    # File 2: clean import file -- ONLY likely-new-jobs, ONLY the 7 columns
+    # WP All Import is mapped to. This is the feed WP All Import can pull from a URL.
+    import_file = "ssc_import.csv"
+    import_fields = ["title", "company", "location", "category",
+                     "job_type", "application_link", "description"]
+    job_rows = [r for r in rows if r["type_guess"].startswith("1")]
+    with open(import_file, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=import_fields, extrasaction="ignore")
+        w.writeheader()
+        w.writerows(job_rows)
 
     jobs = sum(1 for r in rows if r["type_guess"].startswith("1"))
     review = sum(1 for r in rows if r["type_guess"].startswith("2"))
     skip = sum(1 for r in rows if r["type_guess"].startswith("3"))
     print("\n==== DONE ====")
-    print(f"Wrote {len(rows)} notices to {out}")
-    print(f"  {jobs} look like NEW JOBS")
-    print(f"  {review} need a quick human look")
-    print(f"  {skip} look like answer-keys / results / admin (ignore these)")
-    print("Open ssc_jobs.csv, keep the rows you want, then import.")
+    print(f"Reviewed {len(rows)} notices from SSC.")
+    print(f"  {jobs} look like NEW JOBS  -> written to ssc_import.csv (ready to import)")
+    print(f"  {review} need a quick human look (see ssc_jobs.csv)")
+    print(f"  {skip} are answer-keys / results / admin (ignored)")
+    print("ssc_jobs.csv  = full list for your review")
+    print("ssc_import.csv = clean job-only feed for WP All Import")
 
 
 if __name__ == "__main__":
