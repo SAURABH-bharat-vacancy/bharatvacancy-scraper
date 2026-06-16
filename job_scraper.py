@@ -13,6 +13,7 @@ No WordPress posting here on purpose. This just makes the CSV.
 import requests
 import csv
 import sys
+import json
 from datetime import datetime
 
 # ---- The official SSC feed you found in DevTools ----
@@ -64,16 +65,51 @@ def classify(headline: str) -> str:
     return "review"
 
 
+ATTACHMENT_BASE = "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/"
+
+
+def _url_from_string(s) -> str:
+    """Turn any path/filename/URL string into a full clickable SSC link."""
+    if not isinstance(s, str):
+        return ""
+    s = s.strip()
+    if not s:
+        return ""
+    if s.startswith("http"):
+        return s
+    if s.startswith("api/"):
+        return "https://ssc.gov.in/" + s
+    if s.startswith("/"):
+        return "https://ssc.gov.in" + s
+    if "uploads/" in s:
+        return "https://ssc.gov.in/api/attachment/" + s.lstrip("/")
+    if s.lower().endswith(".pdf"):
+        return ATTACHMENT_BASE + s
+    return ""
+
+
 def build_link(rec: dict) -> str:
-    """Turn whatever the feed gives us into a clickable official link."""
-    url = (rec.get("redirectUrl") or "").strip()
-    if url:
-        if url.startswith("http"):
-            return url
-        if url.startswith("/"):
-            return "https://ssc.gov.in" + url
-        return "https://ssc.gov.in/" + url
-    return "https://ssc.gov.in"  # safe fallback: the notice board itself
+    """Best official link: the notice PDF (attachments) first, then redirectUrl."""
+    # 1) Prefer the actual notice attachment (the PDF candidates apply from).
+    atts = rec.get("attachments")
+    if isinstance(atts, list) and atts:
+        first = atts[0]
+        if isinstance(first, dict):
+            for key in ("url", "fileUrl", "filePath", "path", "location", "src",
+                        "attachment", "downloadUrl", "fileName", "name", "file"):
+                link = _url_from_string(first.get(key))
+                if link:
+                    return link
+        else:
+            link = _url_from_string(first)
+            if link:
+                return link
+    # 2) Fall back to redirectUrl if present.
+    link = _url_from_string(rec.get("redirectUrl") or "")
+    if link:
+        return link
+    # 3) Last resort: the SSC notice board itself.
+    return "https://ssc.gov.in"
 
 
 def nice_date(rec: dict) -> str:
@@ -112,8 +148,11 @@ def fetch_notices():
           f"(total available: {payload.get('paginate', {}).get('totalRecords', '?')})")
 
     if data:
-        # Show the field names of the first record so we can verify the feed shape.
+        # Show field names + the real attachment structure so links can be verified.
         print(f"  -> Fields on each notice: {sorted(data[0].keys())}")
+        sample_att = json.dumps(data[0].get("attachments"))[:400]
+        print(f"  -> Sample 'attachments': {sample_att}")
+        print(f"  -> Sample built link  : {build_link(data[0])}")
     return data
 
 
