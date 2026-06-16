@@ -72,7 +72,7 @@ def _url_from_string(s) -> str:
     """Turn any path/filename/URL string into a full clickable SSC link."""
     if not isinstance(s, str):
         return ""
-    s = s.strip()
+    s = s.strip().replace("\\", "/")   # SSC stores paths with backslashes
     if not s:
         return ""
     if s.startswith("http"):
