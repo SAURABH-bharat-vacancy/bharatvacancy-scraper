@@ -1,130 +1,170 @@
 #!/usr/bin/env python3
-import requests
-from bs4 import BeautifulSoup
-import json
-from datetime import datetime
-import os
-import base64
+"""
+SSC Notice Board Scraper for bharatvacancy.com
+------------------------------------------------
+Pulls the latest notices straight from SSC's official data feed
+(the same feed ssc.gov.in uses to fill its own Notice Board),
+sorts likely NEW JOB notices from answer-keys/results/admin noise,
+and writes a clean CSV ready for review + WP All Import.
 
-WEBSITES = {
-    'SSC': {'url': 'https://ssc.gov.in', 'category': 'SSC Jobs', 'location': 'All India'},
-    'IBPS': {'url': 'https://ibps.in', 'category': 'Banking Jobs', 'location': 'All India'},
-    'SBI': {'url': 'https://sbi.co.in', 'category': 'Banking Jobs', 'location': 'All India'},
-    'RRB': {'url': 'https://rrbcdg.gov.in', 'category': 'Railways Jobs', 'location': 'All India'},
-    'NDA': {'url': 'https://nda.ac.in', 'category': 'Defence Jobs', 'location': 'All India'}
+No WordPress posting here on purpose. This just makes the CSV.
+"""
+
+import requests
+import csv
+import sys
+from datetime import datetime
+
+# ---- The official SSC feed you found in DevTools ----
+SSC_API = "https://ssc.gov.in/api/general-website/portal/notice-boards"
+SSC_PARAMS = {
+    "page": 1,
+    "limit": 40,  # pull the 40 most recent notices (feed has 600+ total)
+    "contentType": "notice-boards",
+    "key": "createdAt",
+    "order": "DESC",
+    "isAttachment": "true",
+    "language": "english",
+    "attributes": "id,headline,examId,contentType,redirectUrl,startDate,endDate,language,createdAt",
+}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "application/json",
 }
 
-class JobScraper:
-    def __init__(self):
-        self.jobs = []
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        }
-    
-    def scrape_sources(self):
-        print("Starting Data Scraper Engine...")
-        for source, config in WEBSITES.items():
-            try:
-                res = requests.get(config['url'], headers=self.headers, timeout=15)
-                soup = BeautifulSoup(res.content, 'html.parser')
-                links = soup.find_all('a', limit=60)
-                found = False
-                
-                for link in links:
-                    title = link.get_text().strip()
-                    href = link.get('href', '')
-                    if len(title) > 12 and any(k in title.lower() for k in ['notice', 'job', 'vacancy', 'apply', 'recruitment']):
-                        if href.startswith('/'): 
-                            href = config['url'] + href
-                        
-                        self.jobs.append({
-                            'title': title[:150],
-                            'url': href,
-                            'source': source,
-                            'category': config['category'],
-                            'location': config['location'],
-                            'posted_date': datetime.now().strftime('%Y-%m-%d')
-                        })
-                        found = True
-                        break
-                
-                if not found:
-                    self.jobs.append({
-                        'title': f"Latest {source} Recruitment Notifications & Open Vacancies",
-                        'url': config['url'], 'source': source, 'category': config['category'], 'location': config['location'], 'posted_date': datetime.now().strftime('%Y-%m-%d')
-                    })
-            except Exception as e:
-                print(f"Error reading {source}: {e}")
-                self.jobs.append({
-                    'title': f"Check Latest {source} Vacancies Directly",
-                    'url': config['url'], 'source': source, 'category': config['category'], 'location': config['location'], 'posted_date': datetime.now().strftime('%Y-%m-%d')
-                })
-                
-    def post_to_wordpress(self):
-        # FIX: Added the correct endpoint route path
-        wp_url = "https://bharatvacancy.com"
-        wp_user = os.environ.get('WP_USER')
-        wp_pass = os.environ.get('WP_APP_PASS')
-        
-        if not wp_user or not wp_pass:
-            print("Configuration Error: Secrets are missing from GitHub Settings.")
-            return
+# A notice is almost certainly NOT a new job if its title mentions these.
+# (Checked FIRST, so it wins over the job words below.)
+SKIP_KEYWORDS = [
+    "answer key", "tentative answer", "final answer", "response sheet",
+    "result", "cut-off", "cut off", "cutoff", "marks of", "score card",
+    "scorecard", "admit card", "status of", "list of candidates",
+    "option-cum-preference", "option cum preference", "corrigendum",
+    "withdrawal", "postpone", "reschedul", "declaration of result",
+    "uploading of", "marks and", "writ petition", "court case",
+]
 
-        print("\n📤 Syncing with WordPress database...")
-        
-        # Pack the authorization key using standard Basic Authentication format
-        credential_string = f"{wp_user}:{wp_pass}"
-        token = base64.b64encode(credential_string.encode('utf-8')).decode('utf-8')
-        
-        custom_headers = {
-            'User-Agent': self.headers['User-Agent'],
-            'Authorization': f'Basic {token}',
-            'Content-Type': 'application/json'
-        }
+# A notice is likely a real recruitment opening if its title mentions these.
+JOB_KEYWORDS = [
+    "recruitment", "notification", "examination", "notice of", "advertisement",
+    "vacancy", "vacancies", "apply online", "selection post", "combined",
+    "phase-", "phase ", "junior engineer", "stenographer", "constable",
+    "sub-inspector", "head constable", "multi tasking", "multi-tasking",
+]
 
-        for job in self.jobs:
-            check_url = f"{wp_url}?search={requests.utils.quote(job['title'][:20])}"
-            try:
-                check_res = requests.get(check_url, headers={'User-Agent': self.headers['User-Agent']}, timeout=10)
-                if check_res.status_code == 200 and len(check_res.json()) > 0:
-                    print(f" ⏭️ Already Posted: {job['title'][:40]}...")
-                    continue
-            except: pass
 
-            content_html = f"""
-            <p><strong>Department/Source:</strong> {job['source']}</p>
-            <p><strong>Job Location:</strong> {job['location']}</p>
-            <p><strong>Category:</strong> {job['category']}</p>
-            <p><strong>Notification Date:</strong> {job['posted_date']}</p>
-            <hr style='border: 0; height: 1px; background: #eee; margin: 20px 0;'>
-            <p><a href='{job['url']}' target='_blank' style='background:#0073aa;color:#fff;padding:12px 24px;text-decoration:none;border-radius:4px;display:inline-block;font-weight:bold;'>Click Here to Apply & View Details</a></p>
-            """
-            
-            payload = {
-                'title': job['title'],
-                'content': content_html,
-                'status': 'publish'
-            }
-            
-            try:
-                # Send the data block securely as a JSON string payload
-                res = requests.post(wp_url, headers=custom_headers, json=payload, timeout=15)
-                if res.status_code == 201:
-                    print(f"  ✓ Live Published: {job['title'][:40]}...")
-                else:
-                    print(f"  ✗ Failed to post ({res.status_code}): {job['title'][:40]}")
-            except Exception as e:
-                print(f"  ✗ Error: {e}")
+def classify(headline: str) -> str:
+    h = headline.lower()
+    if any(k in h for k in SKIP_KEYWORDS):
+        return "skip"
+    if any(k in h for k in JOB_KEYWORDS):
+        return "job"
+    return "review"
 
-    def save_to_json(self, filename='jobs_data.json'):
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(self.jobs, f, ensure_ascii=False, indent=2)
+
+def build_link(rec: dict) -> str:
+    """Turn whatever the feed gives us into a clickable official link."""
+    url = (rec.get("redirectUrl") or "").strip()
+    if url:
+        if url.startswith("http"):
+            return url
+        if url.startswith("/"):
+            return "https://ssc.gov.in" + url
+        return "https://ssc.gov.in/" + url
+    return "https://ssc.gov.in"  # safe fallback: the notice board itself
+
+
+def nice_date(rec: dict) -> str:
+    raw = rec.get("startDate") or rec.get("createdAt") or ""
+    for fmt in ("%Y-%m-%dT%H:%M:%S.%fZ", "%Y-%m-%dT%H:%M:%SZ",
+                "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(raw[:len(datetime.now().strftime(fmt))], fmt).strftime("%d %B %Y")
+        except (ValueError, TypeError):
+            continue
+    return raw[:10] if raw else datetime.now().strftime("%d %B %Y")
+
+
+def make_description(headline: str, date_str: str, link: str) -> str:
+    """Original wrapper text (our own words) around the factual notice."""
+    return (
+        f"{headline} has been announced by the Staff Selection Commission (SSC). "
+        f"This official notice was published on {date_str}. "
+        f"Eligible candidates can check the full details \u2014 including eligibility, "
+        f"important dates, vacancy information, and the step-by-step application process "
+        f"\u2014 from the official SSC notice. Bharat Vacancy tracks the latest Government "
+        f"of India job notifications so candidates never miss an opportunity. "
+        f"Always verify final details on the official SSC website before applying."
+    )
+
+
+def fetch_notices():
+    print("Connecting to the official SSC notice feed...")
+    res = requests.get(SSC_API, params=SSC_PARAMS, headers=HEADERS, timeout=30)
+    print(f"  -> HTTP {res.status_code} from ssc.gov.in")
+    res.raise_for_status()
+    payload = res.json()
+
+    data = payload.get("data", [])
+    print(f"  -> Feed returned {len(data)} notices "
+          f"(total available: {payload.get('paginate', {}).get('totalRecords', '?')})")
+
+    if data:
+        # Show the field names of the first record so we can verify the feed shape.
+        print(f"  -> Fields on each notice: {sorted(data[0].keys())}")
+    return data
+
 
 def main():
-    scraper = JobScraper()
-    scraper.scrape_sources()
-    scraper.save_to_json()
-    scraper.post_to_wordpress()
+    try:
+        notices = fetch_notices()
+    except Exception as e:
+        print(f"ERROR talking to SSC: {e}")
+        sys.exit(1)
 
-if __name__ == '__main__':
+    rows = []
+    for rec in notices:
+        headline = (rec.get("headline") or "").strip()
+        if not headline:
+            continue
+        kind = classify(headline)
+        date_str = nice_date(rec)
+        link = build_link(rec)
+        rows.append({
+            "type_guess": {"job": "1_LIKELY_NEW_JOB",
+                           "review": "2_REVIEW",
+                           "skip": "3_answer_key_result_admin"}[kind],
+            "title": headline[:180],
+            "company": "Staff Selection Commission",
+            "location": "All India",
+            "category": "SSC Jobs",
+            "job_type": "Permanent",
+            "application_link": link,
+            "notice_date": date_str,
+            "description": make_description(headline, date_str, link),
+        })
+
+    # Sort so the likely-new-jobs sit at the very top for easy review.
+    rows.sort(key=lambda r: r["type_guess"])
+
+    out = "ssc_jobs.csv"
+    fields = ["type_guess", "title", "company", "location", "category",
+              "job_type", "application_link", "notice_date", "description"]
+    with open(out, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        w.writerows(rows)
+
+    jobs = sum(1 for r in rows if r["type_guess"].startswith("1"))
+    review = sum(1 for r in rows if r["type_guess"].startswith("2"))
+    skip = sum(1 for r in rows if r["type_guess"].startswith("3"))
+    print("\n==== DONE ====")
+    print(f"Wrote {len(rows)} notices to {out}")
+    print(f"  {jobs} look like NEW JOBS")
+    print(f"  {review} need a quick human look")
+    print(f"  {skip} look like answer-keys / results / admin (ignore these)")
+    print("Open ssc_jobs.csv, keep the rows you want, then import.")
+
+
+if __name__ == "__main__":
     main()
