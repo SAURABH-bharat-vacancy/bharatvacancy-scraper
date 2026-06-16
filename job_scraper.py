@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 import os
+import base64
 
 WEBSITES = {
     'SSC': {'url': 'https://ssc.gov.in', 'category': 'SSC Jobs', 'location': 'All India'},
@@ -59,7 +60,7 @@ class JobScraper:
                     'url': config['url'], 'source': source, 'category': config['category'], 'location': config['location'], 'posted_date': datetime.now().strftime('%Y-%m-%d')
                 })
                 
-   def post_to_wordpress(self):
+    def post_to_wordpress(self):
         wp_url = "https://bharatvacancy.com"
         wp_user = os.environ.get('WP_USER')
         wp_pass = os.environ.get('WP_APP_PASS')
@@ -70,16 +71,14 @@ class JobScraper:
 
         print("\n📤 Syncing with WordPress database...")
         
-        # Build an explicit manual token block to bypass proxy stripping
-        import base64
+        # Build an explicit manual token block to bypass Bluehost proxy stripping
         credential_string = f"{wp_user}:{wp_pass}"
         token = base64.b64encode(credential_string.encode('utf-8')).decode('utf-8')
         
-        # Inject custom auth variations to guarantee acceptance
         custom_headers = {
             'User-Agent': self.headers['User-Agent'],
             'Authorization': f'Basic {token}',
-            'X-HTTP-Authorization': f'Basic {token}' # Fallback header for strict proxy servers
+            'X-HTTP-Authorization': f'Basic {token}'  # Fallback header for strict proxy servers
         }
 
         for job in self.jobs:
@@ -102,7 +101,6 @@ class JobScraper:
             
             payload = {'title': job['title'], 'content': content_html, 'status': 'publish'}
             try:
-                # Use the custom header payload explicitly instead of requests auth tuple
                 res = requests.post(wp_url, headers=custom_headers, json=payload, timeout=15)
                 if res.status_code == 201:
                     print(f"  ✓ Live Published: {job['title'][:40]}...")
@@ -110,6 +108,7 @@ class JobScraper:
                     print(f"  ✗ Failed to post ({res.status_code}): {job['title'][:40]}")
             except Exception as e:
                 print(f"  ✗ Error: {e}")
+
     def save_to_json(self, filename='jobs_data.json'):
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(self.jobs, f, ensure_ascii=False, indent=2)
