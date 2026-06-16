@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # adds a "Run workflow" button so you can run it any time
 
 permissions:
-  contents: write             # lets the scraper save the CSV back into the repo
+  contents: write             # lets the scraper save the CSV files back into the repo
 
 jobs:
   scrape:
@@ -26,10 +26,10 @@ jobs:
       - name: Run the SSC scraper
         run: python job_scraper.py
 
-      - name: Save the fresh CSV back to the repo
+      - name: Save the fresh CSV files back to the repo
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add ssc_jobs.csv
-          git commit -m "Update SSC jobs CSV (auto)" || echo "No changes to commit"
+          git add ssc_jobs.csv ssc_import.csv
+          git commit -m "Update SSC job CSVs (auto)" || echo "No changes to commit"
           git push
