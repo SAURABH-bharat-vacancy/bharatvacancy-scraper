@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "title": "Latest SSC Recruitment Notifications & Active Vacancies",
+    "url": "https://ssc.gov.in",
+    "source": "SSC",
+    "category": "SSC Jobs",
+    "location": "All India",
+    "posted_date": "2026-06-16",
+    "type": "Permanent"
+  },
+  {
+    "title": "Check Latest IBPS Vacancies Directly",
+    "url": "https://www.ibps.in/careers",
+    "source": "IBPS",
+    "category": "Banking Jobs",
+    "location": "All India",
+    "posted_date": "2026-06-16",
+    "type": "Permanent"
+  },
+  {
+    "title": "Check Latest SBI Vacancies Directly",
+    "url": "https://sbi.co.in",
+    "source": "SBI",
+    "category": "Banking Jobs",
+    "location": "All India",
+    "posted_date": "2026-06-16",
+    "type": "Permanent"
+  },
+  {
+    "title": "Apply Online",
+    "url": "https://www.rrbapply.gov.in/",
+    "source": "RRB",
+    "category": "Railways Jobs",
+    "location": "All India",
+    "posted_date": "2026-06-16",
+    "type": "Permanent"
+  },
+  {
+    "title": "Check Latest NDA Vacancies Directly",
+    "url": "https://nda.ac.in/notifications",
+    "source": "NDA",
+    "category": "Defence Jobs",
+    "location": "All India",
+    "posted_date": "2026-06-16",
+    "type": "Permanent"
+  }
+]
