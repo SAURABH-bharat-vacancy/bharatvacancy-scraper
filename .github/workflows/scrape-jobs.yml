@@ -25,7 +25,7 @@ jobs:
       run: python job_scraper.py
     
     - name: Scrape IBPS jobs
-      run: python ibps_scraper.py
+      run: python ibis_scraper.py  # <-- CHANGED HERE FROM ibps to ibis
     
     - name: Commit and push
       run: |
