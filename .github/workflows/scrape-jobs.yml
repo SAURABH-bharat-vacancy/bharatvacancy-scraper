@@ -1,35 +1,35 @@
-name: SSC Job Scraper
+name: Scrape Jobs Daily
 
 on:
   schedule:
-    - cron: '30 0 * * *'    # runs daily at 6:00 AM India time
-  workflow_dispatch:          # adds a "Run workflow" button so you can run it any time
-
-permissions:
-  contents: write             # lets the scraper save the CSV files back into the repo
+    - cron: '30 0 * * *'  # 6:00 AM IST (runs at 00:30 UTC)
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Get the code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install requirements
-        run: pip install requests
-
-      - name: Run the SSC scraper
-        run: python job_scraper.py
-
-      - name: Save the fresh CSV files back to the repo
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add ssc_jobs.csv ssc_import.csv
-          git commit -m "Update SSC job CSVs (auto)" || echo "No changes to commit"
-          git push
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        pip install requests beautifulsoup4
+    
+    - name: Scrape SSC jobs
+      run: python job_scraper.py
+    
+    - name: Scrape IBPS jobs
+      run: python ibps_scraper.py
+    
+    - name: Commit and push
+      run: |
+        git config user.name "GitHub Bot"
+        git config user.email "bot@github.com"
+        git add ssc_import.csv ibps_import.csv
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Daily job update: $(date)" && git push)
