@@ -37,6 +37,10 @@ def post_jobs(jobs: list[dict], scraper_name: str) -> dict:
         method="POST",
         headers={
             "Content-Type": "application/json",
+            "Accept": "application/json",
+            # Bluehost's ModSecurity WAF blocks the default "Python-urllib/x.y" UA
+            # as a bot signature — a normal-looking UA avoids that 406.
+            "User-Agent": "BharatVacancyScraper/1.0 (+https://bharatvacancy.com)",
             "X-Api-Key": INGEST_API_KEY,
             "X-Scraper-Name": scraper_name,
         },
