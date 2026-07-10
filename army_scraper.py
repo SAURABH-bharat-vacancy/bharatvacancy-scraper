@@ -1,5 +1,10 @@
 """Join Indian Army scraper (Defence category).
 
+KNOWN ISSUE: joinindianarmy.nic.in times out from GitHub Actions runners
+(confirmed) even though it's reachable from residential networks — same
+network-blocking pattern as ssc.nic.in. Left in place with the same "revisit
+with a proxy once there's revenue" approach as SSC; see ssc_scraper.py.
+
 Note: navy/air force have separate portals (joinindiannavy.gov.in,
 careerindianairforce.cdac.in) — not yet added, same "verify content is real
 before building" approach should apply there too.

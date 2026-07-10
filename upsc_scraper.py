@@ -37,6 +37,7 @@ if __name__ == "__main__":
             print(f"[upsc_scraper] failed to fetch {url}: {e}")
             continue
 
+        print(f"[upsc_scraper] fetched {len(text)} chars from {url}; preview: {text[:300]!r}")
         jobs = extract_jobs(text, PORTAL_NAME, url)
         all_jobs.extend(jobs)
 
