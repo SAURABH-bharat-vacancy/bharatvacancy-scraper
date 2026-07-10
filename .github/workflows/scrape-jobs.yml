@@ -1,35 +1,39 @@
-name: Scrape Jobs Daily
+name: Scrape government job portals
 
 on:
   schedule:
-    - cron: '30 0 * * *'  # 6:00 AM IST (runs at 00:30 UTC)
-  workflow_dispatch:
+    - cron: "*/15 * * * *"   # every 15 minutes — near-real-time without relying on Bluehost cron
+  workflow_dispatch: {}       # lets you trigger a run manually from the Actions tab
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    
+    env:
+      INGEST_URL: https://bharatvacancy.com/ingest.php
+      INGEST_API_KEY: ${{ secrets.INGEST_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-    
-    - name: Install dependencies
-      run: |
-        pip install requests beautifulsoup4
-    
-    - name: Scrape SSC jobs
-      run: python job_scraper.py
-    
-    - name: Scrape IBPS jobs
-      run: python ibis_scraper.py  # <-- CHANGED HERE FROM ibps to ibis
-    
-    - name: Commit and push
-      run: |
-        git config user.name "GitHub Bot"
-        git config user.email "bot@github.com"
-        git add ssc_import.csv ibps_import.csv
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Daily job update: $(date)" && git push)
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run every scraper
+        run: |
+          set +e
+          FAILED=0
+          for f in *_scraper.py; do
+            [ -e "$f" ] || continue
+            echo "::group::$f"
+            python "$f"
+            if [ $? -ne 0 ]; then
+              echo "$f FAILED"
+              FAILED=1
+            fi
+            echo "::endgroup::"
+          done
+          exit $FAILED

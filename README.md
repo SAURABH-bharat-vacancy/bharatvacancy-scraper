@@ -1,74 +1,55 @@
 # Bharat Vacancy - Government Job Scraper
 
-Automatically scrapes government job notifications from official websites and posts them to bharatvacancy.com
+Scrapes government job notifications from official portals and posts them directly to
+bharatvacancy.com's ingest API. Runs on GitHub Actions every 15 minutes.
 
-## Features
+## How it works
 
-✓ Automated daily job scraping
-✓ Posts to WordPress automatically  
-✓ Supports: SSC, Banking, Railways, Defence jobs
-✓ Runs on GitHub Actions (free)
-✓ No manual intervention needed
+1. Each `*_scraper.py` fetches its portal's notice page(s) as raw text.
+2. `extract_jobs_ai.py` sends that text to Claude (Haiku 4.5) with a fixed JSON schema,
+   which pulls out structured job listings — this replaces hand-written CSS selectors,
+   so a portal redesigning its markup doesn't silently break extraction the way it did
+   before.
+3. `ingest_client.py` POSTs the results to `https://bharatvacancy.com/ingest.php`, which
+   dedupes and inserts new listings into the site's database directly. No CSV files, no
+   WordPress import plugin, no intermediate commit-to-repo step.
 
-## Supported Sources
+Add a new portal by copying `_template.py`-style structure from an existing
+`*_scraper.py`, adjusting the portal name and URL(s) — the workflow auto-discovers any
+file matching `*_scraper.py`, no registration step needed.
 
-- SSC (Staff Selection Commission)
-- IBPS (Institute of Banking Personnel Selection)
-- SBI (State Bank of India)
-- RRB (Railway Recruitment Board)
-- NDA (National Defence Academy)
+## Required secrets
 
-## Setup
+Set these under repo **Settings → Secrets and variables → Actions**:
 
-### Installation
+| Secret | Purpose |
+|---|---|
+| `INGEST_API_KEY` | Shared secret `ingest.php` checks — must match `INGEST_API_KEY` in the site's `config.php` |
+| `ANTHROPIC_API_KEY` | Used by `extract_jobs_ai.py` for structured extraction |
+
+## Run locally
 
 ```bash
-git clone https://github.com/yourusername/bharatvacancy-scraper.git
+git clone git@github.com:SAURABH-bharat-vacancy/bharatvacancy-scraper.git
 cd bharatvacancy-scraper
 pip install -r requirements.txt
+export INGEST_API_KEY=...
+export ANTHROPIC_API_KEY=...
+python ibps_scraper.py
 ```
-
-### Run Manually
-
-```bash
-python job_scraper.py
-```
-
-### Automatic Daily Runs
-
-GitHub Actions runs the scraper automatically:
-- **Time:** 6:00 AM IST daily
-- **No setup needed** - Just push code and it runs!
 
 ## Files
 
-- `job_scraper.py` - Main scraper script
-- `requirements.txt` - Python dependencies
-- `.github/workflows/scrape-jobs.yml` - Automation workflow
-- `jobs_data.json` - Output file with scraped jobs
-
-## Output
-
-Creates `jobs_data.json` with job data:
-
-```json
-[
-  {
-    "title": "SSC CGL 2024",
-    "url": "https://ssc.nic.in/...",
-    "source": "SSC",
-    "category": "SSC Jobs",
-    "location": "All India",
-    "posted_date": "2024-06-15",
-    "type": "Permanent"
-  }
-]
-```
+- `ibps_scraper.py`, `ssc_scraper.py` — one file per portal
+- `extract_jobs_ai.py` — shared AI extraction logic
+- `ingest_client.py` — shared HTTP client that posts to `ingest.php`
+- `.github/workflows/scrape-jobs.yml` — runs every scraper every 15 minutes
 
 ## Status
 
-✓ Last run: Check "Actions" tab
-✓ Jobs found: Check `jobs_data.json`
+Check the **Actions** tab for run history, or query `ingest_log` in the site's database
+for a per-run summary (jobs received/inserted/duplicate, and any errors) — a scraper
+that's silently broken shows up there instead of just going stale.
 
 ## Support
 
