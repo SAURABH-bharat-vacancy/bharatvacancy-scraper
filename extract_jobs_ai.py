@@ -65,13 +65,13 @@ Extract every distinct job/exam notification listed. For each one:
 Ignore navigation links, footers, ads, and anything that is not an actual job/exam notification. If there are no notifications on this page, return an empty jobs list.
 
 PAGE TEXT:
-{page_text[:15000]}
+{page_text[:60000]}
 """
 
     try:
         response = client.messages.create(
             model="claude-haiku-4-5",
-            max_tokens=4096,
+            max_tokens=8192,
             output_config={"format": {"type": "json_schema", "schema": EXTRACTION_SCHEMA}},
             messages=[{"role": "user", "content": prompt}],
         )
