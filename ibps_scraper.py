@@ -5,6 +5,7 @@ extract_jobs_ai for structured extraction — this replaces the old keyword-matc
 approach (which produced fake placeholder listings whenever it couldn't find a match).
 """
 import requests
+import urllib3
 from bs4 import BeautifulSoup
 from extract_jobs_ai import extract_jobs
 from ingest_client import post_jobs
@@ -20,9 +21,16 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
 }
 
+# ibps.in's own server has an incomplete TLS certificate chain (confirmed from three
+# independent networks, not a local/CA-store issue) — verification is disabled only
+# for this domain, only because this scraper reads public data and never sends
+# anything sensitive. User explicitly confirmed this tradeoff. Do not copy this
+# pattern to any scraper that submits credentials or user data.
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 def fetch_page_text(url: str) -> str:
-    resp = requests.get(url, headers=HEADERS, timeout=20)
+    resp = requests.get(url, headers=HEADERS, timeout=20, verify=False)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "lxml")
     for tag in soup(["script", "style", "nav", "footer"]):
