@@ -24,6 +24,63 @@ CATEGORIES = ["Banking", "SSC", "Railways", "Defence", "Police", "State", "Gener
 EMPLOYMENT_TYPES = ["Permanent", "Contract", "Temporary", "Part Time"]
 
 
+def _recover_partial_jobs(text: str) -> list[dict]:
+    """When a portal's page has enough distinct notices, the model's JSON
+    response can get cut off mid-generation by hitting max_tokens before it
+    finishes the array. Rather than discard the whole response, walk the
+    "jobs" array with a brace-depth scanner and keep every object that's
+    actually complete; only the last, truncated one gets dropped.
+    """
+    arr_start = text.find("[")
+    if arr_start == -1:
+        return []
+
+    jobs = []
+    i = arr_start + 1
+    n = len(text)
+
+    while i < n:
+        while i < n and (text[i].isspace() or text[i] == ","):
+            i += 1
+        if i >= n or text[i] != "{":
+            break
+
+        obj_start = i
+        depth = 0
+        in_string = False
+        escaped = False
+        closed = False
+
+        while i < n:
+            ch = text[i]
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == '"':
+                in_string = not in_string
+            elif not in_string:
+                if ch == "{":
+                    depth += 1
+                elif ch == "}":
+                    depth -= 1
+                    if depth == 0:
+                        i += 1
+                        closed = True
+                        break
+            i += 1
+
+        if not closed:
+            break  # ran off the end mid-object — this is the truncated one, stop here
+
+        try:
+            jobs.append(json.loads(text[obj_start:i]))
+        except json.JSONDecodeError:
+            pass
+
+    return jobs
+
+
 def _parse_jobs_json(text: str) -> list[dict]:
     text = text.strip()
     fence_match = re.search(r"```(?:json)?\s*(.*?)\s*```", text, re.DOTALL)
@@ -33,8 +90,15 @@ def _parse_jobs_json(text: str) -> list[dict]:
         start, end = text.find("{"), text.rfind("}")
         if start != -1 and end != -1:
             text = text[start:end + 1]
-    data = json.loads(text)
-    return data["jobs"]
+
+    try:
+        data = json.loads(text)
+        return data["jobs"]
+    except (json.JSONDecodeError, KeyError):
+        recovered = _recover_partial_jobs(text)
+        if recovered:
+            return recovered
+        raise
 
 
 def extract_jobs(page_text: str, portal_name: str, page_url: str) -> list[dict]:
