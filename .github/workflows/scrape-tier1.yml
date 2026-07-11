@@ -1,0 +1,26 @@
+name: Scrape Tier 1 portal batch
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours — these portals post far less often than SSC/Army/IBPS, so a 15-min cadence would just waste AI calls
+  workflow_dispatch: {}
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    env:
+      INGEST_URL: https://bharatvacancy.com/ingest.php
+      INGEST_API_KEY: ${{ secrets.INGEST_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Tier 1 batch scraper
+        run: python tier1_batch.py

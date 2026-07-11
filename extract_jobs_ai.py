@@ -22,7 +22,7 @@ EXTRACTION_SCHEMA = {
                     "organization": {"type": "string"},
                     "category": {
                         "type": "string",
-                        "enum": ["Banking", "SSC", "Railways", "Defence", "Police", "State", "General"],
+                        "enum": ["Banking", "SSC", "Railways", "Defence", "Police", "State", "PSU", "General"],
                     },
                     "location": {"type": "string"},
                     "employment_type": {
