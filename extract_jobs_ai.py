@@ -92,6 +92,7 @@ PAGE TEXT:
             max_tokens=8192,
             output_config={"format": {"type": "json_schema", "schema": EXTRACTION_SCHEMA}},
             messages=[{"role": "user", "content": prompt}],
+            timeout=60.0,
         )
     except Exception as e:
         print(f"[extract_jobs_ai] API call failed for {portal_name}: {e}")

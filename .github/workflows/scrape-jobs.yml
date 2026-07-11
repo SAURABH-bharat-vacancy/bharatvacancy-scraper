@@ -12,6 +12,7 @@ jobs:
       INGEST_URL: https://bharatvacancy.com/ingest.php
       INGEST_API_KEY: ${{ secrets.INGEST_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      PYTHONUNBUFFERED: "1"
     steps:
       - uses: actions/checkout@v4
 
@@ -23,6 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run every scraper
+        timeout-minutes: 12
         run: |
           set +e
           FAILED=0
