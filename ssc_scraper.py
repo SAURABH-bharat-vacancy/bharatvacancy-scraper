@@ -75,6 +75,7 @@ def to_job(notice: dict) -> dict | None:
     return {
         "title": headline,
         "organization": ORGANIZATION,
+        "source_portal": PORTAL_NAME,
         "category": "SSC",
         "location": "All India",
         "employment_type": "Permanent",
