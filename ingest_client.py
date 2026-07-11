@@ -47,7 +47,10 @@ def post_jobs(jobs: list[dict], scraper_name: str) -> dict:
     )
 
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        # 90s, not 30s: ingest.php now does best-effort PDF enrichment (fetch +
+        # AI extraction) for up to a few newly-inserted jobs per request, which
+        # can take a while — see includes/pdf_enrich.php on the PHP side.
+        with urllib.request.urlopen(req, timeout=90) as resp:
             result = json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         print(f"[{scraper_name}] ERROR: ingest.php returned HTTP {e.code}: {e.read().decode('utf-8', 'ignore')}", file=sys.stderr)
