@@ -109,9 +109,9 @@ def extract_jobs(page_text: str, portal_name: str, page_url: str) -> list[dict]:
     the ingest_log table (populated by ingest.php) to notice a portal that's gone
     persistently quiet.
     """
-    prompt = f"""Here is the raw text of the "{portal_name}" recruitment notices page ({page_url}).
+    prompt = f"""Here is the raw text of the "{portal_name}" notices page ({page_url}).
 
-Extract every distinct job/exam notification listed. For each one, include these fields when known:
+Extract every distinct notification listed — this includes not just fresh vacancy/recruitment ads, but also exam results, merit lists, admit cards/hall tickets, and answer keys. A "marks and rank position published" or "result declared" announcement is just as much a notification to extract as a new job opening — don't skip it just because it isn't a vacancy. For each one, include these fields when known:
 - title: the notification/exam name, as written on the page
 - organization: usually "{portal_name}" unless the text names a more specific body
 - source_url: the direct link to that specific notification if present in the text, otherwise use {page_url}
@@ -129,7 +129,7 @@ Extract every distinct job/exam notification listed. For each one, include these
 
 For every field marked "omit if not stated" or "omit if not found": only include it when the source text actually states it. Never invent, estimate, or guess a value — an omitted field is far better than a wrong one.
 
-Ignore navigation links, footers, ads, and anything that is not an actual job/exam notification.
+Ignore navigation links, footers, ads, and anything that isn't an actual notification (job, result, admit card, or answer key).
 
 Respond with ONLY a single JSON object of the exact form {{"jobs": [...]}} — no markdown code fences, no commentary before or after. If there are no notifications on this page, respond with {{"jobs": []}}.
 
