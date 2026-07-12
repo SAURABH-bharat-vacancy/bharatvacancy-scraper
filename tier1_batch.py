@@ -15,6 +15,7 @@ clearly didn't return real listings (blocked/stub/error page).
 """
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 from extract_jobs_ai import extract_jobs
 from ingest_client import post_jobs
 
@@ -53,6 +54,17 @@ def fetch_page_text(url: str) -> str:
     soup = BeautifulSoup(resp.text, "lxml")
     for tag in soup(["script", "style", "nav", "footer"]):
         tag.decompose()
+    # Inline each link's resolved URL next to its text (e.g. "Download
+    # Advertisement [https://.../notice.pdf]") before stripping to plain
+    # text — get_text() alone drops href attributes entirely, so the AI
+    # extraction step had no way to report a pdf_url from a listing page.
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        if not href or href.startswith("javascript:") or href.startswith("#"):
+            continue
+        resolved = urljoin(resp.url, href)
+        text = a.get_text(strip=True)
+        a.replace_with(f"{text} [{resolved}]" if text else f"[{resolved}]")
     return soup.get_text(separator="\n", strip=True)
 
 

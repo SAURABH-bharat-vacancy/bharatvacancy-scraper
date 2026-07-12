@@ -109,13 +109,13 @@ def extract_jobs(page_text: str, portal_name: str, page_url: str) -> list[dict]:
     the ingest_log table (populated by ingest.php) to notice a portal that's gone
     persistently quiet.
     """
-    prompt = f"""Here is the raw text of the "{portal_name}" notices page ({page_url}).
+    prompt = f"""Here is the raw text of the "{portal_name}" notices page ({page_url}). Links found on the page are inlined right after their link text in square brackets, e.g. "Download Advertisement [https://example.gov.in/notice.pdf]" — use these bracketed URLs as the source of source_url and pdf_url values; don't guess a URL that isn't backed by one of these brackets.
 
 Extract every distinct notification listed — this includes not just fresh vacancy/recruitment ads, but also exam results, merit lists, admit cards/hall tickets, and answer keys. A "marks and rank position published" or "result declared" announcement is just as much a notification to extract as a new job opening — don't skip it just because it isn't a vacancy. For each one, include these fields when known:
 - title: the notification/exam name, as written on the page
 - organization: usually "{portal_name}" unless the text names a more specific body
-- source_url: the direct link to that specific notification if present in the text, otherwise use {page_url}
-- pdf_url: a direct link to the notification PDF/advertisement document, if one is present in the text — omit if not found, don't guess
+- source_url: the bracketed link immediately after that notification's title/heading if present, otherwise use {page_url}
+- pdf_url: the bracketed link for the notification PDF/advertisement document (usually near text like "Download", "Advertisement", "Notification", "Click here") if present — omit if not found, don't guess
 - vacancy_count: total number of vacancies as stated (e.g. "4187" or "500+" or "Various") — omit if not stated
 - category: one of exactly {CATEGORIES}
 - employment_type: one of exactly {EMPLOYMENT_TYPES} — default to "Permanent" for government recruitment unless the text says otherwise
