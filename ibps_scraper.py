@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from extract_jobs_ai import extract_jobs
 from ingest_client import post_jobs
+from page_cache_client import page_unchanged_since_last_run
 
 PORTAL_NAME = "IBPS"
 PAGES = [
@@ -57,6 +58,10 @@ if __name__ == "__main__":
             text = fetch_page_text(url)
         except Exception as e:
             print(f"[ibps_scraper] failed to fetch {url}: {e}")
+            continue
+
+        if page_unchanged_since_last_run(f"{PORTAL_NAME} {url}", text):
+            print(f"[ibps_scraper] skipped {url}: unchanged since last run")
             continue
 
         jobs = extract_jobs(text, PORTAL_NAME, url)

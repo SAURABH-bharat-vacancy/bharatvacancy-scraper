@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from extract_jobs_ai import extract_jobs
 from ingest_client import post_jobs
+from page_cache_client import page_unchanged_since_last_run
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -80,6 +81,10 @@ if __name__ == "__main__":
 
         if len(text) < MIN_USEFUL_TEXT_LENGTH:
             print(f"[tier1_batch] [{portal_name}] SKIPPED extraction: content too short ({len(text)} chars), likely blocked/stub")
+            continue
+
+        if page_unchanged_since_last_run(portal_name, text):
+            print(f"[tier1_batch] [{portal_name}] SKIPPED extraction: page unchanged since last run")
             continue
 
         try:
