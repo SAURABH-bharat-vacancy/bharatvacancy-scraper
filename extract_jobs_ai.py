@@ -155,9 +155,20 @@ PAGE TEXT:
     for block in response.content:
         if block.type == "text":
             try:
-                return _parse_jobs_json(block.text)
+                jobs = _parse_jobs_json(block.text)
             except (json.JSONDecodeError, KeyError, IndexError) as e:
                 print(f"[extract_jobs_ai] failed to parse response for {portal_name}: {e}")
                 return []
+
+            # source_url is required downstream, but the model doesn't
+            # reliably follow the prompt's "fall back to the page URL"
+            # instruction once it's already supplied a pdf_url for the same
+            # notification — confirmed dropping entire portals' worth of
+            # jobs silently. Enforce the fallback here instead of trusting
+            # compliance.
+            for job in jobs:
+                if not job.get("source_url"):
+                    job["source_url"] = page_url
+            return jobs
 
     return []
