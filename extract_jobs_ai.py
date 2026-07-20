@@ -114,6 +114,7 @@ def extract_jobs(page_text: str, portal_name: str, page_url: str) -> list[dict]:
 Extract every distinct notification listed — this includes not just fresh vacancy/recruitment ads, but also exam results, merit lists, admit cards/hall tickets, and answer keys. A "marks and rank position published" or "result declared" announcement is just as much a notification to extract as a new job opening — don't skip it just because it isn't a vacancy. For each one, include these fields when known:
 - title: the notification/exam name, as written on the page
 - organization: usually "{portal_name}" unless the text names a more specific body
+- description: 1-3 sentences of real context about this specific notification, drawn only from text on the page near it (not the title restated, not invented) — e.g. what the post is for, why it was issued, who it affects. Omit entirely if the page has nothing beyond the title for this notification; never pad with generic filler.
 - source_url: the bracketed link immediately after that notification's title/heading if present, otherwise use {page_url}
 - pdf_url: the bracketed link for the notification PDF/advertisement document (usually near text like "Download", "Advertisement", "Notification", "Click here") if present — omit if not found, don't guess
 - vacancy_count: total number of vacancies as stated (e.g. "4187" or "500+" or "Various") — omit if not stated

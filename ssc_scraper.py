@@ -81,7 +81,11 @@ def to_job(notice: dict) -> dict | None:
         "employment_type": "Permanent",
         "source_url": pdf_url,
         "pdf_url": pdf_url,
-        "description": headline,
+        # No separate description in SSC's API — leaving this unset (rather
+        # than duplicating headline into it) avoids rendering a "Notification
+        # Details" paragraph that just repeats the title. PDF enrichment
+        # (ingest.php, triggered automatically since pdf_url is set) fills in
+        # the real substance — qualification, pay scale, selection process.
         "posted_date": posted_date,
     }
 
