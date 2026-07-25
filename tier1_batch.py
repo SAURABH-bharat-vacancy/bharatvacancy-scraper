@@ -3,10 +3,13 @@ server-rendered (simple HTTP fetch works, no headless browser needed), same
 HTML+AI extraction pattern as army_scraper.py/ibps_scraper.py.
 
 Deliberately NOT named *_scraper.py so the main every-15-minutes workflow
-(scrape-jobs.yml, which globs *_scraper.py) does not pick this up. Running 17
-portals' worth of AI extraction calls every 15 minutes would be wasteful —
-none of these portals post new notices anywhere near that often. Instead this
-runs on its own low-frequency schedule via scrape-tier1.yml.
+(scrape-jobs.yml, which globs *_scraper.py) does not pick this up. Running
+multiple portals' worth of AI extraction calls every 15 minutes would be
+wasteful — none of these portals post new notices anywhere near that often.
+Instead this runs on its own low-frequency schedule via scrape-tier1.yml.
+
+Only lists portals confirmed reachable from GitHub Actions' cloud IPs — see
+the comment above PORTALS for the ones deliberately excluded and why.
 
 Each portal is wrapped in its own try/except so one bad fetch (timeout, block,
 site redesign) doesn't take down the whole batch — matches the pattern in
@@ -27,23 +30,21 @@ HEADERS = {
 MIN_USEFUL_TEXT_LENGTH = 800
 
 # (portal_name, organization, url, category)
+#
+# RRB, RRB Mumbai, Rajasthan PSC, Tamil Nadu PSC, DRDO RAC, Join Indian Navy,
+# EPFO, CRPF, ONGC, NTPC, and Coal India are deliberately NOT in this list —
+# confirmed unreachable from GitHub Actions' cloud IP ranges (connection
+# refused/timeout) or WAF-blocked (NTPC, Coal India: 403), every single run.
+# cron/run-tier1.php on Bluehost's own IP already covers all of them; keeping
+# them here just wastes the run on fetches that always fail. Only add a
+# portal back here if it's independently confirmed reachable from GitHub
+# Actions specifically, not just reachable in general.
 PORTALS = [
-    ("RRB", "Railway Recruitment Board", "https://rrb.indianrailways.gov.in/", "Railways"),
-    ("RRB Mumbai", "Railway Recruitment Board, Mumbai", "https://rrbmumbai.gov.in/", "Railways"),
     ("RRB Bhubaneswar", "Railway Recruitment Board, Bhubaneswar", "https://www.rrbbbs.gov.in/", "Railways"),
     ("Bihar Police", "Central Selection Board of Constable, Bihar", "https://csbc.bihar.gov.in/", "Police"),
     ("UP Police", "Uttar Pradesh Police Recruitment and Promotion Board", "https://uppbpb.gov.in/", "Police"),
-    ("Rajasthan PSC", "Rajasthan Public Service Commission", "https://rpsc.rajasthan.gov.in/", "State"),
-    ("Tamil Nadu PSC", "Tamil Nadu Public Service Commission", "https://www.tnpsc.gov.in/", "State"),
     ("ISRO", "Indian Space Research Organisation", "https://www.isro.gov.in/CurrentOpportunities.html", "PSU"),
-    ("DRDO RAC", "Recruitment & Assessment Centre, DRDO", "https://rac.gov.in/", "PSU"),
-    ("Join Indian Navy", "Indian Navy", "https://www.joinindiannavy.gov.in/", "Defence"),
-    ("EPFO", "Employees' Provident Fund Organisation", "https://www.epfindia.gov.in/site_en/Recruitments.php", "PSU"),
     ("India Post", "Department of Posts", "https://www.indiapost.gov.in/vacancies", "PSU"),
-    ("CRPF", "Central Reserve Police Force", "https://rect.crpf.gov.in/", "Police"),
-    ("ONGC", "Oil and Natural Gas Corporation", "https://www.ongcindia.com/web/eng/career/recruitment-notice", "PSU"),
-    ("NTPC", "NTPC Limited", "https://careers.ntpc.co.in/recruitment/", "PSU"),
-    ("Coal India", "Coal India Limited", "https://www.coalindia.in/career-cil/jobs-coal-india/", "PSU"),
     ("SAIL", "Steel Authority of India Limited", "https://sailcareers.com/", "PSU"),
     ("Indian Coast Guard", "Indian Coast Guard", "https://www.indiancoastguard.gov.in/recruitment", "Defence"),
 ]
