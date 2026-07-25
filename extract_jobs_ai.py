@@ -15,13 +15,83 @@ less strict than schema-enforced output, but the parsing below is defensive
 about the common failure modes (markdown code fences, leading/trailing prose).
 """
 import json
+import os
 import re
+import urllib.request
+import urllib.error
 from anthropic import Anthropic
 
 client = Anthropic()  # reads ANTHROPIC_API_KEY from env
 
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
+GROQ_MODEL = "llama-3.3-70b-versatile"
+
 CATEGORIES = ["Banking", "SSC", "Railways", "Defence", "Police", "State", "General"]
 EMPLOYMENT_TYPES = ["Permanent", "Contract", "Temporary", "Part Time"]
+
+
+def _call_anthropic(prompt: str) -> str | None:
+    """Returns None (never raises) on any failure so _call_llm_extract() can
+    fall through to Groq instead of aborting extraction outright."""
+    try:
+        response = client.messages.create(
+            model="claude-haiku-4-5",
+            max_tokens=8192,
+            messages=[{"role": "user", "content": prompt}],
+            timeout=60.0,
+        )
+    except Exception as e:
+        print(f"[extract_jobs_ai] Anthropic call failed: {e}")
+        return None
+
+    if response.stop_reason == "refusal":
+        return None
+
+    for block in response.content:
+        if block.type == "text":
+            return block.text
+    return None
+
+
+def _call_groq(prompt: str) -> str | None:
+    """Fallback path: same prompt, OpenAI-compatible chat-completions shape.
+    Only reached when Anthropic itself failed — see _call_llm_extract()."""
+    if not GROQ_API_KEY:
+        return None
+
+    body = json.dumps({
+        "model": GROQ_MODEL,
+        "max_tokens": 8192,
+        "messages": [{"role": "user", "content": prompt}],
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        "https://api.groq.com/openai/v1/chat/completions",
+        data=body,
+        method="POST",
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {GROQ_API_KEY}",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        return data["choices"][0]["message"]["content"]
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, KeyError, ValueError) as e:
+        print(f"[extract_jobs_ai] Groq fallback call failed: {e}")
+        return None
+
+
+def _call_llm_extract(prompt: str) -> str | None:
+    """Tries Anthropic first; only calls Groq if Anthropic failed outright
+    (down, rate-limited, or credit balance exhausted). Never silently
+    prefers the free tier when the primary is healthy."""
+    text = _call_anthropic(prompt)
+    if text is not None:
+        return text
+
+    print("[extract_jobs_ai] Anthropic call failed, falling back to Groq")
+    return _call_groq(prompt)
 
 
 def _recover_partial_jobs(text: str) -> list[dict]:
@@ -138,38 +208,23 @@ PAGE TEXT:
 {page_text[:60000]}
 """
 
+    text = _call_llm_extract(prompt)
+    if text is None:
+        print(f"[extract_jobs_ai] API call failed for {portal_name} (Anthropic and Groq both unavailable)")
+        return []
+
     try:
-        response = client.messages.create(
-            model="claude-haiku-4-5",
-            max_tokens=8192,
-            messages=[{"role": "user", "content": prompt}],
-            timeout=60.0,
-        )
-    except Exception as e:
-        print(f"[extract_jobs_ai] API call failed for {portal_name}: {e}")
+        jobs = _parse_jobs_json(text)
+    except (json.JSONDecodeError, KeyError, IndexError) as e:
+        print(f"[extract_jobs_ai] failed to parse response for {portal_name}: {e}")
         return []
 
-    if response.stop_reason == "refusal":
-        print(f"[extract_jobs_ai] extraction refused for {portal_name}")
-        return []
-
-    for block in response.content:
-        if block.type == "text":
-            try:
-                jobs = _parse_jobs_json(block.text)
-            except (json.JSONDecodeError, KeyError, IndexError) as e:
-                print(f"[extract_jobs_ai] failed to parse response for {portal_name}: {e}")
-                return []
-
-            # source_url is required downstream, but the model doesn't
-            # reliably follow the prompt's "fall back to the page URL"
-            # instruction once it's already supplied a pdf_url for the same
-            # notification — confirmed dropping entire portals' worth of
-            # jobs silently. Enforce the fallback here instead of trusting
-            # compliance.
-            for job in jobs:
-                if not job.get("source_url"):
-                    job["source_url"] = page_url
-            return jobs
-
-    return []
+    # source_url is required downstream, but the model doesn't reliably
+    # follow the prompt's "fall back to the page URL" instruction once it's
+    # already supplied a pdf_url for the same notification — confirmed
+    # dropping entire portals' worth of jobs silently. Enforce the fallback
+    # here instead of trusting compliance.
+    for job in jobs:
+        if not job.get("source_url"):
+            job["source_url"] = page_url
+    return jobs
