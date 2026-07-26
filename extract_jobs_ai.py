@@ -26,6 +26,13 @@ client = Anthropic()  # reads ANTHROPIC_API_KEY from env
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
+# Model name matters a lot for this specific key — several otherwise-current
+# names return 404 ("no longer available to new users") or 429 (zero quota).
+# "gemini-flash-latest" is the one confirmed working; re-verify with
+# bharatvacancy/_debug_google.php before changing this.
+GOOGLE_MODEL = "gemini-flash-latest"
+
 CATEGORIES = ["Banking", "SSC", "Railways", "Defence", "Police", "State", "General"]
 EMPLOYMENT_TYPES = ["Permanent", "Contract", "Temporary", "Part Time"]
 
@@ -82,16 +89,49 @@ def _call_groq(prompt: str) -> str | None:
         return None
 
 
+def _call_gemini(prompt: str) -> str | None:
+    """Third fallback tier. Gemini's own response shape
+    (candidates[0].content.parts[0].text) and auth (?key= query param, not
+    a bearer header) - different from both Anthropic and Groq's shapes."""
+    if not GOOGLE_API_KEY:
+        return None
+
+    body = json.dumps({
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"maxOutputTokens": 8192},
+    }).encode("utf-8")
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GOOGLE_MODEL}:generateContent?key={GOOGLE_API_KEY}"
+    req = urllib.request.Request(
+        url,
+        data=body,
+        method="POST",
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        return data["candidates"][0]["content"]["parts"][0]["text"]
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, KeyError, IndexError, ValueError) as e:
+        print(f"[extract_jobs_ai] Gemini fallback call failed: {e}")
+        return None
+
+
 def _call_llm_extract(prompt: str) -> str | None:
-    """Tries Anthropic first; only calls Groq if Anthropic failed outright
-    (down, rate-limited, or credit balance exhausted). Never silently
-    prefers the free tier when the primary is healthy."""
+    """Tries Anthropic, then Groq, then Gemini — each only called if every
+    prior tier failed outright (down, rate-limited, or credit balance
+    exhausted). Never silently prefers a free tier when the primary is
+    healthy."""
     text = _call_anthropic(prompt)
     if text is not None:
         return text
 
     print("[extract_jobs_ai] Anthropic call failed, falling back to Groq")
-    return _call_groq(prompt)
+    text = _call_groq(prompt)
+    if text is not None:
+        return text
+
+    print("[extract_jobs_ai] Groq call failed, falling back to Gemini")
+    return _call_gemini(prompt)
 
 
 def _recover_partial_jobs(text: str) -> list[dict]:
