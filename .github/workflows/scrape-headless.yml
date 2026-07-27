@@ -30,4 +30,4 @@ jobs:
 
       - name: Run headless scraper
         timeout-minutes: 15
-        run: python headless_scraper.py
+        run: python headless_portals.py
