@@ -24,7 +24,7 @@ from anthropic import Anthropic
 client = Anthropic()  # reads ANTHROPIC_API_KEY from env
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "openai/gpt-oss-120b"
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 # Model name matters a lot for this specific key — several otherwise-current
