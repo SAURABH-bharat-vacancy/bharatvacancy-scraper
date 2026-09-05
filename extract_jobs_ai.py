@@ -38,6 +38,13 @@ GROQ_API_KEYS = [k for k in [
     os.environ.get("GROQ_API_KEY_5", ""),
 ] if k]
 
+# Confirmed live 2026-09-05: Groq's API is fronted by Cloudflare, which
+# returns a 403 ("error code: 1010") for urllib.request's default
+# User-Agent ("Python-urllib/x.y") specifically — curl and PHP's libcurl
+# pass through fine with their own default UAs, so this was never visible
+# from the PHP backfill scripts, only here. A real browser UA fixes it.
+_BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 # Model name matters a lot for this specific key — several otherwise-current
 # names return 404 ("no longer available to new users") or 429 (zero quota).
@@ -104,6 +111,7 @@ def _call_groq(prompt: str) -> str | None:
             headers={
                 "Content-Type": "application/json",
                 "Authorization": f"Bearer {api_key}",
+                "User-Agent": _BROWSER_UA,
             },
         )
         try:
@@ -140,7 +148,7 @@ def _call_gemini(prompt: str) -> str | None:
         url,
         data=body,
         method="POST",
-        headers={"Content-Type": "application/json"},
+        headers={"Content-Type": "application/json", "User-Agent": _BROWSER_UA},
     )
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
