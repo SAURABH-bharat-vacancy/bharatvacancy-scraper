@@ -23,8 +23,20 @@ from anthropic import Anthropic
 
 client = Anthropic()  # reads ANTHROPIC_API_KEY from env
 
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_MODEL = "openai/gpt-oss-120b"
+# Multiple keys (each its own free-tier quota), tried in order, rotating to
+# the next only on a 429 — same pattern as aerovistajaipur.com's
+# api/rera-checker.php. Values live in GitHub Actions secrets
+# (GROQ_API_KEY[_2..5]), not hardcoded here — see
+# project_bharatvacancy_pdf_url_backfill.md for why hardcoding real keys
+# into a pushed file was deliberately avoided.
+GROQ_API_KEYS = [k for k in [
+    os.environ.get("GROQ_API_KEY", ""),
+    os.environ.get("GROQ_API_KEY_2", ""),
+    os.environ.get("GROQ_API_KEY_3", ""),
+    os.environ.get("GROQ_API_KEY_4", ""),
+    os.environ.get("GROQ_API_KEY_5", ""),
+] if k]
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
 # Model name matters a lot for this specific key — several otherwise-current
@@ -62,31 +74,54 @@ def _call_anthropic(prompt: str) -> str | None:
 
 def _call_groq(prompt: str) -> str | None:
     """Fallback path: same prompt, OpenAI-compatible chat-completions shape.
-    Only reached when Anthropic itself failed — see _call_llm_extract()."""
-    if not GROQ_API_KEY:
+    Only reached when Anthropic itself failed — see _call_llm_extract().
+
+    Tries each key in GROQ_API_KEYS in order, moving to the next ONLY on a
+    429 (rate limit) — any other outcome (success or a real error) stops
+    the loop right there, same rule as rera-checker.php's callGroq().
+
+    reasoning_effort=low is load-bearing, not an optimization: confirmed
+    live 2026-08-31 that openai/gpt-oss-120b is a reasoning model that
+    spends its whole max_tokens budget on hidden chain-of-thought and hits
+    the limit before ever writing to "content" — indistinguishable from
+    "found nothing" unless you inspect the raw response.
+    """
+    if not GROQ_API_KEYS:
         return None
 
-    body = json.dumps({
-        "model": GROQ_MODEL,
-        "max_tokens": 8192,
-        "messages": [{"role": "user", "content": prompt}],
-    }).encode("utf-8")
-    req = urllib.request.Request(
-        "https://api.groq.com/openai/v1/chat/completions",
-        data=body,
-        method="POST",
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {GROQ_API_KEY}",
-        },
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        return data["choices"][0]["message"]["content"]
-    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, KeyError, ValueError) as e:
-        print(f"[extract_jobs_ai] Groq fallback call failed: {e}")
-        return None
+    last_err = None
+    for api_key in GROQ_API_KEYS:
+        body = json.dumps({
+            "model": GROQ_MODEL,
+            "max_tokens": 8192,
+            "reasoning_effort": "low",
+            "messages": [{"role": "user", "content": prompt}],
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            "https://api.groq.com/openai/v1/chat/completions",
+            data=body,
+            method="POST",
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {api_key}",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            return data["choices"][0]["message"]["content"]
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code == 429:
+                continue  # this key's quota is spent, try the next one
+            print(f"[extract_jobs_ai] Groq fallback call failed: {e}")
+            return None
+        except (urllib.error.URLError, TimeoutError, KeyError, ValueError) as e:
+            print(f"[extract_jobs_ai] Groq fallback call failed: {e}")
+            return None
+
+    print(f"[extract_jobs_ai] Groq fallback call failed: all {len(GROQ_API_KEYS)} keys rate-limited ({last_err})")
+    return None
 
 
 def _call_gemini(prompt: str) -> str | None:
