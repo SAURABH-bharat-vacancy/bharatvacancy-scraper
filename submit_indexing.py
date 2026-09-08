@@ -36,6 +36,10 @@ from google.oauth2 import service_account
 from google.auth.transport.requests import Request
 
 FEED_URL = "https://bharatvacancy.com/job-urls-feed.php"
+# Bluehost's ModSecurity WAF blocks requests' default "python-requests/x.y"
+# User-Agent as a bot signature (same issue documented in ingest_client.py) —
+# a browser-like UA avoids the 406.
+FEED_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"}
 INDEXING_ENDPOINT = "https://indexing.googleapis.com/v3/urlNotifications:publish"
 SCOPES = ["https://www.googleapis.com/auth/indexing"]
 STATE_FILE = Path(__file__).parent / "indexing_state.json"
@@ -64,7 +68,7 @@ def get_access_token() -> str:
 
 
 def fetch_eligible_urls() -> list[str]:
-    resp = requests.get(FEED_URL, timeout=30)
+    resp = requests.get(FEED_URL, headers=FEED_HEADERS, timeout=30)
     resp.raise_for_status()
     return [line.strip() for line in resp.text.splitlines() if line.strip()]
 
