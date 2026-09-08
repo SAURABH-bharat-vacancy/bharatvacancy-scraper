@@ -2,17 +2,12 @@
 challenge — confirmed via direct testing (see bharatvacancy chat history,
 not guessed):
 
-- MPSC (mpsc.gov.in): a React SPA whose data comes from a JSON API
-  (/web/api/v1/...) that rejects requests without a "CRC" header the
-  frontend JS computes client-side. No documented algorithm, and reverse
-  engineering a signing scheme is fragile (breaks silently on any frontend
-  update) — rendering the page for real sidesteps it entirely.
 - RBI (opportunities.rbi.org.in): fronted by an F5/Shape "TSPD" bot-challenge.
   Replaying the TS* cookies from a plain request (the trick that worked for
   RRB) was NOT enough here — confirmed empirically, still zero real content
   even with cookies replayed. This one genuinely needs JS execution.
 
-Both problems have the same fix: a real browser. Playwright's Chromium runs
+The fix is a real browser. Playwright's Chromium runs
 the challenge/app JS the same way a human's browser would, so by the time we
 read the page it's already past whatever plain requests/curl can't get
 through. Same extract_jobs_ai + link-inlining + ingest pipeline as every
@@ -36,7 +31,6 @@ MIN_USEFUL_TEXT_LENGTH = 800
 
 # (portal_name, organization, url, category)
 PORTALS = [
-    ("MPSC", "Maharashtra Public Service Commission", "https://mpsc.gov.in/", "State"),
     ("RBI", "Reserve Bank of India", "https://opportunities.rbi.org.in/scripts/index.aspx", "Banking"),
 ]
 
