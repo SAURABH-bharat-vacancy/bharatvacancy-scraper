@@ -1,0 +1,36 @@
+name: Submit job URLs to Google Indexing API
+
+on:
+  schedule:
+    - cron: "7 3 * * *"   # once a day — Indexing API quota is 200/project/day, no benefit running more often
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # needs to commit indexing_state.json back to the repo
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_INDEXING_SA_KEY: ${{ secrets.GOOGLE_INDEXING_SA_KEY }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests google-auth
+
+      - name: Submit eligible job URLs
+        run: python submit_indexing.py
+
+      - name: Commit updated submission state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add indexing_state.json
+          git diff --cached --quiet || git commit -m "Update indexing submission state [skip ci]"
+          git push
