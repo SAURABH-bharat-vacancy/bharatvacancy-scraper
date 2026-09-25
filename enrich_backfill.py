@@ -151,7 +151,15 @@ def post_enrich(slug: str, fields: dict) -> bool:
                  "X-Api-Key": INGEST_API_KEY, "X-Action": "enrich", "X-Scraper-Name": "enrich_backfill"})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
-            return json.loads(r.read()).get("updated", 0) > 0
+            resp = json.loads(r.read())
+        if "updated" not in resp:
+            # Server predates the enrich action and treated this as a normal
+            # insert payload. Stop the whole run rather than mark every page failed.
+            print("[enrich_backfill] ingest.php has no enrich action yet - aborting without recording state", file=sys.stderr)
+            sys.exit(2)
+        return resp["updated"] > 0
+    except SystemExit:
+        raise
     except Exception as e:
         print(f"  enrich POST failed: {e}", file=sys.stderr)
         return False
