@@ -8,10 +8,16 @@
  "10-2-b-tech-cadet-entry-jan-27-course-application-extended-to-29-jun-2026-fedfab37": {
   "status": "nopdf"
  },
+ "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-3523ee58": {
+  "status": "nopdf"
+ },
  "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-2026-4ced6385": {
   "status": "nopdf"
  },
  "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-2026-c5c73920": {
+  "status": "nopdf"
+ },
+ "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-26-02a5f1ca": {
   "status": "nopdf"
  },
  "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-26-0be97949": {
@@ -340,7 +346,7 @@
  },
  "advertisement-no-152-lateral-recruitment-of-scientists-8ff88ed8": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "advertisement-no-153-closed-due-to-insufficient-applications-193913c1": {
   "status": "nopdf"
@@ -350,7 +356,7 @@
  },
  "advertisement-no-154-recruitment-of-project-scientists-on-contractual-basis-for-drdo-hyderabad-bcbed74d": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "advertisement-no-156-direct-recruitment-for-scientist-b-in-drdo-29ae4c39": {
   "status": "enriched"
@@ -766,6 +772,12 @@
  "application-special-notice-notice-to-check-the-status-of-the-submitted-application-against-cen-02-2026-bd4140c3": {
   "status": "nopdf"
  },
+ "application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-to-29-jun-2026-601f904d": {
+  "status": "nopdf"
+ },
+ "application-window-for-avr-mr-musician-02-26-batch-8afb8b60": {
+  "status": "nopdf"
+ },
  "application-window-for-avr-mr-musician-02-26-batch-90415780": {
   "status": "nopdf"
  },
@@ -778,6 +790,9 @@
  "application-window-for-avr-mr-musician-02-26-batch-extended-till-30-apr-26-472373a7": {
   "status": "nopdf"
  },
+ "application-window-for-avr-mr-musician-02-26-batch-extended-till-30-apr-26-bef5715d": {
+  "status": "nopdf"
+ },
  "application-window-for-avr-mr-musician-02-26-batch-extended-to-30-apr-26-3033f76c": {
   "status": "nopdf"
  },
@@ -788,6 +803,9 @@
   "status": "nopdf"
  },
  "apply-online-for-common-recruitment-process-under-crp-rrbs-xv-280e74ab": {
+  "status": "nopdf"
+ },
+ "apply-online-for-crp-rrbs-xv-983fe09b": {
   "status": "nopdf"
  },
  "apply-online-for-recruitment-of-various-posts-in-ibps-cf6c25f0": {
@@ -834,15 +852,18 @@
  },
  "associate-for-coal-coordination-liaisoning-retired-executives-25b4dd8b": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "associate-positions-for-retired-executives-for-coal-coordination-liaisoning-eb691c7c": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "associate-positions-for-retired-executives-from-psus-govt-organizations-72b53e8d": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
+ },
+ "avr-mr-for-inet-26-e951fa9e": {
+  "status": "nopdf"
  },
  "avr-mr-inet-26-application-live-from-14-mar-2026-7607a0c0": {
   "status": "nopdf"
@@ -851,6 +872,12 @@
   "status": "nopdf"
  },
  "avr-mr-musician-02-26-batch-application-extended-to-30-apr-2026-ce7a5894": {
+  "status": "nopdf"
+ },
+ "avr-mr-musician-02-26-batch-application-window-extended-21e097c8": {
+  "status": "nopdf"
+ },
+ "avr-mr-musician-02-26-batch-application-window-extended-till-30-apr-2026-3fdf7003": {
   "status": "nopdf"
  },
  "avr-mr-musician-02-26-batch-application-window-extended-till-30-apr-26-9b1b401d": {
@@ -877,6 +904,9 @@
  "avr-mr-musician-02-26-batch-application-window-extended-to-30-apr-26-27eaf479": {
   "status": "nopdf"
  },
+ "avr-mr-musician-02-26-batch-application-window-extended-to-30-apr-26-987bfec4": {
+  "status": "nopdf"
+ },
  "avr-mr-musician-02-26-batch-application-window-extended-to-30-apr-26-b2c98f53": {
   "status": "nopdf"
  },
@@ -887,6 +917,9 @@
   "status": "nopdf"
  },
  "avr-ssr-avr-mr-and-ssr-med-for-inet-26-application-live-from-14-mar-26-439417e3": {
+  "status": "nopdf"
+ },
+ "avr-ssr-avr-mr-and-ssr-med-for-inet-26-application-window-live-from-14-mar-26-a521961b": {
   "status": "nopdf"
  },
  "avr-ssr-avr-mr-and-ssr-med-for-inet-26-applications-live-from-14-mar-26-advertisements-downloadable-951c996b": {
@@ -925,7 +958,13 @@
  "avr-ssr-avr-mr-and-ssr-med-inet-26-application-open-777bda8e": {
   "status": "nopdf"
  },
+ "avr-ssr-avr-mr-and-ssr-med-inet-26-application-open-e10b20bb": {
+  "status": "nopdf"
+ },
  "avr-ssr-avr-mr-and-ssr-med-inet-26-application-window-live-from-14-mar-26-6304ab5f": {
+  "status": "nopdf"
+ },
+ "avr-ssr-avr-mr-and-ssr-med-inet-26-applications-live-from-14-mar-2026-3d951b79": {
   "status": "nopdf"
  },
  "avr-ssr-avr-mr-and-ssr-med-inet-26-applications-live-from-14-mar-2026-b402979e": {
@@ -935,6 +974,9 @@
   "status": "nopdf"
  },
  "avr-ssr-avr-mr-ssr-med-inet-26-application-live-from-14-mar-2026-2174a7d8": {
+  "status": "nopdf"
+ },
+ "avr-ssr-for-inet-26-fec687bb": {
   "status": "nopdf"
  },
  "avr-ssr-inet-26-application-live-from-14-mar-2026-13fe9d81": {
@@ -953,6 +995,9 @@
   "status": "nopdf"
  },
  "bob-recruitment-of-human-resource-registration-005755bd": {
+  "status": "nopdf"
+ },
+ "bob-recruitment-of-local-bank-officer-df0c4d1c": {
   "status": "nopdf"
  },
  "boi-recruitment-of-officers-in-various-streams-upto-scale-iv-921e4fa0": {
@@ -981,11 +1026,11 @@
  },
  "caution-do-not-respond-to-fake-emails-or-calls-663deec5": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "caution-notice-about-fake-emails-calls-00e833c3": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "ccse-iv-group-iv-services-onscreen-certificate-verification-for-forest-watcher-98cc6c73": {
   "status": "nopdf"
@@ -1200,9 +1245,37 @@
  "director-ayush-group-a-in-the-directorate-of-ayurved-medical-education-and-drugs-department-advertisement-119be18d": {
   "status": "nopdf"
  },
+ "disqualified-candidates-list-school-lecturer-school-edu-2025-biology-d91f1b60": {
+  "status": "fail",
+  "tries": 1
+ },
+ "disqualified-candidates-list-school-lecturer-school-edu-2025-drawing-7ced5fb9": {
+  "status": "fail",
+  "tries": 1
+ },
+ "disqualified-candidates-list-school-lecturer-school-edu-2025-maths-a959a842": {
+  "status": "fail",
+  "tries": 1
+ },
+ "disqualified-candidates-list-school-lecturer-school-edu-2025-music-77f47963": {
+  "status": "fail",
+  "tries": 1
+ },
+ "disqualified-candidates-list-school-lecturer-school-edu-2025-rajasthani-075c0b02": {
+  "status": "fail",
+  "tries": 1
+ },
+ "disqualified-candidates-list-school-lecturer-school-edu-2025-sanskrit-1ceec596": {
+  "status": "fail",
+  "tries": 1
+ },
+ "disqualified-candidates-list-school-lecturer-school-edu-2025-urdu-b6573ddd": {
+  "status": "fail",
+  "tries": 1
+ },
  "do-not-respond-or-act-on-fake-emails-calls-6b20d9c3": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "eligibility-status-technical-screening-items-2-3-advt-no-154-f9d33909": {
   "status": "nopdf"
@@ -1366,16 +1439,23 @@
  },
  "in-calendar-2026-e38470a4": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "indicative-syllabus-assistant-chemist-trainee-advt-no-09-26-34f64c3d": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
+ },
+ "indicative-syllabus-for-assistant-chemist-trainee-advt-no-09-26-60d42804": {
+  "status": "fail",
+  "tries": 1
  },
  "inet-26-avr-ssr-avr-mr-and-ssr-med-b3c252c1": {
   "status": "nopdf"
  },
  "information-regarding-the-city-of-examination-and-admission-certificate-for-the-candidates-of-combined-graduate-level-examination-2026-tier-i-083c0888": {
+  "status": "ok"
+ },
+ "information-regarding-the-city-of-examination-and-admission-certificate-for-the-candidates-of-combined-hindi-translator-examination-2026-tier-i-and-stenographer-grade-c-and-d-examination-2026-tier-i-0223b6b6": {
   "status": "ok"
  },
  "information-regarding-the-city-of-examination-and-admission-certificate-for-the-candidates-of-phase-xiv-2026-selection-posts-examination-cbe-2d60f4fd": {
@@ -1413,7 +1493,13 @@
  "interview-trainees-for-training-programmes-ispat-general-hospital-rourkela-stipend-basis-adv-no-hr-t-m-2498-bf545d8a": {
   "status": "enriched"
  },
+ "iob-recruitment-of-generalist-specialist-officers-61444255": {
+  "status": "nopdf"
+ },
  "iob-recruitment-of-generalist-specialist-officers-registration-b6be1568": {
+  "status": "nopdf"
+ },
+ "iob-recruitment-of-security-guards-0d4be4ea": {
   "status": "nopdf"
  },
  "iob-recruitment-of-security-guards-registration-926ce708": {
@@ -1433,7 +1519,7 @@
  },
  "lateral-recruitment-of-scientists-advertisement-no-152-6db6957f": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "law-officer-contract-basis-advertisement-6a50496b": {
   "status": "nopdf"
@@ -1456,6 +1542,22 @@
  "list-of-candidates-qualified-for-interview-u-p-technical-education-advt-no-a-7-e-1-2021-50b1f4dd": {
   "status": "notext"
  },
+ "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-biology-b323cb49": {
+  "status": "fail",
+  "tries": 1
+ },
+ "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-drawing-0a07c956": {
+  "status": "fail",
+  "tries": 1
+ },
+ "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-music-f4c58d16": {
+  "status": "fail",
+  "tries": 1
+ },
+ "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-sanskrit-99481a64": {
+  "status": "fail",
+  "tries": 1
+ },
  "list-of-provisionally-selected-candidates-assistant-teacher-agri-horti-advt-no-a-5-e-1-2025-eec26a41": {
   "status": "notext"
  },
@@ -1464,6 +1566,9 @@
  },
  "list-of-provisionally-selected-candidates-computer-assistant-advt-no-a-4-e-1-2025-a167212f": {
   "status": "notext"
+ },
+ "list-of-register-numbers-of-candidates-for-motor-vehicle-inspector-grade-ii-notification-no-03-2018-ac76ea92": {
+  "status": "enriched"
  },
  "list-of-selected-candidates-u-p-tech-edu-tchg-service-advt-no-a-7-e-1-2021-c42e97f1": {
   "status": "notext"
@@ -1510,7 +1615,25 @@
  "marks-after-interview-for-asst-agriculture-officer-2021-fbfe8de5": {
   "status": "nopdf"
  },
+ "marks-after-physical-deputy-jailor-2024-9a56e951": {
+  "status": "nopdf"
+ },
  "marks-asst-professor-medical-edu-2024-obstetrics-gynaecology-e510576c": {
+  "status": "nopdf"
+ },
+ "marks-asst-professor-nephrology-ss-2024-a3ebc49c": {
+  "status": "nopdf"
+ },
+ "marks-asst-professor-neuro-surgery-ss-2024-0cc4c22a": {
+  "status": "nopdf"
+ },
+ "marks-asst-professor-neurology-ss-2024-97626488": {
+  "status": "nopdf"
+ },
+ "marks-asst-professor-plastic-and-reconstructive-surgery-ss-2024-5fe05bc6": {
+  "status": "nopdf"
+ },
+ "marks-asst-professor-surgical-gastroenterology-ss-2024-a0ba76dc": {
   "status": "nopdf"
  },
  "mecl-recruitment-of-non-executive-posts-1a07da1f": {
@@ -1543,13 +1666,22 @@
  "mtt-recruitment-advt-no-hr-rec-c-97-mtt-2025-d7706e65": {
   "status": "nopdf"
  },
+ "nbl-notification-for-specialist-officers-057c25b3": {
+  "status": "nopdf"
+ },
  "nbl-notification-for-the-posts-of-specialist-officers-898bcf06": {
+  "status": "nopdf"
+ },
+ "nmdfc-recruitment-of-company-secretary-cum-chief-manager-9d4b2d38": {
   "status": "nopdf"
  },
  "nmdfc-recruitment-of-company-secretary-cum-chief-manager-registration-c3d298b7": {
   "status": "nopdf"
  },
  "notification-detailed-centralised-employment-notification-000f0e35": {
+  "status": "nopdf"
+ },
+ "notification-for-crp-rrb-xv-010d0289": {
   "status": "nopdf"
  },
  "notification-for-crp-rrb-xv-e4563dc3": {
@@ -1569,19 +1701,19 @@
  },
  "official-communication-from-rac-8a1f8b9d": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "official-communication-from-rac-alert-335b120a": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "official-communication-from-rac-alert-9fd66c7e": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "official-communication-from-rac-ff60ea30": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "omr-answer-sheets-for-examinations-conducted-on-17-18-19-04-2021-55882d96": {
   "status": "nopdf"
@@ -1589,10 +1721,16 @@
  "online-application-for-avr-mr-inet-26-live-from-14-mar-26-b487cda9": {
   "status": "nopdf"
  },
+ "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-67dee51f": {
+  "status": "nopdf"
+ },
  "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-is-live-from-14-mar-26-download-advertisements-5d0a2637": {
   "status": "nopdf"
  },
  "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-is-live-from-14-mar-26-download-advertisements-cf31621b": {
+  "status": "nopdf"
+ },
+ "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-live-from-14-mar-2026-8156e2ac": {
   "status": "nopdf"
  },
  "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-live-from-14-mar-26-29cc393a": {
@@ -1604,13 +1742,22 @@
  "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-live-from-14-mar-26-63df4923": {
   "status": "nopdf"
  },
+ "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-live-from-14-mar-26-bb88baba": {
+  "status": "nopdf"
+ },
  "online-application-for-avr-ssr-avr-mr-and-ssr-med-for-inet-26-live-from-14-mar-26-download-advertisements-54797c1f": {
+  "status": "nopdf"
+ },
+ "online-application-for-avr-ssr-avr-mr-and-ssr-med-inet-26-live-from-14-mar-26-00f9c317": {
   "status": "nopdf"
  },
  "online-application-for-avr-ssr-inet-26-live-from-14-mar-26-3764e405": {
   "status": "nopdf"
  },
  "online-application-for-ssr-medical-inet-26-live-from-14-mar-26-9d8e50ed": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-10-2-b-tech-cadet-entry-for-jan-27-course-dc92fc0d": {
   "status": "nopdf"
  },
  "online-application-window-for-10-2-b-tech-cadet-entry-for-jan-27-course-extended-to-29-jun-26-6abe2d40": {
@@ -1620,6 +1767,9 @@
   "status": "nopdf"
  },
  "online-application-window-for-10-2-b-tech-cadet-entry-for-jan-27-course-extended-upto-29-jun-26-083abc24": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-10-2-b-tech-cadet-entry-for-jan-27-course-extended-upto-29-jun-26-e5881895": {
   "status": "nopdf"
  },
  "online-application-window-for-10-2-b-tech-cadet-entry-for-jan-27-course-is-extended-upto-29-jun-26-login-to-apply-5f12165b": {
@@ -1632,6 +1782,15 @@
   "status": "nopdf"
  },
  "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-d3f43e71": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-till-29-jun-26-16c61d50": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-till-29-jun-26-ed59c5ab": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-to-29-jun-26-0493ec10": {
   "status": "nopdf"
  },
  "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-to-29-jun-26-0c406f5d": {
@@ -1649,6 +1808,9 @@
  "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-upto-29-jun-26-e0ec34c8": {
   "status": "nopdf"
  },
+ "online-application-window-for-ssc-various-entries-jan-27-course-fe483b6d": {
+  "status": "nopdf"
+ },
  "online-application-window-for-ssc-various-entries-jan-27-course-is-live-c73ad822": {
   "status": "nopdf"
  },
@@ -1664,10 +1826,31 @@
  "online-application-window-for-ssc-various-entries-jan-27-course-live-88970523": {
   "status": "nopdf"
  },
+ "online-application-window-for-ssc-various-entries-jan-27-course-live-closed-daa53ab3": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-ssc-various-entries-jan-27-course-live-dbbab7f2": {
+  "status": "nopdf"
+ },
  "online-application-window-for-ssc-various-entries-jan-27-course-live-download-advertisement-96e8a1d3": {
   "status": "nopdf"
  },
+ "online-application-window-for-ssc-various-entries-jun-27-course-239083ae": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-ssc-various-entries-jun-27-course-extended-till-03-aug-26-178b7bc1": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-ssc-various-entries-jun-27-course-extended-till-03-aug-26-b5ae313c": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-ssc-various-entries-jun-27-course-extended-to-03-aug-2026-4810cc0a": {
+  "status": "nopdf"
+ },
  "online-application-window-for-ssc-various-entries-jun-27-course-extended-to-03-aug-26-66c89135": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-ssc-various-entries-jun-27-course-extended-to-03-aug-26-79942be9": {
   "status": "nopdf"
  },
  "online-application-window-for-ssc-various-entries-jun-27-course-extended-to-03-aug-26-86cde391": {
@@ -1685,6 +1868,9 @@
  "online-application-window-for-ssc-various-entries-jun-27-course-extended-upto-03-aug-26-3939c599": {
   "status": "nopdf"
  },
+ "online-application-window-for-ssc-various-entries-jun-27-course-extended-upto-03-aug-26-4667f4cd": {
+  "status": "nopdf"
+ },
  "online-application-window-for-ssc-various-entries-jun-27-course-is-extended-upto-03-aug-26-150f3877": {
   "status": "nopdf"
  },
@@ -1694,6 +1880,14 @@
  "online-detailed-application-form-school-lecturer-school-edu-2025-3-subjects-89cc93e1": {
   "status": "fail",
   "tries": 3
+ },
+ "online-detailed-application-form-school-lecturer-school-edu-2025-6-subjects-0e4bae85": {
+  "status": "fail",
+  "tries": 1
+ },
+ "online-detailed-application-form-school-lecturer-school-edu-2025-7-subjects-fe6615a3": {
+  "status": "fail",
+  "tries": 1
  },
  "online-main-exam-call-letter-for-crp-po-mts-xvi-0fb5c342": {
   "status": "nopdf"
@@ -1737,7 +1931,7 @@
  },
  "press-note-regarding-interview-dates-for-asst-prof-librarian-and-pti-college-edu-exam-2023-librarian-ninth-phase-7924442c": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "press-note-regarding-interview-dates-for-asst-professor-medical-edu-2024-orthopedics-b-s-273a5df2": {
   "status": "enriched"
@@ -1812,6 +2006,9 @@
  "promotion-for-the-post-of-head-clerk-37e87c3a": {
   "status": "nopdf"
  },
+ "provisional-allotment-for-crp-rrbs-xiv-officer-scale-i-ii-iii-cd56fa4e": {
+  "status": "nopdf"
+ },
  "provisional-allotment-under-reserve-list-for-crp-csa-xv-409e211f": {
   "status": "nopdf"
  },
@@ -1820,10 +2017,18 @@
  },
  "public-notice-requirement-of-valid-gate-score-for-direct-recruitment-of-scientist-b-04a8809a": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "publication-of-dates-and-important-information-for-pet-of-uttar-pradesh-home-guards-enrolment-2025-ae7fb1e3": {
   "status": "notext"
+ },
+ "question-paper-asst-prosecution-officer-home-dept-exam-2026-pre-3918d316": {
+  "status": "fail",
+  "tries": 1
+ },
+ "question-paper-statistical-officer-statistics-dept-exam-2025-f7a17286": {
+  "status": "fail",
+  "tries": 1
  },
  "question-paper-sub-inspector-comb-comp-re-exam-2021-g-k-and-g-s-fe8ae227": {
   "status": "fail",
@@ -1875,9 +2080,13 @@
  "recruitment-of-company-secretary-cum-chief-manager-nmdfc-0f3ff2c4": {
   "status": "nopdf"
  },
+ "recruitment-of-engineering-executive-trainees-2027-through-gate-2027-4e66a276": {
+  "status": "fail",
+  "tries": 1
+ },
  "recruitment-of-engineering-executive-trainees-2027-through-gate-2027-advt-11-26-86d2aeb4": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "recruitment-of-generalist-specialist-officers-9202975e": {
   "status": "nopdf"
@@ -1926,10 +2135,13 @@
  },
  "recruitment-of-project-scientists-on-contractual-basis-advertisement-no-154-12fdbe67": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "recruitment-of-scientific-assistant-in-imd-through-junior-engineer-examination-2026-84aa6162": {
   "status": "ok"
+ },
+ "recruitment-of-scientist-d-through-deputation-for-inmas-advt-no-153-2b2e1ed1": {
+  "status": "nopdf"
  },
  "recruitment-of-security-guards-2035369c": {
   "status": "nopdf"
@@ -1940,11 +2152,20 @@
  "request-for-proposal-rfp-for-development-of-online-applications-portal-for-candidates-registration-with-grievance-redressal-system-and-hosting-of-ibps-website-93760582": {
   "status": "ok"
  },
+ "requirement-of-valid-gate-score-for-direct-recruitment-of-scientist-b-1441f595": {
+  "status": "enriched"
+ },
+ "requirement-of-valid-gate-score-for-direct-recruitment-of-scientist-b-drds-bcd28a08": {
+  "status": "enriched"
+ },
  "requirement-of-valid-gate-score-for-direct-recruitment-of-scientist-b-group-a-gazetted-5c68f5ff": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "requirement-of-valid-gate-score-for-direct-recruitment-of-scientist-b-public-notice-e7e495c9": {
+  "status": "enriched"
+ },
+ "requirement-of-valid-gate-score-for-scientist-b-direct-recruitment-66267c03": {
   "status": "enriched"
  },
  "results-final-personal-interviews-all-vacancies-advt-no-154-23771a4b": {
@@ -2058,6 +2279,12 @@
  "ssc-various-entries-jan-27-course-application-window-1c3843a1": {
   "status": "nopdf"
  },
+ "ssc-various-entries-jan-27-course-application-window-live-548fa5dd": {
+  "status": "nopdf"
+ },
+ "ssc-various-entries-jan-27-course-application-window-live-587e58fc": {
+  "status": "nopdf"
+ },
  "ssc-various-entries-jan-27-course-application-window-live-6f8548c0": {
   "status": "nopdf"
  },
@@ -2085,6 +2312,9 @@
  "ssc-various-entries-jun-27-course-application-extended-to-03-aug-2026-5b7a131b": {
   "status": "nopdf"
  },
+ "ssc-various-entries-jun-27-course-application-window-extended-19b7c610": {
+  "status": "nopdf"
+ },
  "ssc-various-entries-jun-27-course-application-window-extended-to-03-aug-2026-bd1edd58": {
   "status": "nopdf"
  },
@@ -2109,7 +2339,13 @@
  "ssc-various-entries-jun-27-course-application-window-extended-to-03-aug-26-c1832637": {
   "status": "nopdf"
  },
+ "ssc-various-entries-jun-27-course-application-window-extended-to-03-aug-26-fa5fa231": {
+  "status": "nopdf"
+ },
  "ssc-various-entries-jun-27-course-online-application-window-extended-to-03-aug-26-7bd2abb1": {
+  "status": "nopdf"
+ },
+ "ssr-med-for-inet-26-17fa6159": {
   "status": "nopdf"
  },
  "ssr-med-inet-26-application-live-from-14-mar-2026-f927f502": {
@@ -2134,7 +2370,7 @@
  },
  "syllabus-assistant-chemist-trainee-advt-09-26-cb21691b": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "tentative-cbt-schedule-for-section-controller-cen-03-2026-e32399f2": {
   "status": "nopdf"
@@ -2165,8 +2401,7 @@
   "status": "ok"
  },
  "updated-vacancies-as-on-09-09-2026-for-common-recruitment-process-for-crp-rrbs-xv-9a3ed73b": {
-  "status": "fail",
-  "tries": 2
+  "status": "ok"
  },
  "updated-vacancies-as-on-09-09-2026-for-crp-rrbs-xv-d73f3fbc": {
   "status": "ok"
