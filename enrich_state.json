@@ -796,6 +796,12 @@
  "advt-no-414-2023-maharashtra-gazetted-civil-services-combined-preliminary-examination-2024-declaration-of-exam-date-revised-posts-and-form-submission-according-to-sebc-reservation-b8fa504e": {
   "status": "nopdf"
  },
+ "agniveer-apprentice-01-27-and-02-27-batch-recruitment-bd8b6883": {
+  "status": "enriched"
+ },
+ "agniveer-ssr-agniveer-mr-and-ssr-med-inet-26-recruitment-93b389c7": {
+  "status": "nopdf"
+ },
  "agniveer-ssr-agniveer-mr-and-ssr-medical-inet-26-b7a13e33": {
   "status": "nopdf"
  },
@@ -883,6 +889,9 @@
  "appointment-of-executive-to-assistant-manager-idbi-da72fbd0": {
   "status": "nopdf"
  },
+ "assistant-architect-pwd-notice-advt-no-d-2-e-1-2024-e5449551": {
+  "status": "notext"
+ },
  "assistant-commissioner-social-welfare-relevant-group-a-social-justice-and-special-assistance-department-advertisement-e396007e": {
   "status": "nopdf"
  },
@@ -891,6 +900,18 @@
  },
  "assistant-director-of-industries-and-commerce-assistant-superintendent-notification-no-34-2019-c1453f0d": {
   "status": "nopdf"
+ },
+ "assistant-professor-govt-degree-college-exam-2025-mains-qualified-candidates-list-30781463": {
+  "status": "notext"
+ },
+ "assistant-professor-govt-degree-college-exam-2025-mains-qualified-candidates-list-8c26a231": {
+  "status": "notext"
+ },
+ "assistant-professor-govt-degree-college-mains-exam-2025-notice-advt-no-a-7-e-1-2025-30be651a": {
+  "status": "notext"
+ },
+ "assistant-professor-govt-degree-college-mains-exam-2025-notice-advt-no-a-7-e-1-2025-67490e57": {
+  "status": "notext"
  },
  "assistant-professor-govt-degree-college-mains-qualified-candidates-list-advt-no-a-7-e-1-2025-6fffd3f4": {
   "status": "notext"
@@ -1197,6 +1218,9 @@
  "combined-civil-services-examination-iv-group-iv-services-notif-no-01-2024-forest-watcher-onscreen-cv-list-1220707a": {
   "status": "nopdf"
  },
+ "combined-higher-secondary-10-2-level-examination-2025-declaration-of-first-round-of-tentative-allocation-frta-d53da5f5": {
+  "status": "ok"
+ },
  "combined-hindi-translators-examination-2025-sample-option-cum-preference-form-18fdc9b4": {
   "status": "ok"
  },
@@ -1266,6 +1290,9 @@
  "combined-technical-services-examination-non-interview-posts-notification-no-04-2026-12674e4d": {
   "status": "nopdf"
  },
+ "computer-assistant-exam-2025-type-test-notice-advt-no-a-4-e-1-2025-708adbda": {
+  "status": "notext"
+ },
  "crp-csa-xv-86a60fd8": {
   "status": "nopdf"
  },
@@ -1331,31 +1358,31 @@
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-biology-d91f1b60": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-drawing-7ced5fb9": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-maths-a959a842": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-music-77f47963": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-rajasthani-075c0b02": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-sanskrit-1ceec596": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-urdu-b6573ddd": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "do-not-respond-or-act-on-fake-emails-calls-6b20d9c3": {
   "status": "fail",
@@ -1496,6 +1523,9 @@
  "fixed-term-employees-at-ati-goa-advt-no-1-2026-r-p-b9a0f222": {
   "status": "nopdf"
  },
+ "food-safety-and-drug-administration-up-notice-advt-no-d-6-e-1-2025-03326092": {
+  "status": "notext"
+ },
  "frequently-asked-questions-regarding-cen-02-2026-technicians-578544ed": {
   "status": "nopdf"
  },
@@ -1579,11 +1609,11 @@
  },
  "indicative-syllabus-for-assistant-chemist-trainee-advt-no-09-26-4162b133": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "indicative-syllabus-for-assistant-chemist-trainee-advt-no-09-26-60d42804": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "inet-26-avr-ssr-avr-mr-and-ssr-med-b3c252c1": {
   "status": "nopdf"
@@ -1660,6 +1690,15 @@
  "law-officer-contract-basis-advertisement-6a50496b": {
   "status": "nopdf"
  },
+ "lecturer-gic-advt-no-a-6-e-1-2025-mains-qualified-candidates-list-163dfe17": {
+  "status": "notext"
+ },
+ "lecturer-gic-advt-no-a-6-e-1-2025-mains-qualified-candidates-list-fdd0b892": {
+  "status": "notext"
+ },
+ "lecturer-male-female-govt-inter-college-advt-no-a-6-e-1-2025-notice-1fd9e88d": {
+  "status": "notext"
+ },
  "list-of-candidates-prov-qual-for-mains-assistant-professor-advt-no-a-7-e-1-2025-list-2-9b65b272": {
   "status": "notext"
  },
@@ -1680,27 +1719,27 @@
  },
  "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-biology-b323cb49": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-drawing-0a07c956": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-economics-73533f16": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-music-f4c58d16": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-sanskrit-99481a64": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-sociology-dbcf435b": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "list-of-provisionally-selected-candidates-assistant-teacher-agri-horti-advt-no-a-5-e-1-2025-eec26a41": {
   "status": "notext"
@@ -1787,6 +1826,12 @@
   "status": "nopdf"
  },
  "medical-officer-maharashtra-medical-insurance-service-group-a-in-the-state-labour-insurance-scheme-advertisement-10ed4df1": {
+  "status": "nopdf"
+ },
+ "miscellaneous-examination-advt-no-a-2-e-1-2026-b1b527d7": {
+  "status": "nopdf"
+ },
+ "miscellaneous-examination-advt-no-a-3-e-1-2026-e00348ee": {
   "status": "nopdf"
  },
  "motor-transport-branch-main-raksi-recruitment-selection-results-2020-2025-e58bab7f": {
@@ -2039,11 +2084,11 @@
  },
  "online-detailed-application-form-school-lecturer-school-edu-2025-6-subjects-0e4bae85": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "online-detailed-application-form-school-lecturer-school-edu-2025-7-subjects-fe6615a3": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "online-main-exam-call-letter-for-crp-po-mts-xvi-0fb5c342": {
   "status": "nopdf"
@@ -2113,7 +2158,7 @@
  },
  "press-note-regarding-online-detailed-application-form-for-school-lecturer-school-edu-2025-6-subjects-8365d251": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "press-note-regarding-online-edit-and-withdraw-application-for-protection-officer-2025-e21fa551": {
   "status": "fail",
@@ -2132,6 +2177,9 @@
  },
  "professor-and-assistant-professor-medical-education-advt-no-d-1-e-1-2026-fb54ac98": {
   "status": "enriched"
+ },
+ "professor-and-assistant-professor-medical-education-dept-allopathy-advt-no-d-1-e-1-2026-57d371b2": {
+  "status": "nopdf"
  },
  "proficiency-training-dresser-cum-compounder-male-nurse-female-in-m-hs-cfp-03416b02": {
   "status": "ok"
@@ -2187,11 +2235,11 @@
  },
  "question-paper-asst-prosecution-officer-home-dept-exam-2026-pre-3918d316": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "question-paper-statistical-officer-statistics-dept-exam-2025-f7a17286": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "question-paper-sub-inspector-comb-comp-re-exam-2021-g-k-and-g-s-fe8ae227": {
   "status": "fail",
@@ -2245,7 +2293,7 @@
  },
  "recruitment-of-engineering-executive-trainees-2027-through-gate-2027-4e66a276": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "recruitment-of-engineering-executive-trainees-2027-through-gate-2027-advt-11-26-86d2aeb4": {
   "status": "fail",
@@ -2367,6 +2415,9 @@
  "retired-ongcians-as-junior-consultant-associate-consultant-to-mentor-pmis-interns-e75ecf10": {
   "status": "enriched"
  },
+ "review-officer-asstt-review-officer-exam-2016-notice-advt-no-a-3-e-1-2016-d6507de5": {
+  "status": "notext"
+ },
  "rsp-engagement-of-consultant-sports-coach-on-contractual-basis-advt-no-03-2026-5571e291": {
   "status": "ok"
  },
@@ -2414,7 +2465,7 @@
  },
  "senior-vice-presidents-in-lng-ethane-and-marine-operations-on-fixed-term-basis-advt-no-3-2025-r-p-da01c07b": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "senior-vice-presidents-in-lng-ethane-marine-operations-advt-no-3-2025-r-p-a9ed0abc": {
   "status": "nopdf"
@@ -2518,6 +2569,9 @@
  "ssc-various-entries-jun-27-course-online-application-window-extended-to-03-aug-26-7bd2abb1": {
   "status": "nopdf"
  },
+ "ssc-various-entries-jun-27-course-recruitment-4ba61650": {
+  "status": "enriched"
+ },
  "ssc-various-entries-jun-27-course-recruitment-fd0948a3": {
   "status": "nopdf"
  },
@@ -2570,13 +2624,28 @@
  "uiicl-recruitment-of-administrative-officer-scale-i-registration-6d865aee": {
   "status": "nopdf"
  },
+ "up-jail-training-school-service-mains-qualified-candidates-list-advt-no-a-6-e-1-2025-0a0795b9": {
+  "status": "notext"
+ },
+ "up-jail-training-school-service-mains-qualified-candidates-list-advt-no-a-6-e-1-2025-394f68b1": {
+  "status": "notext"
+ },
  "up-jail-training-school-service-mains-qualified-candidates-list-advt-no-a-6-e-1-2025-677197c7": {
   "status": "notext"
  },
  "up-jail-training-school-service-mains-qualified-candidates-list-advt-no-a-6-e-1-2025-85bdda7f": {
   "status": "notext"
  },
+ "up-jail-training-school-service-mains-qualified-candidates-list-advt-no-a-6-e-1-2025-d642b842": {
+  "status": "notext"
+ },
+ "up-jail-training-school-teaching-staff-mains-exam-advt-no-a-6-e-1-2025-notice-645167e1": {
+  "status": "notext"
+ },
  "up-jail-training-school-teaching-staff-service-notice-advt-no-a-6-e-1-2025-15ff8052": {
+  "status": "notext"
+ },
+ "up-legislative-department-notice-advt-no-d-6-e-1-2025-8bd5d2aa": {
   "status": "notext"
  },
  "up-police-2025-f209393d": {
@@ -2605,6 +2674,9 @@
  },
  "verification-of-compensatory-time-scribe-entitlement-and-document-examination-for-pwbd-candidates-with-locomotor-disability-47cd224c": {
   "status": "ok"
+ },
+ "veterinary-officer-up-livestock-department-notice-advt-no-d-6-e-1-2025-f16f4a4c": {
+  "status": "notext"
  },
  "walk-in-interview-audio-logists-short-term-contract-bokaro-steel-plant-2a1a8a15": {
   "status": "ok"
