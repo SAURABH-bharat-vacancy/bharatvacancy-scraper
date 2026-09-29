@@ -32,6 +32,9 @@
  "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-2026-4ced6385": {
   "status": "nopdf"
  },
+ "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-2026-6d7bae10": {
+  "status": "nopdf"
+ },
  "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-2026-c5c73920": {
   "status": "nopdf"
  },
@@ -1072,6 +1075,9 @@
  "agniveer-ssr-mr-ssr-med-inet-26-20162409": {
   "status": "nopdf"
  },
+ "agniveers-of-02-2022-batch-password-reset-instruction-41e62ce9": {
+  "status": "nopdf"
+ },
  "agniveers-of-02-2022-batch-password-reset-notification-2f4ed873": {
   "status": "nopdf"
  },
@@ -1188,7 +1194,7 @@
  },
  "appointment-of-chairperson-rac-drdo-advt-no-158-d04aa98c": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "appointment-of-eso-as-junior-assistant-manager-1435c72d": {
   "status": "nopdf"
@@ -1330,6 +1336,9 @@
  "avr-mr-musician-02-26-batch-application-window-extended-to-30-apr-2026-653ccc8f": {
   "status": "nopdf"
  },
+ "avr-mr-musician-02-26-batch-application-window-extended-to-30-apr-2026-fc35d1e2": {
+  "status": "nopdf"
+ },
  "avr-mr-musician-02-26-batch-application-window-extended-to-30-apr-26-19acc141": {
   "status": "nopdf"
  },
@@ -1417,7 +1426,13 @@
  "avr-ssr-avr-mr-and-ssr-med-inet-26-online-application-4adef0ca": {
   "status": "nopdf"
  },
+ "avr-ssr-avr-mr-and-ssr-med-inet-26-online-application-live-80bd77a0": {
+  "status": "nopdf"
+ },
  "avr-ssr-avr-mr-and-ssr-med-inet-26-recruitment-efb28eaf": {
+  "status": "nopdf"
+ },
+ "avr-ssr-avr-mr-and-ssr-medical-inet-26-applications-live-from-14-mar-26-c1a66ff5": {
   "status": "nopdf"
  },
  "avr-ssr-avr-mr-ssr-med-inet-26-application-live-from-14-mar-2026-2174a7d8": {
@@ -1555,13 +1570,22 @@
  "cdse-jun-26-course-joining-letters-issued-61d4bcbe": {
   "status": "nopdf"
  },
+ "cen-01-2019-ntpc-graduate-undergraduate-categories-6a3e2685": {
+  "status": "nopdf"
+ },
  "cen-01-2024-additional-list-no-6-for-assistant-loco-pilot-018b3c94": {
   "status": "enriched"
  },
  "cen-01-2024-additional-list-no-6-for-assistant-loco-pilot-alp-1a0831b2": {
   "status": "enriched"
  },
+ "cen-01-2024-alp-posts-af1f922d": {
+  "status": "nopdf"
+ },
  "cen-01-2024-rpf-sub-inspectors-20a5174d": {
+  "status": "nopdf"
+ },
+ "cen-01-2025-alp-posts-c9586136": {
   "status": "nopdf"
  },
  "cen-01-2025-city-intimation-for-cbt-2-13a324a1": {
@@ -1576,10 +1600,20 @@
  "cen-01-2025-notification-9aa90e08": {
   "status": "nopdf"
  },
+ "cen-01-2026-alp-posts-dd8f9c9d": {
+  "status": "fail",
+  "tries": 1
+ },
  "cen-01-2026-application-special-notice-90f4a18a": {
   "status": "nopdf"
  },
+ "cen-02-2019-paramedical-category-posts-a96c45b8": {
+  "status": "enriched"
+ },
  "cen-02-2024-rpf-constables-2d7b054c": {
+  "status": "nopdf"
+ },
+ "cen-02-2024-technician-posts-9a571983": {
   "status": "nopdf"
  },
  "cen-02-2025-application-special-notice-0b62b13b": {
@@ -1600,10 +1634,19 @@
  "cen-02-2025-dv-call-letter-download-for-technician-gr-iii-03d120c1": {
   "status": "nopdf"
  },
+ "cen-02-2025-technician-9f64ccad": {
+  "status": "nopdf"
+ },
  "cen-02-2026-application-special-notice-9db17d8e": {
   "status": "nopdf"
  },
  "cen-02-2026-notification-38d55d6c": {
+  "status": "nopdf"
+ },
+ "cen-03-2019-ministerial-and-isolated-categories-6c57163d": {
+  "status": "nopdf"
+ },
+ "cen-03-2024-je-dma-cma-and-others-posts-aa42f3a1": {
   "status": "nopdf"
  },
  "cen-03-2025-1st-provisional-panel-for-paramedical-category-06c891b3": {
@@ -1614,6 +1657,9 @@
  },
  "cen-03-2025-notice-document-upload-portal-for-paramedical-category-dv-me-bbc84d09": {
   "status": "enriched"
+ },
+ "cen-03-2025-paramedical-categories-d0d02f4b": {
+  "status": "nopdf"
  },
  "cen-03-2026-detailed-centralised-employment-notice-hindi-87f109a7": {
   "status": "nopdf"
@@ -1633,13 +1679,25 @@
  "cen-03-2026-section-controller-5db94732": {
   "status": "nopdf"
  },
+ "cen-04-2024-paramedical-posts-22686ace": {
+  "status": "nopdf"
+ },
+ "cen-04-2025-section-controller-c8a069ad": {
+  "status": "nopdf"
+ },
  "cen-04-2026-application-special-notice-7f6ffce6": {
   "status": "nopdf"
  },
  "cen-04-2026-notification-44741f39": {
   "status": "nopdf"
  },
+ "cen-05-2024-ntpc-graduate-posts-ead27cf1": {
+  "status": "nopdf"
+ },
  "cen-05-2025-application-special-notice-b44f7948": {
+  "status": "nopdf"
+ },
+ "cen-06-2024-ntpc-under-graduate-posts-bbbf663f": {
   "status": "nopdf"
  },
  "cen-06-2024-ntpc-undergraduate-posts-f0a6180d": {
@@ -1650,6 +1708,13 @@
  },
  "cen-06-2025-notification-5956dc77": {
   "status": "nopdf"
+ },
+ "cen-06-2025-ntpc-graduate-post-128e4d77": {
+  "status": "nopdf"
+ },
+ "cen-06-2025-ntpc-graduate-post-a2871809": {
+  "status": "fail",
+  "tries": 1
  },
  "cen-07-2024-application-special-notice-2b068444": {
   "status": "nopdf"
@@ -1663,12 +1728,23 @@
  "cen-07-2024-bank-account-details-update-link-for-fee-refund-3dd30ab8": {
   "status": "nopdf"
  },
+ "cen-07-2024-ministerial-and-isolated-categories-fed112bb": {
+  "status": "nopdf"
+ },
  "cen-07-2025-ntpc-under-graduate-post-5a683cd8": {
+  "status": "fail",
+  "tries": 2
+ },
+ "cen-07-2025-ntpc-under-graduate-post-f214f8fe": {
   "status": "fail",
   "tries": 1
  },
  "cen-07-2025-ntpc-undergraduate-post-148fa9cc": {
   "status": "enriched"
+ },
+ "cen-08-2024-level-1-74e29c1c": {
+  "status": "fail",
+  "tries": 1
  },
  "cen-08-2025-cbt-questions-responses-keys-and-objection-tracker-link-0f552e82": {
   "status": "nopdf"
@@ -1678,6 +1754,9 @@
  },
  "cen-08-2025-link-to-view-cbt-questions-responses-keys-objection-tracker-88c6825c": {
   "status": "nopdf"
+ },
+ "cen-08-2025-ministerial-isolated-categories-8143f55f": {
+  "status": "enriched"
  },
  "cen-09-2025-application-special-notice-2f678747": {
   "status": "nopdf"
@@ -1708,6 +1787,9 @@
  },
  "cen-09-2025-revised-tentative-schedule-of-cbt-for-level-1-posts-34c0efac": {
   "status": "enriched"
+ },
+ "cen-rrc-01-2019-level-1-posts-d04bd6a8": {
+  "status": "nopdf"
  },
  "change-of-pet-dates-for-up-home-guards-enrollment-2025-due-to-continuous-rain-2ac554a1": {
   "status": "enriched"
@@ -1748,6 +1830,9 @@
  "combined-civil-services-examination-ii-group-ii-and-iia-services-certificate-verification-a43aa1a6": {
   "status": "nopdf"
  },
+ "combined-civil-services-examination-ii-group-ii-and-iia-services-certificate-verification-a759b269": {
+  "status": "nopdf"
+ },
  "combined-civil-services-examination-ii-group-ii-and-iia-services-counselling-17446077": {
   "status": "nopdf"
  },
@@ -1773,6 +1858,9 @@
   "status": "nopdf"
  },
  "combined-civil-services-examination-iv-group-iv-services-counselling-539fcd8d": {
+  "status": "nopdf"
+ },
+ "combined-civil-services-examination-iv-group-iv-services-counselling-5ad26742": {
   "status": "nopdf"
  },
  "combined-civil-services-examination-iv-group-iv-services-counselling-6825a243": {
@@ -1865,6 +1953,9 @@
  "combined-technical-services-examination-interview-posts-notification-no-08-2026-20aa71b6": {
   "status": "nopdf"
  },
+ "combined-technical-services-examination-interview-posts-oral-test-memo-b269945b": {
+  "status": "nopdf"
+ },
  "combined-technical-services-examination-iti-level-ii-notification-no-13-2025-f76de76a": {
   "status": "nopdf"
  },
@@ -1890,6 +1981,9 @@
   "status": "notext"
  },
  "crp-csa-xv-86a60fd8": {
+  "status": "nopdf"
+ },
+ "crp-csa-xvi-online-pre-examination-training-b66373dc": {
   "status": "nopdf"
  },
  "crp-csa-xvi-online-pre-examination-training-for-sc-st-obc-minority-communities-ex-servicemen-pwbds-ea33d37c": {
@@ -2251,6 +2345,9 @@
  "food-safety-and-drug-administration-up-notice-advt-no-d-6-e-1-2025-03326092": {
   "status": "notext"
  },
+ "frequently-asked-questions-0e16799e": {
+  "status": "nopdf"
+ },
  "frequently-asked-questions-english-dba8054f": {
   "status": "nopdf"
  },
@@ -2352,6 +2449,9 @@
   "status": "nopdf"
  },
  "iifcl-direct-recruitment-for-the-post-of-dgm-registration-71896d47": {
+  "status": "nopdf"
+ },
+ "in-calendar-2026-6a4fe80e": {
   "status": "nopdf"
  },
  "in-calendar-2026-b57b9d04": {
@@ -2492,13 +2592,21 @@
  "lecturer-male-female-govt-inter-college-advt-no-a-6-e-1-2025-notice-1fd9e88d": {
   "status": "notext"
  },
+ "list-of-01-selected-candidate-for-appointment-on-compassionate-grounds-in-crpf-vacancies-released-on-16-03-2026-ebdf0200": {
+  "status": "fail",
+  "tries": 1
+ },
  "list-of-01-selected-candidates-for-appointment-on-compassionate-grounds-in-crpf-vacancies-released-on-06-02-2026-c611c062": {
+  "status": "fail",
+  "tries": 2
+ },
+ "list-of-03-selected-candidates-for-appointment-on-compassionate-grounds-in-crpf-vacancies-released-on-27-03-2026-e9110a39": {
   "status": "fail",
   "tries": 1
  },
  "list-of-84-selected-candidates-for-appointment-on-compassionate-grounds-in-crpf-vacancies-released-on-06-02-2026-389efc40": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "list-of-candidates-prov-qual-for-mains-assistant-professor-advt-no-a-7-e-1-2025-list-2-9b65b272": {
   "status": "notext"
@@ -2543,7 +2651,7 @@
  },
  "list-of-disqualified-candidates-for-asst-prof-college-education-2025-physics-e5a971ad": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "list-of-disqualified-candidates-for-school-lecturer-school-edu-2025-biology-b323cb49": {
   "status": "fail",
@@ -2585,9 +2693,13 @@
  "list-of-register-numbers-of-candidates-for-motor-vehicle-inspector-grade-ii-notification-no-03-2018-ac76ea92": {
   "status": "enriched"
  },
- "list-of-selected-candidate-for-appointment-on-compassionate-grounds-in-crpf-vacancy-released-on-02-04-2026-22ef0c36": {
+ "list-of-selected-candidate-for-appointment-on-compassionate-grounds-in-crpf-vacancy-released-on-02-04-2026-01379e11": {
   "status": "fail",
   "tries": 1
+ },
+ "list-of-selected-candidate-for-appointment-on-compassionate-grounds-in-crpf-vacancy-released-on-02-04-2026-22ef0c36": {
+  "status": "fail",
+  "tries": 2
  },
  "list-of-selected-candidates-u-p-tech-edu-tchg-service-advt-no-a-7-e-1-2021-c42e97f1": {
   "status": "notext"
@@ -2763,6 +2875,9 @@
  "notification-for-common-recruitment-process-for-crp-csa-xvi-0704d759": {
   "status": "ok"
  },
+ "notification-for-common-recruitment-process-for-crp-po-mts-xvi-0390ccc7": {
+  "status": "ok"
+ },
  "notification-for-common-recruitment-process-for-crp-po-mts-xvi-0e1cac8a": {
   "status": "ok"
  },
@@ -2774,6 +2889,13 @@
  },
  "notification-for-common-recruitment-process-for-crp-spl-xvi-a1949bc5": {
   "status": "ok"
+ },
+ "notification-for-common-recruitment-process-for-crp-spl-xvi-d260968c": {
+  "status": "ok"
+ },
+ "notification-for-crp-po-mts-xvi-3bc90a83": {
+  "status": "fail",
+  "tries": 1
  },
  "notification-for-crp-rrb-xv-010d0289": {
   "status": "nopdf"
@@ -2825,6 +2947,10 @@
  "official-communication-from-rac-ff60ea30": {
   "status": "fail",
   "tries": 3
+ },
+ "official-indian-navy-calendar-2026-c810afd3": {
+  "status": "fail",
+  "tries": 1
  },
  "omr-answer-sheets-for-examinations-conducted-on-17-18-19-04-2021-55882d96": {
   "status": "nopdf"
@@ -3084,7 +3210,7 @@
  },
  "press-note-regarding-interview-dates-for-a-r-o-agriculture-chemistry-2022-d9e2681c": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "press-note-regarding-interview-dates-for-asst-prof-college-education-2025-09d88ad2": {
   "status": "fail",
@@ -3099,7 +3225,7 @@
  },
  "press-note-regarding-interview-dates-for-asst-prof-librarian-and-pti-exam-2023-627cbcd4": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "press-note-regarding-interview-dates-for-asst-prof-sanskrit-college-edu-2024-fadb5201": {
   "status": "enriched"
@@ -3122,7 +3248,7 @@
  },
  "press-note-regarding-interview-dates-for-sub-inspector-telecom-comp-exam-2024-cd4721d7": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "press-note-regarding-online-detailed-application-form-agriculture-dept-exam-2024-aro-agriculture-chemistry-7d402a9b": {
   "status": "enriched"
@@ -3186,6 +3312,9 @@
  "proficiency-training-dresser-cum-compounder-nurse-cfp-4df5fcf8": {
   "status": "enriched"
  },
+ "proficiency-training-for-dresser-cum-compounder-male-and-nurse-female-cfp-5370c657": {
+  "status": "ok"
+ },
  "proficiency-training-of-dresser-cum-compounder-male-and-nurse-female-cfp-f64da204": {
   "status": "ok"
  },
@@ -3205,6 +3334,9 @@
   "status": "nopdf"
  },
  "promotion-for-the-post-of-head-clerk-37e87c3a": {
+  "status": "nopdf"
+ },
+ "promotion-for-the-post-of-head-clerk-bmcp-5f6e6acc": {
   "status": "nopdf"
  },
  "provisional-allotment-for-crp-rrbs-xiv-officer-scale-i-ii-iii-cd56fa4e": {
@@ -3251,39 +3383,39 @@
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-english-61adb4c2": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-g-k-group-d-9c26258a": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-gujarati-6fb1b8fe": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-mathematics-f647822f": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-punjabi-40beaca5": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-sanskrit-01c81a49": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-science-8833bbac": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-sindhi-7d2ab732": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-for-sr-teacher-sec-edu-comp-exam-2025-urdu-75683f98": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "question-paper-statistical-officer-statistics-dept-exam-2025-f7a17286": {
   "status": "fail",
@@ -3460,6 +3592,12 @@
  "recruitment-to-various-group-a-non-faculty-posts-14aabc7a": {
   "status": "nopdf"
  },
+ "reference-is-made-to-advertisement-no-13-24-for-recruitment-of-junior-executive-biomass-on-fixed-term-basis-e9bf707b": {
+  "status": "nopdf"
+ },
+ "reference-is-made-to-advt-no-3-26-for-recruitment-of-executive-ibd-on-fte-basis-1db89341": {
+  "status": "nopdf"
+ },
  "request-for-proposal-rfp-for-development-of-online-applications-portal-for-candidates-registration-with-grievance-redressal-system-and-hosting-of-ibps-website-93760582": {
   "status": "ok"
  },
@@ -3484,7 +3622,7 @@
  },
  "requirement-of-valid-gate-score-for-direct-recruitment-of-scientist-b-group-a-gazetted-post-in-defence-research-development-service-drds-cadre-of-drdo-28ae51f9": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "requirement-of-valid-gate-score-for-direct-recruitment-of-scientist-b-public-notice-47c16a9b": {
   "status": "enriched"
@@ -3603,11 +3741,38 @@
  "selected-candidates-advt-no-a-7-e-1-2021-u-p-technical-education-ddaf23d9": {
   "status": "notext"
  },
+ "selected-candidates-for-specialist-general-duty-medical-officer-advt-no-isp-rectt-cont-doc-2026-307-54f3c09d": {
+  "status": "ok"
+ },
  "selected-candidates-list-for-consultants-sports-coach-advt-no-isp-hr-cf-2026-242-a-99f25288": {
   "status": "ok"
  },
  "selected-candidates-specialist-general-duty-medical-officer-isp-rectt-cont-doc-2026-307-d39cad2c": {
   "status": "ok"
+ },
+ "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-annexure-a-03d37bbc": {
+  "status": "fail",
+  "tries": 1
+ },
+ "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-application-form-e694189a": {
+  "status": "fail",
+  "tries": 1
+ },
+ "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-detailed-application-form-daaa2ed3": {
+  "status": "fail",
+  "tries": 1
+ },
+ "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-for-the-vacancy-year-s-2024-and-2025-detailed-application-form-181fceaf": {
+  "status": "fail",
+  "tries": 1
+ },
+ "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-instruction-for-candidates-dc735a43": {
+  "status": "fail",
+  "tries": 1
+ },
+ "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-instructions-for-candidates-3773d190": {
+  "status": "fail",
+  "tries": 1
  },
  "selection-of-specialist-general-duty-medical-officers-advt-no-isp-rectt-cont-doc-2026-307-1651e62d": {
   "status": "ok"
@@ -3736,6 +3901,9 @@
  "ssc-various-entries-jan-27-course-application-window-live-b03fbe5d": {
   "status": "nopdf"
  },
+ "ssc-various-entries-jan-27-course-application-window-live-c793cc30": {
+  "status": "nopdf"
+ },
  "ssc-various-entries-jan-27-course-application-window-live-dee71d80": {
   "status": "nopdf"
  },
@@ -3770,6 +3938,9 @@
   "status": "nopdf"
  },
  "ssc-various-entries-jun-27-course-application-window-extended-19b7c610": {
+  "status": "nopdf"
+ },
+ "ssc-various-entries-jun-27-course-application-window-extended-to-03-aug-2026-a46ee167": {
   "status": "nopdf"
  },
  "ssc-various-entries-jun-27-course-application-window-extended-to-03-aug-2026-bd1edd58": {
@@ -3902,6 +4073,12 @@
   "status": "fail",
   "tries": 3
  },
+ "the-computer-based-test-for-et-hr-against-advt-14-25-dafe0286": {
+  "status": "nopdf"
+ },
+ "the-computer-based-test-for-executive-hospital-administration-on-fixed-term-basis-against-advt-07-25-134398cd": {
+  "status": "nopdf"
+ },
  "ubi-recruitment-of-officers-ff2acea1": {
   "status": "nopdf"
  },
@@ -3956,6 +4133,9 @@
  "updated-vacancies-as-on-25-09-2026-for-crp-rrbs-xv-a2ebc4b7": {
   "status": "ok"
  },
+ "updated-vacancies-for-crp-rrbs-xv-as-on-25-09-2026-a1cc7b0a": {
+  "status": "ok"
+ },
  "uppsc-exam-calendar-2026-67a544fb": {
   "status": "notext"
  },
@@ -4002,6 +4182,9 @@
   "status": "enriched"
  },
  "walk-in-interview-for-audiologists-bokaro-steel-plant-short-term-contract-811a53f8": {
+  "status": "ok"
+ },
+ "walk-in-interview-for-audiologists-short-term-contract-bokaro-steel-plant-3b2b39b6": {
   "status": "ok"
  },
  "walk-in-interview-for-audiologists-short-term-contract-bokaro-steel-plant-6298b588": {
