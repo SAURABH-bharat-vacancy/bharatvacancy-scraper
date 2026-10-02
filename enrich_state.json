@@ -1993,7 +1993,7 @@
  },
  "cen-01-2026-alp-posts-1247b3ef": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "cen-01-2026-alp-posts-dd8f9c9d": {
   "status": "fail",
@@ -2010,7 +2010,7 @@
  },
  "cen-02-2024-rpf-constables-95530744": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "cen-02-2024-technician-posts-6c823146": {
   "status": "nopdf"
@@ -2050,11 +2050,11 @@
  },
  "cen-02-2026-technicians-10ca9821": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "cen-03-2019-ministerial-and-isolated-categories-3564ae56": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "cen-03-2019-ministerial-and-isolated-categories-6c57163d": {
   "status": "nopdf"
@@ -2133,7 +2133,7 @@
  },
  "cen-05-2025-je-dms-cma-post-08ceec9b": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "cen-06-2024-ntpc-under-graduate-posts-a543f38e": {
   "status": "nopdf"
@@ -2159,7 +2159,7 @@
  },
  "cen-06-2025-ntpc-graudate-post-a3c4fec2": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "cen-07-2024-application-special-notice-2b068444": {
   "status": "nopdf"
@@ -3878,6 +3878,9 @@
   "status": "nopdf"
  },
  "notification-214c021d": {
+  "status": "nopdf"
+ },
+ "notification-c6091534": {
   "status": "nopdf"
  },
  "notification-detailed-centralised-employment-notification-000f0e35": {
