@@ -623,6 +623,9 @@
  "advertisement-for-engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-for-fy-2026-27-49fbd0a3": {
   "status": "enriched"
  },
+ "advertisement-for-engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-48182a1a": {
+  "status": "enriched"
+ },
  "advertisement-for-engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-cac41c42": {
   "status": "enriched"
  },
@@ -664,6 +667,9 @@
  },
  "advertisement-for-the-post-of-domain-expert-for-fishing-liner-hanger-operations-and-drilling-fluid-operations-at-ongc-ahmedabad-mehsana-assets-53a58039": {
   "status": "nopdf"
+ },
+ "advertisement-for-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-d27b7df0": {
+  "status": "enriched"
  },
  "advertisement-inviting-applications-for-engagement-as-associate-junior-consultant-on-contract-basis-at-ongc-s-tripura-asset-32a73fd5": {
   "status": "nopdf"
@@ -2585,6 +2591,9 @@
  "detailed-advertisement-for-engagement-of-advisors-consultants-2026-27-iisco-steel-plant-burnpur-d0e96a1e": {
   "status": "enriched"
  },
+ "detailed-advertisement-for-engagement-of-advisors-consultants-2026-27-iisco-steel-plant-f2ccac01": {
+  "status": "enriched"
+ },
  "detailed-application-form-b8e4d9a5": {
   "status": "fail",
   "tries": 2
@@ -2932,6 +2941,9 @@
  },
  "engagement-of-young-professional-yps-in-epfo-5f5a5f10": {
   "status": "nopdf"
+ },
+ "engagement-of-young-professionals-at-cmlo-advt-no-cmlo-yp-2026-04-791cb931": {
+  "status": "enriched"
  },
  "engagement-of-young-professionals-on-fixed-term-basis-advt-no-rsp-r-yp-2026-01-225f6e16": {
   "status": "ok"
@@ -3676,10 +3688,16 @@
  "management-trainee-mtt-advt-no-hr-rec-c-97-mtt-2025-de9f5f8c": {
   "status": "nopdf"
  },
+ "management-trainee-technical-advertisement-no-hr-rec-c-97-mtt-2025-1a709f96": {
+  "status": "nopdf"
+ },
  "management-trainee-technical-advt-no-hr-rec-c-97-mtt-2025-2153cbfa": {
   "status": "nopdf"
  },
  "management-trainee-technical-advt-no-hr-rec-c-97-mtt-2025-af05b3da": {
+  "status": "nopdf"
+ },
+ "management-trainee-technical-advt-no-hr-rec-c-97-mtt-2025-c45b4a50": {
   "status": "nopdf"
  },
  "management-trainee-technical-mtt-advt-no-hr-rec-c-97-mtt-2025-027b9288": {
@@ -4248,6 +4266,12 @@
  "physical-efficiency-test-pet-schedule-notice-for-direct-recruitment-2025-a5b4be81": {
   "status": "notext"
  },
+ "physical-fitness-examination-centres-and-dates-for-direct-recruitment-of-arks-civilians-police-and-equivalent-posts-2025-4a00d9e6": {
+  "status": "ok"
+ },
+ "physical-fitness-examination-dates-for-direct-recruitment-of-arks-civilians-police-and-equivalent-posts-2025-e4ec5f8e": {
+  "status": "ok"
+ },
  "pnb-recruitment-of-local-bank-officer-in-jmgs-i-992905c1": {
   "status": "nopdf"
  },
@@ -4414,6 +4438,9 @@
   "status": "enriched"
  },
  "proficiency-training-of-dresser-cum-compounder-male-and-nurse-female-in-m-hs-cfp-bb855ce6": {
+  "status": "ok"
+ },
+ "proficiency-training-of-dresser-cum-compounder-male-and-nurse-female-in-m-hs-cfp-cdd4d933": {
   "status": "ok"
  },
  "proficiency-training-of-dresser-cum-compounder-male-and-nurse-female-in-m-hs-cfp-e686fbbc": {
