@@ -584,7 +584,13 @@
  "advertisement-engagement-of-advisors-consultants-2026-27-iisco-steel-plant-5c23cc96": {
   "status": "ok"
  },
+ "advertisement-engagement-of-advisors-consultants-fy-2026-27-iisco-steel-plant-a91ee616": {
+  "status": "ok"
+ },
  "advertisement-for-appointment-of-banker-faculty-technical-banker-faculty-and-executive-secretary-fixed-term-contract-ff7c245c": {
+  "status": "ok"
+ },
+ "advertisement-for-appointment-of-banker-faculty-technical-banker-faculty-and-executive-secretary-to-director-on-fixed-term-full-time-contract-basis-0b666695": {
   "status": "ok"
  },
  "advertisement-for-appointment-of-banker-faculty-technical-banker-faculty-and-executive-secretary-to-director-on-fixed-term-full-time-contract-basis-c9d753ce": {
@@ -598,6 +604,9 @@
  },
  "advertisement-for-associate-consultant-for-laq-rou-on-contract-basis-423c0d83": {
   "status": "enriched"
+ },
+ "advertisement-for-direct-recruitment-of-hindi-officer-on-regular-basis-d437ee74": {
+  "status": "ok"
  },
  "advertisement-for-direct-recruitment-of-hindi-officer-on-regular-basis-f75c5bb0": {
   "status": "enriched"
@@ -1851,6 +1860,9 @@
   "status": "nopdf"
  },
  "avr-ssr-inet-26-application-live-from-14-mar-2026-3ee2ad58": {
+  "status": "nopdf"
+ },
+ "bio-data-form-documents-for-gd-interview-mtt-posts-ee3a4196": {
   "status": "nopdf"
  },
  "biochemist-2024-62223d40": {
@@ -3402,6 +3414,10 @@
  "inet-26-avr-ssr-avr-mr-and-ssr-med-b3c252c1": {
   "status": "nopdf"
  },
+ "information-handout-for-online-exam-for-the-post-of-hindi-officer-46d058c5": {
+  "status": "fail",
+  "tries": 1
+ },
  "information-regarding-the-city-of-examination-and-admission-certificate-for-the-candidates-of-combined-graduate-level-examination-2026-tier-i-083c0888": {
   "status": "ok"
  },
@@ -4497,6 +4513,9 @@
  "professor-and-assistant-professor-medical-education-dept-allopathy-advt-no-d-1-e-1-2026-57d371b2": {
   "status": "nopdf"
  },
+ "proficiency-training-dresser-cum-compounder-m-hs-cfp-1e27e53b": {
+  "status": "ok"
+ },
  "proficiency-training-dresser-cum-compounder-male-and-nurse-female-in-m-hs-cfp-54f74a51": {
   "status": "ok"
  },
@@ -4950,6 +4969,9 @@
   "status": "nopdf"
  },
  "recruitment-of-various-posts-eff227c8": {
+  "status": "nopdf"
+ },
+ "recruitment-of-various-posts-in-ibps-ab7b994a": {
   "status": "nopdf"
  },
  "recruitment-status-for-scientist-d-at-inmas-advt-no-153-90275bc4": {
@@ -5641,6 +5663,9 @@
  "trade-apprentices-ta-advertisement-bhilai-steel-plant-fy-2026-27-8c0bb4dc": {
   "status": "enriched"
  },
+ "trade-apprenticeship-advertisement-bhilai-steel-plant-fy-2026-27-bf7b3c5f": {
+  "status": "ok"
+ },
  "ubi-recruitment-of-officers-ff2acea1": {
   "status": "nopdf"
  },
@@ -5960,6 +5985,9 @@
   "status": "nopdf"
  },
  "young-professionals-recruitment-rourkela-steel-plant-advt-no-rsp-r-yp-2026-01-1eb967c9": {
+  "status": "nopdf"
+ },
+ "young-professionals-recruitment-rourkela-steel-plant-mti-ranchi-advt-no-rsp-r-yp-2026-01-bfb97e22": {
   "status": "nopdf"
  },
  "young-professionals-recruitment-rsp-mti-ranchi-advt-no-rsp-r-yp-2026-01-afb8b9bb": {
