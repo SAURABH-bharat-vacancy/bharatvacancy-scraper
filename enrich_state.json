@@ -2685,6 +2685,9 @@
  "detailed-centralised-employment-notification-hindi-section-controller-cen-03-2026-31eaa723": {
   "status": "nopdf"
  },
+ "detailed-centralised-employment-notification-hindi-section-controller-cen-03-2026-98446cf2": {
+  "status": "nopdf"
+ },
  "detailed-centralised-employment-notification-hindi-section-controller-d06e64d8": {
   "status": "nopdf"
  },
@@ -2692,6 +2695,9 @@
   "status": "nopdf"
  },
  "detailed-centralised-employment-notification-section-controller-cen-03-2026-32a5e00b": {
+  "status": "nopdf"
+ },
+ "detailed-centralised-employment-notification-section-controller-cen-03-2026-e2f93e69": {
   "status": "nopdf"
  },
  "diploma-engineer-control-and-instrumentation-st-backlog-vacancy-at-kudgi-advt-no-kudgi-02-2026-d4bb99c3": {
@@ -3415,8 +3421,7 @@
   "status": "nopdf"
  },
  "information-handout-for-online-exam-for-the-post-of-hindi-officer-46d058c5": {
-  "status": "fail",
-  "tries": 1
+  "status": "notext"
  },
  "information-regarding-the-city-of-examination-and-admission-certificate-for-the-candidates-of-combined-graduate-level-examination-2026-tier-i-083c0888": {
   "status": "ok"
