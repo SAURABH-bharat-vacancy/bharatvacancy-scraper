@@ -89,6 +89,9 @@
  "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-26-cc7a1cc8": {
   "status": "nopdf"
  },
+ "10-2-b-tech-cadet-entry-jan-27-course-online-application-window-extended-7a783b97": {
+  "status": "nopdf"
+ },
  "10-2-b-tech-cadet-entry-jan-27-course-online-application-window-extended-to-29-jun-26-cadeb00e": {
   "status": "nopdf"
  },
@@ -1141,6 +1144,12 @@
  "advt-no-414-2023-maharashtra-gazetted-civil-services-combined-preliminary-examination-2024-declaration-of-exam-date-revised-posts-and-form-submission-according-to-sebc-reservation-b8fa504e": {
   "status": "nopdf"
  },
+ "advt-no-a-1-e-1-2025-combined-state-upper-subordinate-services-details-of-posts-4557d07f": {
+  "status": "notext"
+ },
+ "advt-no-a-5-e-1-2025-assistant-teacher-trained-graduate-exam-2025-sanskrit-selected-list-5abc2e62": {
+  "status": "notext"
+ },
  "agniveer-02-2022-batch-password-reset-required-99d6e56b": {
   "status": "nopdf"
  },
@@ -1220,6 +1229,9 @@
   "status": "nopdf"
  },
  "agniveer-mr-musician-02-26-batch-application-window-5006dbfb": {
+  "status": "nopdf"
+ },
+ "agniveer-mr-musician-02-26-batch-application-window-extended-667bc527": {
   "status": "nopdf"
  },
  "agniveer-ssr-01-27-batch-16918860": {
@@ -2645,6 +2657,9 @@
  "deputy-managers-in-mechanical-and-civil-disciplines-for-nuclear-field-337fe946": {
   "status": "nopdf"
  },
+ "deputy-secretary-i-t-in-uppsc-advt-no-d-2-e-1-2026-0a187bb8": {
+  "status": "nopdf"
+ },
  "despatch-rider-scooter-driver-fefd6ff4": {
   "status": "nopdf"
  },
@@ -3032,8 +3047,14 @@
  "engagement-of-retired-revenue-officials-surveyor-as-junior-consultant-e4a76797": {
   "status": "enriched"
  },
+ "engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-51843758": {
+  "status": "enriched"
+ },
  "engagement-of-young-professional-yps-in-epfo-5f5a5f10": {
   "status": "nopdf"
+ },
+ "engagement-of-young-professionals-at-cmlo-advt-no-cmlo-yp-2026-04-67b744e4": {
+  "status": "enriched"
  },
  "engagement-of-young-professionals-at-cmlo-advt-no-cmlo-yp-2026-04-791cb931": {
   "status": "enriched"
@@ -3465,6 +3486,9 @@
  "information-service-division-posts-deputation-basis-937ee523": {
   "status": "nopdf"
  },
+ "inspector-of-drugs-s-06-04-reopen-advt-no-d-6-e-1-2025-7af1ecf4": {
+  "status": "nopdf"
+ },
  "inspector-of-factories-and-boilers-2025-7aff464d": {
   "status": "nopdf"
  },
@@ -3812,6 +3836,9 @@
   "status": "nopdf"
  },
  "management-trainee-technical-advt-no-hr-rec-c-97-mtt-2025-c45b4a50": {
+  "status": "nopdf"
+ },
+ "management-trainee-technical-advt-no-hr-rec-c-97-mtt-2025-d3f0dfeb": {
   "status": "nopdf"
  },
  "management-trainee-technical-mtt-advt-no-hr-rec-c-97-mtt-2025-027b9288": {
@@ -4240,6 +4267,9 @@
   "status": "nopdf"
  },
  "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-till-29-jun-26-ed59c5ab": {
+  "status": "nopdf"
+ },
+ "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-to-29-jun-26-0334caed": {
   "status": "nopdf"
  },
  "online-application-window-for-10-2-b-tech-cadet-entry-jan-27-course-extended-to-29-jun-26-0493ec10": {
@@ -5541,6 +5571,9 @@
  "ssc-various-entries-jun-27-course-application-window-extended-to-03-aug-26-fa5fa231": {
   "status": "nopdf"
  },
+ "ssc-various-entries-jun-27-course-online-application-window-extended-df7e21bc": {
+  "status": "nopdf"
+ },
  "ssc-various-entries-jun-27-course-online-application-window-extended-to-03-aug-26-7bd2abb1": {
   "status": "nopdf"
  },
@@ -5833,6 +5866,9 @@
  "walk-in-interview-consultants-doctors-iisco-steel-plant-adv-dated-18-aug-2026-72ae7bf3": {
   "status": "ok"
  },
+ "walk-in-interview-consultants-sports-coach-at-dsp-2026-14af2b35": {
+  "status": "ok"
+ },
  "walk-in-interview-for-audio-logists-bokaro-steel-plant-0d5725ed": {
   "status": "enriched"
  },
@@ -5965,10 +6001,16 @@
  "young-professionals-bokaro-steel-plant-advt-no-bsl-r-yp-2026-01-0ba50ed4": {
   "status": "nopdf"
  },
+ "young-professionals-bokaro-steel-plant-advt-no-bsl-r-yp-2026-01-d62e6bad": {
+  "status": "nopdf"
+ },
  "young-professionals-bokaro-steel-plant-advt-no-bsl-r-yp-2026-01-fd802250": {
   "status": "nopdf"
  },
  "young-professionals-isp-dsp-asp-advt-no-isp-yp-2026-01-7a5e2bf7": {
+  "status": "nopdf"
+ },
+ "young-professionals-isp-dsp-asp-advt-no-isp-yp-2026-01-a865ad6d": {
   "status": "nopdf"
  },
  "young-professionals-law-contract-basis-0c84fb96": {
@@ -6044,6 +6086,9 @@
   "status": "nopdf"
  },
  "young-professionals-rsp-mti-ranchi-advt-no-rsp-r-yp-2026-01-1e0fc095": {
+  "status": "nopdf"
+ },
+ "young-professionals-rsp-mti-ranchi-advt-no-rsp-r-yp-2026-01-92119637": {
   "status": "nopdf"
  },
  "young-professionals-rsp-mti-ranchi-advt-no-rsp-r-yp-2026-01-d5708f6f": {
