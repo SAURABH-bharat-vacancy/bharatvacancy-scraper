@@ -2681,6 +2681,9 @@
  "detailed-advertisement-engagement-of-advisors-consultants-2026-27-at-iisco-steel-plant-burnpur-15c02367": {
   "status": "ok"
  },
+ "detailed-advertisement-for-engagement-of-advisors-consultants-2026-27-at-iisco-steel-plant-fb0e9fcb": {
+  "status": "enriched"
+ },
  "detailed-advertisement-for-engagement-of-advisors-consultants-2026-27-iisco-steel-plant-burnpur-d0e96a1e": {
   "status": "enriched"
  },
@@ -3053,10 +3056,19 @@
  "engagement-of-young-professional-yps-in-epfo-5f5a5f10": {
   "status": "nopdf"
  },
+ "engagement-of-young-professionals-at-bokaro-steel-plant-advt-no-bsl-r-yp-2026-01-f7597466": {
+  "status": "enriched"
+ },
  "engagement-of-young-professionals-at-cmlo-advt-no-cmlo-yp-2026-04-67b744e4": {
   "status": "enriched"
  },
  "engagement-of-young-professionals-at-cmlo-advt-no-cmlo-yp-2026-04-791cb931": {
+  "status": "enriched"
+ },
+ "engagement-of-young-professionals-at-isp-dsp-asp-advt-no-isp-yp-2026-01-1afbf337": {
+  "status": "enriched"
+ },
+ "engagement-of-young-professionals-at-rsp-mti-ranchi-advt-no-rsp-r-yp-2026-01-a47b25bd": {
   "status": "enriched"
  },
  "engagement-of-young-professionals-on-fixed-term-basis-advt-no-rsp-r-yp-2026-01-225f6e16": {
@@ -3825,6 +3837,9 @@
  },
  "management-trainee-mtt-advt-no-hr-rec-c-97-mtt-2025-de9f5f8c": {
   "status": "nopdf"
+ },
+ "management-trainee-mtt-recruitment-advt-no-hr-rec-c-97-mtt-2025-b47102e6": {
+  "status": "enriched"
  },
  "management-trainee-technical-advertisement-no-hr-rec-c-97-mtt-2025-1a709f96": {
   "status": "nopdf"
