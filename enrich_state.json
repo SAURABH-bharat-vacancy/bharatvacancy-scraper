@@ -1261,6 +1261,9 @@
  "agniveer-ssr-agniveer-mr-and-ssr-medical-inet-26-b7a13e33": {
   "status": "nopdf"
  },
+ "agniveer-ssr-avr-mr-and-ssr-med-inet-26-f2a33496": {
+  "status": "nopdf"
+ },
  "agniveer-ssr-for-inet-2026-142a7354": {
   "status": "nopdf"
  },
@@ -2550,7 +2553,7 @@
  },
  "compassionate-appointment-in-crpf-2026-15cc3950": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "compassionate-appointment-in-crpf-2026-7a0ae281": {
   "status": "nopdf"
@@ -3429,6 +3432,9 @@
  },
  "home-guard-enrollment-2025-pet-venue-change-notice-latest-77e23c67": {
   "status": "notext"
+ },
+ "home-guards-enrollment-2025-candidate-list-by-district-ac0d9b08": {
+  "status": "nopdf"
  },
  "home-guards-enrollment-2025-pet-venue-change-notice-15-09-2026-7156790e": {
   "status": "notext"
@@ -4936,7 +4942,7 @@
  },
  "recruitment-of-constable-technical-tradesmen-and-pioneer-male-female-2026-ef5dc135": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-of-credit-officers-in-gbo-stream-7dc067c7": {
   "status": "nopdf"
@@ -5322,7 +5328,7 @@
  },
  "selection-of-assistant-commandant-gd-capfs-through-ldce-2024-and-2025-e70647a9": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-annexure-a-03d37bbc": {
   "status": "fail",
