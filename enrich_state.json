@@ -89,6 +89,9 @@
  "10-2-b-tech-cadet-entry-jan-27-course-application-window-extended-to-29-jun-26-cc7a1cc8": {
   "status": "nopdf"
  },
+ "10-2-b-tech-cadet-entry-jan-27-course-d15432ba": {
+  "status": "nopdf"
+ },
  "10-2-b-tech-cadet-entry-jan-27-course-online-application-window-extended-7a783b97": {
   "status": "nopdf"
  },
@@ -657,6 +660,9 @@
   "status": "enriched"
  },
  "advertisement-for-engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-48182a1a": {
+  "status": "enriched"
+ },
+ "advertisement-for-engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-b113a9da": {
   "status": "enriched"
  },
  "advertisement-for-engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-cac41c42": {
@@ -1234,6 +1240,9 @@
  "agniveer-mr-musician-02-26-batch-application-window-extended-667bc527": {
   "status": "nopdf"
  },
+ "agniveer-mr-musician-02-26-batch-fdab3bef": {
+  "status": "nopdf"
+ },
  "agniveer-ssr-01-27-batch-16918860": {
   "status": "nopdf"
  },
@@ -1241,6 +1250,9 @@
   "status": "nopdf"
  },
  "agniveer-ssr-agniveer-mr-and-ssr-med-inet-26-565ba2d5": {
+  "status": "nopdf"
+ },
+ "agniveer-ssr-agniveer-mr-and-ssr-med-inet-26-d9b5dcee": {
   "status": "nopdf"
  },
  "agniveer-ssr-agniveer-mr-and-ssr-med-inet-26-recruitment-93b389c7": {
@@ -1698,6 +1710,9 @@
   "status": "nopdf"
  },
  "avr-mr-inet-26-application-live-from-14-mar-2026-f5754c4f": {
+  "status": "nopdf"
+ },
+ "avr-mr-musician-02-26-batch-7049a43b": {
   "status": "nopdf"
  },
  "avr-mr-musician-02-26-batch-application-extended-to-30-apr-2026-7e34e0ab": {
@@ -2440,6 +2455,9 @@
  "combined-civil-services-examination-iv-group-iv-services-notification-no-11-2026-4be85be7": {
   "status": "enriched"
  },
+ "combined-civil-services-examination-iv-group-iv-services-notification-no-11-2026-a450db69": {
+  "status": "enriched"
+ },
  "combined-higher-secondary-10-2-level-examination-2025-declaration-of-first-round-of-tentative-allocation-frta-d53da5f5": {
   "status": "ok"
  },
@@ -2529,6 +2547,10 @@
  },
  "common-recruitment-process-for-crp-po-mts-xvi-86dfb626": {
   "status": "ok"
+ },
+ "compassionate-appointment-in-crpf-2026-15cc3950": {
+  "status": "fail",
+  "tries": 1
  },
  "compassionate-appointment-in-crpf-2026-7a0ae281": {
   "status": "nopdf"
@@ -4912,6 +4934,10 @@
  "recruitment-of-constable-technical-tradesmen-and-pioneer-2026-window-for-online-application-form-correction-w-e-f-21-05-2026-to-23-05-2026-725fbf0f": {
   "status": "enriched"
  },
+ "recruitment-of-constable-technical-tradesmen-and-pioneer-male-female-2026-ef5dc135": {
+  "status": "fail",
+  "tries": 1
+ },
  "recruitment-of-credit-officers-in-gbo-stream-7dc067c7": {
   "status": "nopdf"
  },
@@ -4968,6 +4994,9 @@
  },
  "recruitment-of-managers-and-junior-executives-6ce073a5": {
   "status": "nopdf"
+ },
+ "recruitment-of-meritorious-sportspersons-for-hc-gd-and-ct-gd-under-sports-quota-a3515f5c": {
+  "status": "enriched"
  },
  "recruitment-of-non-executive-posts-60664bc8": {
   "status": "nopdf"
@@ -5291,6 +5320,10 @@
  "selection-for-the-post-of-director-t-fs-ongc-10c92421": {
   "status": "nopdf"
  },
+ "selection-of-assistant-commandant-gd-capfs-through-ldce-2024-and-2025-e70647a9": {
+  "status": "fail",
+  "tries": 1
+ },
  "selection-of-assistant-commandant-gd-capfs-through-limited-departmental-competitive-examination-annexure-a-03d37bbc": {
   "status": "fail",
   "tries": 3
@@ -5526,6 +5559,9 @@
  "ssc-various-entries-jan-27-course-application-window-open-eda20286": {
   "status": "nopdf"
  },
+ "ssc-various-entries-jan-27-course-b1c9d952": {
+  "status": "nopdf"
+ },
  "ssc-various-entries-jan-27-course-online-application-41d33f68": {
   "status": "nopdf"
  },
@@ -5596,6 +5632,12 @@
   "status": "nopdf"
  },
  "ssc-various-entries-jun-27-course-application-window-extended-to-03-aug-26-fa5fa231": {
+  "status": "nopdf"
+ },
+ "ssc-various-entries-jun-27-course-d898227c": {
+  "status": "nopdf"
+ },
+ "ssc-various-entries-jun-27-course-dfe555d5": {
   "status": "nopdf"
  },
  "ssc-various-entries-jun-27-course-online-application-window-extended-df7e21bc": {
@@ -5913,6 +5955,9 @@
  },
  "walk-in-interview-for-audiologists-short-term-contract-bokaro-steel-plant-6298b588": {
   "status": "ok"
+ },
+ "walk-in-interview-for-clinical-physiotherapist-on-contractual-basis-f3edd4a6": {
+  "status": "enriched"
  },
  "walk-in-interview-for-consultants-doctors-for-jharkhand-group-of-mines-780410e1": {
   "status": "enriched"
