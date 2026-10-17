@@ -728,6 +728,9 @@
  "advertisement-no-137-cancelled-due-to-unavoidable-reasons-ab5aa23c": {
   "status": "nopdf"
  },
+ "advertisement-no-137-cancelled-e3e41f9f": {
+  "status": "nopdf"
+ },
  "advertisement-no-142-cancelled-due-to-insufficient-candidates-8ce6f8d9": {
   "status": "nopdf"
  },
@@ -740,7 +743,13 @@
  "advertisement-no-148-cancelled-7d57cc2e": {
   "status": "nopdf"
  },
+ "advertisement-no-148-cancelled-due-to-inadequate-response-86091f9d": {
+  "status": "nopdf"
+ },
  "advertisement-no-150-cancelled-958a700d": {
+  "status": "nopdf"
+ },
+ "advertisement-no-150-cancelled-due-to-administrative-reason-8c9cea5a": {
   "status": "nopdf"
  },
  "advertisement-no-151-cancelled-9806eb41": {
