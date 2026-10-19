@@ -621,7 +621,7 @@
   "status": "enriched"
  },
  "advertisement-for-appointment-of-retired-under-secretary-on-contract-basis-0ebb0323": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advertisement-for-associate-consultant-at-ongc-jorhat-on-contract-basis-692df8dc": {
   "status": "enriched"
@@ -806,25 +806,25 @@
   "status": "nopdf"
  },
  "advt-no-001-2026-state-services-main-examination-2025-notification-4bbd764b": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-002-2023-deputy-engineer-electrical-maharashtra-electrical-engineering-service-group-a-public-works-department-1ddd8d6b": {
   "status": "nopdf"
  },
  "advt-no-002-2026-maharashtra-forest-services-main-examination-2025-notification-531b0687": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-003-2023-deputy-director-group-a-in-the-directorate-of-groundwater-surveys-and-development-agency-130b2b83": {
   "status": "nopdf"
  },
  "advt-no-003-2026-maharashtra-civil-engineering-services-main-examination-2025-notification-c55a8a25": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-004-2023-chief-drilling-engineer-group-a-in-the-directorate-of-groundwater-surveys-and-development-agency-0a485d00": {
   "status": "nopdf"
  },
  "advt-no-004-2026-deputy-superintendent-group-a-group-of-t-b-hospitals-mcgm-advertisement-a1d4406f": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-005-2023-assistant-chemist-group-b-in-the-directorate-of-groundwater-surveys-and-development-agency-68a74ca7": {
   "status": "nopdf"
@@ -1046,7 +1046,7 @@
   "status": "nopdf"
  },
  "advt-no-104-2025-joint-director-of-insurance-gr-a-finance-dept-announcement-regarding-cancellation-of-advertisement-d2b6ac03": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-105-2025-assistant-director-animal-husbandry-gr-a-advertisement-3049a2a3": {
   "status": "nopdf"
@@ -1076,7 +1076,7 @@
   "status": "nopdf"
  },
  "advt-no-114-2025-senior-research-officer-group-b-tribal-development-department-regarding-cancellation-of-advertisement-c443d224": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-115-2025-superintendent-general-state-service-group-b-advertisement-c385833f": {
   "status": "nopdf"
@@ -1085,7 +1085,7 @@
   "status": "nopdf"
  },
  "advt-no-116-2025-drug-inspector-group-b-announcement-regarding-date-of-screening-test-03a44b1e": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-117-2025-maharashtra-group-b-non-gazetted-services-combined-preliminary-examination-2025-advertisement-0f1ca9b9": {
   "status": "nopdf"
@@ -1109,40 +1109,40 @@
   "status": "nopdf"
  },
  "advt-no-124-2025-maharashtra-group-c-services-combined-preliminary-examination-2025-advertisement-7dc9d296": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-125-2025-superintendent-inspector-certified-school-and-others-of-women-and-child-development-department-limited-departmental-competitive-examination-2025-advertisement-fd7d59be": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-126-2025-member-respected-person-from-civil-society-maharashtra-state-police-complaint-authority-mumbai-advertisement-d4a5908b": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-127-2025-assistant-director-forensic-science-lab-general-state-service-group-a-advertisement-b7cec7f0": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-128-2025-scientific-officer-cyber-crime-tape-authentication-speaker-identification-general-state-service-group-b-advertisement-aa2bc81e": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-129-2025-assistant-chemical-analyser-general-state-service-group-b-advertisement-7759fb5c": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-130-2025-deputy-director-senior-research-officer-group-a-advertisement-c41e26be": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-131-2025-professor-department-of-prosthodontics-and-crown-and-bridge-group-a-under-nayar-hospital-dental-college-advertisement-94f88240": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-132-2025-maharashtra-civil-services-gazetted-combined-preliminary-examination-2026-advertisement-568a25a3": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-133-2025-chief-technical-officer-general-state-services-group-a-advertisement-585da731": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-134-2025-deputy-director-health-services-state-health-laboratory-group-a-advertisement-ebfe154d": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-135-2025-architect-public-works-department-group-a-advertisement-b4a43075": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-153-recruitment-for-scientist-d-deputation-closure-notice-4bbb0201": {
   "status": "nopdf"
@@ -3396,7 +3396,13 @@
  "final-personal-interview-results-for-advertisement-no-154-6464f24a": {
   "status": "nopdf"
  },
+ "final-vacancies-of-combined-higher-secondary-10-2-level-examination-2025-as-on-18-06-2026-e97a68a8": {
+  "status": "ok"
+ },
  "final-vacancies-of-combined-hindi-translators-examination-2025-as-on-08-09-2026-881b5cba": {
+  "status": "ok"
+ },
+ "final-vacancies-of-junior-engineer-civil-mechanical-and-electrical-examination-2025-d47ce96e": {
   "status": "ok"
  },
  "fixed-term-employees-at-ati-goa-advt-no-1-2026-r-p-b9a0f222": {
