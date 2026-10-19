@@ -14,6 +14,7 @@ only fills NULL/empty columns (COALESCE), never overwrites real data.
 Scanned PDFs (no text layer) are recorded as 'notext' and skipped, not retried.
 State lives in enrich_state.json and is committed back by the workflow.
 """
+import hashlib
 import html
 import io
 import json
@@ -24,6 +25,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime
 from pathlib import Path
 
 import requests
@@ -165,6 +167,97 @@ def post_enrich(slug: str, fields: dict) -> bool:
         return False
 
 
+MPSC_PER_RUN = int(os.environ.get("ENRICH_MPSC_LIMIT", "20"))
+MPSC_MAX_PDF_BYTES = 15 * 1024 * 1024  # MPSC advertisements run larger than the generic 8 MB cap
+MPSC_DOWNLOAD_URL = "https://mpsc.gov.in/web/api/v1/downloadFileImage/english/{id}"
+
+
+def mpsc_candidates() -> list:
+    """MPSC advertisements, newest first, as (slug, title, file_id).
+
+    MPSC rows have no pdf_url on the site (their download endpoint needs the same
+    site-published Authorization header the scraper already uses), and their source
+    link is one shared listing page, so the generic feed-driven loop can never
+    enrich them. Instead we walk MPSC's own advertisement list, rebuild each row's
+    slug exactly the way ingest.php does (slugified title + first 8 hex of
+    sha256(portal|title|source_url)), read the English PDF, and post the fields.
+    """
+    import mpsc_scraper as m
+
+    min_year = datetime.now().year - m.RECENCY_WINDOW_YEARS
+    out = []
+    for entry in m.fetch_notices():
+        job = m.to_job(entry, min_year)
+        if not job:
+            continue
+        digest = hashlib.sha256(f"{job['source_portal']}|{job['title']}|{job['source_url']}".encode()).hexdigest()
+        slug = re.sub(r"[^a-z0-9]+", "-", job["title"].lower()).strip("-") + "-" + digest[:8]
+        out.append((entry.get("yearOfAdvertisement") or 0, job.get("posted_date") or "", slug, job["title"], entry["id"]))
+    out.sort(reverse=True)
+    return [(slug, title, fid) for _, _, slug, title, fid in out]
+
+
+def mpsc_pdf_text(file_id) -> str:
+    import mpsc_scraper as m
+
+    headers = dict(m.HEADERS)
+    headers["Accept"] = "*/*"
+    resp = requests.get(MPSC_DOWNLOAD_URL.format(id=int(file_id)), headers=headers, timeout=90, stream=True)
+    resp.raise_for_status()
+    data = resp.raw.read(MPSC_MAX_PDF_BYTES + 1, decode_content=True)
+    if len(data) > MPSC_MAX_PDF_BYTES or not data.startswith(b"%PDF"):
+        return ""
+    reader = PdfReader(io.BytesIO(data))
+    return "\n".join((p.extract_text() or "") for p in reader.pages[:12])
+
+
+def run_mpsc(state: dict) -> int:
+    try:
+        candidates = mpsc_candidates()
+    except Exception as e:
+        print(f"[enrich_backfill] MPSC list unavailable, skipping MPSC this run: {e}", file=sys.stderr)
+        return 0
+    todo = [c for c in candidates
+            if state.get(c[0], {}).get("status") not in ("ok", "notext", "enriched")
+            and state.get(c[0], {}).get("tries", 0) < MAX_TRIES]
+    print(f"[enrich_backfill] MPSC: {len(candidates)} advertisements, {len(todo)} to do, up to {MPSC_PER_RUN} this run")
+
+    done = 0
+    for slug, title, file_id in todo:
+        if done >= MPSC_PER_RUN:
+            break
+        done += 1
+        print(f"[MPSC {done}] {title[:70]}")
+        try:
+            text = mpsc_pdf_text(file_id)
+        except Exception as e:
+            st = state.get(slug, {}); state[slug] = {"status": "fail", "tries": st.get("tries", 0) + 1}
+            print(f"  pdf fetch/parse failed: {e}", file=sys.stderr)
+            continue
+        if len(text.strip()) < 200:
+            state[slug] = {"status": "notext"}
+            print("  no text layer - skipped")
+            continue
+        res = groq_extract(title, text)
+        if res == "ratelimited":
+            print("  all Groq keys rate-limited - stopping MPSC for this run")
+            break
+        if res is None:
+            st = state.get(slug, {}); state[slug] = {"status": "fail", "tries": st.get("tries", 0) + 1}
+            continue
+        fields = clean(res)
+        print("  fields:", ", ".join(fields) or "(none)")
+        if DRY_RUN:
+            print("  ", json.dumps(fields, ensure_ascii=False)[:400])
+            continue
+        if not fields or post_enrich(slug, fields):
+            state[slug] = {"status": "ok"}
+        else:
+            st = state.get(slug, {}); state[slug] = {"status": "fail", "tries": st.get("tries", 0) + 1}
+        time.sleep(2)
+    return done
+
+
 def main() -> None:
     if not GROQ_KEYS:
         print("[enrich_backfill] ERROR: no GROQ_API_KEY* set", file=sys.stderr)
@@ -175,6 +268,14 @@ def main() -> None:
 
     urls = requests.get(FEED_URL, headers=BROWSER_HEADERS, timeout=30).text.split()
     state = load_state()
+    # MPSC first: it has its own per-run budget so its ~200 advertisements get done
+    # in a few days instead of competing with the generic feed loop for Groq quota.
+    try:
+        run_mpsc(state)
+    except Exception as e:  # never let the MPSC path take down the generic enrichment below
+        print(f"[enrich_backfill] MPSC step failed, continuing with the feed: {e}", file=sys.stderr)
+    if not DRY_RUN:
+        save_state(state)
     todo = []
     for u in urls:
         slug = urllib.parse.parse_qs(urllib.parse.urlparse(u).query).get("slug", [""])[0]
