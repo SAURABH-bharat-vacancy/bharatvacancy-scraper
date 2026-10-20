@@ -195,7 +195,7 @@
   "status": "nopdf"
  },
  "122-2025-assistant-director-in-the-directorate-of-government-printing-and-stationery-group-b-advertisement-d6c44391": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "176-91ae8d28": {
   "status": "ok"
@@ -772,6 +772,9 @@
  "advertisement-no-156-direct-recruitment-for-scientist-b-in-drdo-29ae4c39": {
   "status": "enriched"
  },
+ "advertisement-no-157-lateral-recruitment-of-scientists-updated-status-37d98055": {
+  "status": "nopdf"
+ },
  "advertisement-pertaining-to-the-hiring-of-2-dilr-surveyors-at-ongc-mehsana-asset-16c26f50": {
   "status": "nopdf"
  },
@@ -794,7 +797,7 @@
   "status": "ok"
  },
  "advt-112-2025-sub-inspector-state-excise-group-c-limited-departmental-competitive-exam-2023-advertisement-31c18c4f": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-001-2023-maharashtra-non-gazetted-group-b-and-group-c-services-combined-preliminary-examination-2023-advertisement-0e825276": {
   "status": "nopdf"
@@ -1031,7 +1034,7 @@
   "status": "nopdf"
  },
  "advt-no-089-2025-additional-director-of-health-services-maharashtra-medical-and-health-services-group-a-announcement-regarding-stay-on-advertisement-d349ba77": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-090-2024-district-health-officer-cadre-maharashtra-medical-health-services-group-a-advertisement-0e12b823": {
   "status": "nopdf"
@@ -1055,58 +1058,61 @@
   "status": "nopdf"
  },
  "advt-no-107-2025-joint-director-medical-education-and-research-group-a-advertisement-63e63ff0": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-108-2025-deputy-director-industrial-safety-and-health-group-a-advertisement-0c7cade1": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-109-2025-professor-oral-medicine-diagnosis-and-radiology-group-a-advertisement-e3c50db0": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-110-2025-scientist-grade-2-group-a-advrtisement-24978b54": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-111-2025-assistant-section-officer-group-b-non-gazetted-limited-departmental-competitive-examination-2025-advertisement-774f4660": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-113-2025-deputy-manager-small-press-group-a-advertisement-a8dc103c": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-114-2025-senior-research-officer-group-b-tribal-development-department-advertisement-076cad6a": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-114-2025-senior-research-officer-group-b-tribal-development-department-regarding-cancellation-of-advertisement-c443d224": {
   "status": "notext"
  },
  "advt-no-115-2025-superintendent-general-state-service-group-b-advertisement-c385833f": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-116-2025-drug-inspector-group-b-advertisement-e6e4c061": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-116-2025-drug-inspector-group-b-announcement-regarding-date-of-screening-test-03a44b1e": {
   "status": "notext"
  },
  "advt-no-117-2025-maharashtra-group-b-non-gazetted-services-combined-preliminary-examination-2025-advertisement-0f1ca9b9": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-118-2025-maharashtra-group-c-services-main-examination-2024-announcement-regarding-extension-for-application-submission-73906c38": {
-  "status": "nopdf"
+  "status": "notext"
+ },
+ "advt-no-118-2025-maharashtra-group-c-services-main-examination-2024-corrigendem-regarding-age-relaxation-dedd7833": {
+  "status": "notext"
  },
  "advt-no-118-2025-maharashtra-group-c-services-main-examination-2024-notification-2f1b1b26": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-119-2025-assistant-section-officer-limited-departmental-competitive-examination-2016-only-reserved-for-pwbd-candidates-advertisement-1318ad6e": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-120-2025-headmaster-govt-technical-high-school-or-centre-technical-group-b-and-other-posts-advertisement-69f9d5d9": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-121-2025-deputy-director-steam-boiler-group-a-advertisement-a1c70b12": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-123-2025-member-state-police-complaint-authority-mumbai-advertisement-4d74e6e6": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-124-2025-maharashtra-group-c-services-combined-preliminary-examination-2025-advertisement-7dc9d296": {
   "status": "ok"
