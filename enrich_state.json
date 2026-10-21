@@ -408,7 +408,7 @@
   "status": "ok"
  },
  "adv-no-033-2023-034-2023-035-2023-036-2023-maharashtra-subordinate-services-group-b-main-examination-2022-notification-967d3efb": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-033-2024-legal-advisor-group-a-home-department-advertisement-1eaba150": {
   "status": "ok"
@@ -423,34 +423,34 @@
   "status": "notext"
  },
  "adv-no-037-2023-assistant-director-group-b-in-the-directorate-of-archaeology-and-museums-advertisement-b6af6e70": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-037-2024-assistant-director-health-services-transport-general-state-service-group-a-advertisement-85a57b44": {
   "status": "ok"
  },
  "adv-no-038-2023-deputy-curator-group-b-in-the-directorate-of-archaeology-and-museums-advertisement-83f687cd": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-038-2024-demographer-general-state-service-group-a-advertisement-3594f6f7": {
   "status": "ok"
  },
  "adv-no-039-2023-joint-director-general-state-service-group-a-in-the-directorate-of-economics-and-statistics-advertisement-dd6ccdcc": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-039-2024-director-of-art-maharashtra-art-education-service-group-a-advertisement-9132fdda": {
   "status": "ok"
  },
  "adv-no-040-2023-deputy-director-general-state-service-group-a-in-the-directorate-of-economics-and-statistics-advertisement-c8033d67": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-040-2024-civil-judge-junior-division-and-judicial-magistrate-first-class-main-examination-2022-notification-90877434": {
   "status": "notext"
  },
  "adv-no-041-2023-assistant-draftsman-cum-under-secretary-group-a-advertisement-d816cef9": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-042-2023-senior-scientific-officer-general-state-services-group-a-public-health-department-advertisement-9c2a419a": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-043-2023-associate-professor-in-government-pharmacy-colleges-maharashtra-engineering-teachers-services-group-a-advertisement-7f460990": {
   "status": "ok"
@@ -924,22 +924,22 @@
   "status": "ok"
  },
  "advt-no-026-2023-civil-judge-junior-division-and-judicial-magistrate-first-class-preliminary-examiniation-2022-advertisement-719efa0d": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-027-2023-director-technical-education-maharashtra-engineering-administrative-services-group-a-in-the-directorate-of-technical-education-advertisement-03269a77": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-028-2023-assistant-director-technical-of-technical-education-deputy-secretary-maharashtra-state-board-of-technical-education-maharashtra-engineering-administrative-services-group-a-advertisement-3ba1bf2d": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-029-2023-deputy-director-group-a-in-the-directorate-of-archaeology-and-museums-advertisement-11efcf20": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-030-2023-taluka-sports-officer-group-b-advertisement-085428e1": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-031-2023-deputy-executive-health-officer-municipal-service-municipal-corporation-of-grater-mumbai-group-a-advertisement-1b1c0f3f": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-039-2023-joint-director-chief-research-officer-general-state-service-group-a-announcement-regarding-cancellation-of-advtrisement-e2cc198b": {
   "status": "notext"
@@ -1563,7 +1563,7 @@
   "status": "nopdf"
  },
  "assistant-commissioner-social-welfare-relevant-group-a-social-justice-and-special-assistance-department-advertisement-e396007e": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "assistant-director-group-b-in-the-directorate-of-archives-advertisement-c3e541c6": {
   "status": "nopdf"
@@ -1651,7 +1651,7 @@
   "status": "nopdf"
  },
  "assistant-section-officer-limited-departmental-competitive-examination-2023-advertisement-f49891e3": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "assistant-town-planner-2022-d719e46d": {
   "status": "nopdf"
@@ -2877,7 +2877,7 @@
   "status": "nopdf"
  },
  "director-ayush-group-a-in-the-directorate-of-ayurved-medical-education-and-drugs-department-advertisement-119be18d": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "director-deputy-secretary-and-under-secretaries-at-g20-secretariat-156d4f70": {
   "status": "nopdf"
@@ -3537,9 +3537,12 @@
   "status": "nopdf"
  },
  "house-master-group-b-in-the-commissionerate-of-social-welfare-social-justice-and-special-assistance-department-advertisement-0aa04896": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "ibes-special-recruitment-drive-srd-bc712a79": {
+  "status": "nopdf"
+ },
+ "ibps-careers-f55f4f86": {
   "status": "nopdf"
  },
  "idbi-appointment-of-eso-as-junior-assistant-manager-1b7ec73d": {
@@ -4066,7 +4069,7 @@
   "status": "nopdf"
  },
  "medical-officer-maharashtra-medical-insurance-service-group-a-in-the-state-labour-insurance-scheme-advertisement-10ed4df1": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "medical-specialist-204b844d": {
   "status": "nopdf"
@@ -4140,6 +4143,9 @@
  "nabard-recruitment-of-specialists-on-contract-2026-27-ciso-dos-csite-3da78e18": {
   "status": "nopdf"
  },
+ "nabard-recruitment-of-specialists-on-contract-2026-27-ciso-dos-csite-6818e0af": {
+  "status": "nopdf"
+ },
  "national-research-fellowship-in-social-security-ade73800": {
   "status": "nopdf"
  },
@@ -4198,6 +4204,9 @@
   "status": "nopdf"
  },
  "nit-recruitment-of-non-faculty-position-ee55c4f8": {
+  "status": "nopdf"
+ },
+ "nit-recruitment-of-non-faculty-positions-f6a43001": {
   "status": "nopdf"
  },
  "nmdfc-recruitment-of-company-secretary-cum-chief-manager-9d4b2d38": {
@@ -5506,7 +5515,7 @@
   "status": "nopdf"
  },
  "senior-geophysicist-group-a-in-the-directorate-of-groundwater-surveys-and-development-agency-advertisement-de760a68": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "senior-manager-green-chemicals-22eaf338": {
   "status": "nopdf"
@@ -5528,7 +5537,7 @@
   "status": "nopdf"
  },
  "social-welfare-officer-group-b-social-justice-and-special-assistance-department-advertisement-3e95d51a": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "special-recruitment-drive-srd-e398bb01": {
   "status": "nopdf"
