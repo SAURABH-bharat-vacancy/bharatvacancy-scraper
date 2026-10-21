@@ -507,58 +507,58 @@
   "status": "nopdf"
  },
  "adv-no-070-2023-maharashtra-non-gazetted-group-b-services-main-examination-2023-notification-b3ca5d40": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-071-2023-to-110-2023-assistant-professor-associate-professor-and-professor-in-ayurvedic-medical-colleges-advertisement-6d65aff2": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-111-2023-maharashtra-group-c-services-main-examination-2023-notification-58a66852": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "adv-no-112-2023-professor-in-various-subjects-maharashtra-education-services-group-a-in-the-directorate-of-higher-education-advertisement-01355d88": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-113-2023-associate-professor-in-various-subjects-maharashtra-education-services-group-a-in-the-directorate-of-higher-education-advertisement-eb26ddde": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-114-2023-assistant-professor-in-various-subjects-librarian-director-of-physical-education-maharashtra-education-services-group-a-advertisement-ca9168c2": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-115-2023-lecturer-in-various-subjects-maharashtra-education-services-group-b-collegiate-branch-advertisement-abb869c2": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-116-2023-principal-or-director-in-the-government-institute-or-college-of-arts-commerce-and-science-group-a-and-adv-no-117-2023-principal-in-the-government-college-of-education-group-a-advertisement-5adcef7a": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "adv-no-118-2023-translator-in-marathi-group-c-and-adv-no-119-2023-translator-in-hindi-group-c-advertisement-69c80355": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "adv-no-120-2023-assistant-statistician-in-general-state-service-group-b-advertisement-f42a8683": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "adv-no-121-2023-state-services-main-examination-2023-notification-02140738": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-122-2023-maharashtra-civil-engineering-services-main-examination-2023-notification-6e00b67f": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-123-2022-maharashtra-electrical-engineering-services-main-examination-2023-notification-205090cb": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "adv-no-124-2023-inspector-of-legal-metrology-group-b-main-examination-2023-notification-0595657d": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "adv-no-125-2023-food-and-drugs-administrative-services-main-examination-2023-notification-8cb2ea8d": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-126-2023-dean-maharashtra-ayurvedic-services-group-a-in-the-directorate-of-ayush-advertisement-39ac0505": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-127-2023-administrative-officer-general-state-services-group-b-in-the-directorate-of-ayush-advertisement-ff508b44": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-128-2023-physicist-radiotherapy-govt-medical-colleges-and-hospitals-group-b-advertisement-2ca38959": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "adv-no-129-2023-deputy-superintendent-of-police-assistant-commissioner-of-police-communication-information-technology-maharashtra-state-police-service-group-a-advertisement-70630959": {
   "status": "ok"
@@ -583,7 +583,7 @@
  },
  "adv-no-135-262-2023-assistant-professor-in-various-subjects-me-rs-group-b-advertisement-0f18063a": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "adv-no-53-2023-director-health-services-maharashtra-medical-and-health-service-group-a-advertisement-2c94e4f9": {
   "status": "nopdf"
@@ -595,7 +595,7 @@
   "status": "ok"
  },
  "advertisement-appointment-of-retired-under-secretary-section-officer-assistant-section-officer-clerk-typist-on-contract-basis-1e5f3ab6": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advertisement-direct-recruitment-of-hindi-officer-regular-basis-9c034442": {
   "status": "ok"
@@ -2663,6 +2663,9 @@
  },
  "consultants-sports-coach-at-isp-b5f48759": {
   "status": "nopdf"
+ },
+ "contractual-appointment-of-15-general-duty-medical-officers-4c78edae": {
+  "status": "enriched"
  },
  "crp-csa-xv-86a60fd8": {
   "status": "nopdf"
