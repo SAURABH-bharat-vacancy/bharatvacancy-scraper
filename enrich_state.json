@@ -372,7 +372,7 @@
   "status": "ok"
  },
  "administrative-officer-group-b-in-the-directorate-of-archaeology-and-museums-advertisement-27fb0fac": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "administrative-screening-status-electrical-electronics-electronics-communication-electronics-instrumentation-electronics-engineering-mechanical-engineering-advt-no-152-769d473b": {
   "status": "nopdf"
@@ -766,6 +766,9 @@
  "advertisement-no-153-recruitment-closed-3e0bfd6a": {
   "status": "nopdf"
  },
+ "advertisement-no-153-scientist-d-recruitment-deputed-closed-3c4150af": {
+  "status": "nopdf"
+ },
  "advertisement-no-154-recruitment-of-project-scientists-on-contractual-basis-for-drdo-hyderabad-bcbed74d": {
   "status": "fail",
   "tries": 3
@@ -801,7 +804,7 @@
   "status": "ok"
  },
  "advt-no-001-2023-maharashtra-non-gazetted-group-b-and-group-c-services-combined-preliminary-examination-2023-advertisement-0e825276": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-001-2024-007-2024-assistant-professor-i-c-c-u-general-medicine-maharashtra-medical-and-research-service-group-b-in-the-government-medical-colleges-d4aa264b": {
   "status": "ok"
@@ -813,31 +816,31 @@
   "status": "notext"
  },
  "advt-no-002-2023-deputy-engineer-electrical-maharashtra-electrical-engineering-service-group-a-public-works-department-1ddd8d6b": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-002-2026-maharashtra-forest-services-main-examination-2025-notification-531b0687": {
   "status": "notext"
  },
  "advt-no-003-2023-deputy-director-group-a-in-the-directorate-of-groundwater-surveys-and-development-agency-130b2b83": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-003-2026-maharashtra-civil-engineering-services-main-examination-2025-notification-c55a8a25": {
   "status": "notext"
  },
  "advt-no-004-2023-chief-drilling-engineer-group-a-in-the-directorate-of-groundwater-surveys-and-development-agency-0a485d00": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-004-2026-deputy-superintendent-group-a-group-of-t-b-hospitals-mcgm-advertisement-a1d4406f": {
   "status": "notext"
  },
  "advt-no-005-2023-assistant-chemist-group-b-in-the-directorate-of-groundwater-surveys-and-development-agency-68a74ca7": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-005-2026-deputy-executive-health-officer-municipal-service-group-b-mcgm-advertisement-211fddb5": {
   "status": "notext"
  },
  "advt-no-006-2023-assistant-administrative-officer-group-b-in-the-directorate-of-groundwater-surveys-and-development-agency-e95a867a": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-006-2026-additional-public-prosecutor-group-a-advertisement-9b1dad59": {
   "status": "notext"
@@ -846,31 +849,31 @@
   "status": "notext"
  },
  "advt-no-007-2023-assistant-commissioner-technical-maharashtra-technical-service-group-a-in-the-directorate-of-textile-da00bbb9": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-007-2026-motor-vehicles-prosecutor-group-a-advertisement-abf65189": {
   "status": "notext"
  },
  "advt-no-008-2023-assistant-director-sericulture-service-group-a-in-the-directorate-of-sericulture-5d6ae201": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-008-2026-zilla-sainik-welfare-officer-deputy-director-group-a-advertisement-ecc4f48c": {
   "status": "notext"
  },
  "advt-no-009-2023-sericulture-development-officer-state-sericulture-service-grade-i-group-b-in-the-directorate-of-sericulture-f2b0be3e": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "advt-no-009-2026-medical-officer-group-b-in-the-government-medical-college-hospitals-adverisement-1b8634ff": {
   "status": "notext"
  },
  "advt-no-010-2023-assistant-director-group-b-in-the-directorate-of-cultural-affairs-cdc35826": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-010-2026-maharashtra-group-b-non-gazetted-services-combined-main-examination-2025-notification-17c803eb": {
   "status": "notext"
  },
  "advt-no-011-2023-maharashtra-gazetted-civil-services-combined-preliminary-examination-2023-advertisement-ae36c493": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "advt-no-011-2025-civil-surgeon-cadre-maharashtra-medical-health-services-group-a-advertisement-ed884dd4": {
   "status": "ok"
@@ -1566,7 +1569,7 @@
   "status": "ok"
  },
  "assistant-director-group-b-in-the-directorate-of-archives-advertisement-c3e541c6": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "assistant-director-information-services-and-programmer-on-deputation-basis-0757ea8f": {
   "status": "nopdf"
@@ -2702,7 +2705,7 @@
   "tries": 3
  },
  "curator-group-b-in-the-directorate-of-archaeology-and-museums-advertisement-e29fb827": {
-  "status": "nopdf"
+  "status": "notext"
  },
  "dccb-application-for-the-post-of-manager-staff-assistant-5130bc89": {
   "status": "nopdf"
@@ -3630,7 +3633,7 @@
   "status": "nopdf"
  },
  "inspector-superintendent-institute-of-disabled-persons-group-b-in-the-commissionerate-for-persons-with-disabilities-advertisement-03066ed8": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "instruction-for-candiates-d6cab395": {
   "status": "enriched"
@@ -3955,7 +3958,7 @@
   "status": "notext"
  },
  "maharashtra-gazetted-technical-services-main-examination-2022-notification-013038dd": {
-  "status": "nopdf"
+  "status": "ok"
  },
  "management-trainee-hr-rec-c-97-mtt-2025-5a00ca3e": {
   "status": "nopdf"
