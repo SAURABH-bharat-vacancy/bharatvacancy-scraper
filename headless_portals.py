@@ -32,6 +32,19 @@ MIN_USEFUL_TEXT_LENGTH = 800
 # (portal_name, organization, url, category)
 PORTALS = [
     ("RBI", "Reserve Bank of India", "https://opportunities.rbi.org.in/scripts/index.aspx", "Banking"),
+    # Added 2026-10-25: these answered 403 / refused connections to plain requests from both
+    # GitHub's and Bluehost's data-centre IPs but load fine from a home connection in India,
+    # so this is a test of whether a real browser gets through. Portal names match the ones
+    # used by cron/run-tier1.php so a row found by either side dedupes against the other.
+    ("Coal India", "Coal India Limited", "https://www.coalindia.in/career-cil/jobs-coal-india/", "PSU"),
+    ("NTPC", "NTPC Limited", "https://careers.ntpc.co.in/recruitment/", "PSU"),
+    ("Indian Coast Guard", "Indian Coast Guard", "https://www.indiancoastguard.gov.in/recruitment", "Defence"),
+    ("BSF", "Border Security Force", "https://rectt.bsf.gov.in/", "Police"),
+    ("BPCL", "Bharat Petroleum Corporation Limited", "https://www.bharatpetroleum.in/careers/job-openings", "PSU"),
+    ("BPSC", "Bihar Public Service Commission", "https://bpsc.bihar.gov.in/", "State"),
+    ("Punjab PSC", "Punjab Public Service Commission", "https://ppsc.gov.in/", "State"),
+    ("JKPSC", "Jammu and Kashmir Public Service Commission", "https://jkpsc.nic.in/", "State"),
+    ("Assam PSC", "Assam Public Service Commission", "https://apsc.nic.in/", "State"),
 ]
 
 
