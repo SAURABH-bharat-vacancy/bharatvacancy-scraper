@@ -25,7 +25,7 @@ from urllib.parse import urljoin
 from playwright.sync_api import sync_playwright
 from extract_jobs_ai import extract_jobs
 from ingest_client import post_jobs
-from page_cache_client import page_unchanged_since_last_run
+from page_cache_client import page_unchanged_since_last_run, forget_page_hash
 
 MIN_USEFUL_TEXT_LENGTH = 800
 
@@ -95,6 +95,7 @@ if __name__ == "__main__":
                 jobs = extract_jobs(text, portal_name, url)
             except Exception as e:
                 print(f"[headless_scraper] [{portal_name}] extraction failed: {e}")
+                forget_page_hash(portal_name)
                 continue
 
             for job in jobs:

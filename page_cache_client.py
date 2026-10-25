@@ -16,6 +16,31 @@ from ingest_client import INGEST_URL, INGEST_API_KEY
 PAGE_CACHE_URL = INGEST_URL.rsplit("/", 1)[0] + "/page-cache.php"
 
 
+def forget_page_hash(portal_name: str) -> None:
+    """Drops the stored hash for a portal. page_unchanged_since_last_run() saves the hash
+    before extraction runs, so call this when extraction fails: otherwise the page looks
+    "unchanged" on every later run and is never read again. Best-effort like the check.
+    """
+    if not INGEST_API_KEY:
+        return
+    body = json.dumps({"portal": portal_name, "forget": True}).encode("utf-8")
+    req = urllib.request.Request(
+        PAGE_CACHE_URL,
+        data=body,
+        method="POST",
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "BharatVacancyScraper/1.0 (+https://bharatvacancy.com)",
+            "X-Api-Key": INGEST_API_KEY,
+        },
+    )
+    try:
+        urllib.request.urlopen(req, timeout=15).read()
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
+        pass
+
+
 def page_unchanged_since_last_run(portal_name: str, text: str) -> bool:
     """Returns True if this exact page text was already seen on the last
     successful check for this portal — callers should skip the AI call in
