@@ -383,6 +383,9 @@
  "administrative-screening-status-mechanical-aeronautical-aerospace-items-6-8-9-10-11-12-advt-no-152-b7927132": {
   "status": "nopdf"
  },
+ "admission-letter-for-preliminary-examination-of-ctsre-2025-advt-no-5925-ossc-71c39bbd": {
+  "status": "nopdf"
+ },
  "adv-no-008-2024-assistant-director-of-libraries-district-library-officer-in-the-maharashtra-state-library-service-group-b-advertisement-e3495862": {
   "status": "ok"
  },
@@ -639,6 +642,9 @@
  "advertisement-for-direct-recruitment-of-hindi-officer-regular-c67dd30d": {
   "status": "ok"
  },
+ "advertisement-for-director-marketing-hpcl-8414f95f": {
+  "status": "ok"
+ },
  "advertisement-for-engagement-of-4-retired-ongc-persons-from-mechanical-discipline-as-consultants-for-well-services-assam-asset-ca281a37": {
   "status": "nopdf"
  },
@@ -778,6 +784,14 @@
  },
  "advertisement-no-157-lateral-recruitment-of-scientists-updated-status-37d98055": {
   "status": "nopdf"
+ },
+ "advertisement-of-recruitment-for-the-post-of-head-constable-education-and-stress-counsellor-2026-3f4a0863": {
+  "status": "fail",
+  "tries": 1
+ },
+ "advertisement-of-recruitment-for-the-post-of-head-constable-motor-mechanic-2026-fff65926": {
+  "status": "fail",
+  "tries": 1
  },
  "advertisement-pertaining-to-the-hiring-of-2-dilr-surveyors-at-ongc-mehsana-asset-16c26f50": {
   "status": "nopdf"
@@ -1400,12 +1414,24 @@
  "aiims-recruitment-to-various-group-a-non-faculty-posts-ed06d60b": {
   "status": "nopdf"
  },
+ "amendment-dt-05-08-2025-to-the-post-of-assistant-public-prosecutors-in-andhra-pradesh-state-prosecution-department-1b285249": {
+  "status": "fail",
+  "tries": 1
+ },
+ "amendment-dt-25-08-2025-to-the-post-of-assistant-public-prosecutors-in-andhra-pradesh-state-prosecution-department-9102edac": {
+  "status": "fail",
+  "tries": 1
+ },
  "analyst-cum-programmer-deputy-director-2024-09fbf409": {
   "status": "nopdf"
  },
  "annexure-a-3d4f896d": {
   "status": "fail",
   "tries": 2
+ },
+ "announcement-for-assistant-district-attorney-advt-no-18-2025-7554290e": {
+  "status": "fail",
+  "tries": 1
  },
  "announcement-regarding-the-examination-pattern-of-maharashtra-group-c-services-examination-2026-and-the-acceptance-of-applications-from-candidates-appearing-in-the-final-year-of-their-degree-for-the-cadre-of-assistant-fisheries-development-officer-technical-a875f071": {
   "status": "notext"
@@ -1555,6 +1581,9 @@
  "assistant-agriculture-engineer-2025-f1f850ad": {
   "status": "nopdf"
  },
+ "assistant-agriculture-engineer-advt-no-08-of-2026-27-0cc4b287": {
+  "status": "nopdf"
+ },
  "assistant-agriculture-officer-2018-7d517f3c": {
   "status": "nopdf"
  },
@@ -1656,8 +1685,23 @@
  "assistant-professor-sanskrit-college-edu-2024-15c4b8ca": {
   "status": "nopdf"
  },
+ "assistant-public-prosecutor-advt-no-09-of-2026-27-a912e75e": {
+  "status": "nopdf"
+ },
  "assistant-public-prosecutor-grade-ii-notification-no-18-2025-abe7add7": {
   "status": "nopdf"
+ },
+ "assistant-public-prosecutors-final-cutt-offs-4ce62649": {
+  "status": "fail",
+  "tries": 1
+ },
+ "assistant-public-prosecutors-in-andhra-pradesh-state-prosecution-department-e9490011": {
+  "status": "fail",
+  "tries": 1
+ },
+ "assistant-public-prosecutors-zone-wise-selection-1386491b": {
+  "status": "fail",
+  "tries": 1
  },
  "assistant-section-officer-limited-departmental-competitive-examination-2023-advertisement-f49891e3": {
   "status": "notext"
@@ -2716,6 +2760,12 @@
  "dccb-application-for-the-post-of-manager-staff-assistant-5130bc89": {
   "status": "nopdf"
  },
+ "debarment-order-of-sri-hiralal-naik-2f88f4af": {
+  "status": "nopdf"
+ },
+ "debarment-order-of-sri-rohit-mohanta-5f9cba72": {
+  "status": "nopdf"
+ },
  "declaration-of-pending-results-online-recruitment-of-meritorious-sportspersons-notification-no-w-17-55-2022-spn-i-karnataka-circle-76e2aa8f": {
   "status": "nopdf"
  },
@@ -2797,6 +2847,10 @@
  "detailed-advertisement-for-engagement-of-advisors-consultants-2026-27-iisco-steel-plant-f2ccac01": {
   "status": "enriched"
  },
+ "detailed-advertisement-for-recruitment-of-meritorious-sportspersons-to-the-post-of-constable-general-duty-under-sports-quota-2025-fa0f39f9": {
+  "status": "fail",
+  "tries": 1
+ },
  "detailed-application-form-b8e4d9a5": {
   "status": "fail",
   "tries": 2
@@ -2851,6 +2905,12 @@
  },
  "detailed-notification-hindi-bff2393b": {
   "status": "nopdf"
+ },
+ "details-of-applications-received-position-wise-application-count-c576b72c": {
+  "status": "ok"
+ },
+ "details-of-applications-received-recruitment-of-officers-2026-5278f569": {
+  "status": "ok"
  },
  "diploma-engineer-control-and-instrumentation-st-backlog-vacancy-at-kudgi-advt-no-kudgi-02-2026-d4bb99c3": {
   "status": "enriched"
@@ -2945,6 +3005,9 @@
   "status": "nopdf"
  },
  "driver-constables-in-bihar-police-e1eb77dd": {
+  "status": "nopdf"
+ },
+ "driver-operator-in-fire-services-90e47cf6": {
   "status": "nopdf"
  },
  "edit-window-for-candidates-to-modify-correct-application-form-for-crp-po-mts-xvi-2be6ad38": {
@@ -3118,6 +3181,9 @@
  "engagement-of-doctors-on-fixed-term-basis-advt-no-3-2026-r-p-8b66d474": {
   "status": "nopdf"
  },
+ "engagement-of-ex-employees-as-ta-consultant-for-visakh-refinery-english-advt-8a303a5d": {
+  "status": "notext"
+ },
  "engagement-of-graduate-apprentices-95c565a6": {
   "status": "nopdf"
  },
@@ -3126,6 +3192,10 @@
  },
  "engagement-of-head-digital-projects-on-fixed-term-basis-in-ongc-advt-no-6-2024-r-p-f86fad5a": {
   "status": "nopdf"
+ },
+ "engagement-of-hpcl-graduate-apprentice-trainees-2026-27-for-refineries-division-43e05504": {
+  "status": "fail",
+  "tries": 1
  },
  "engagement-of-junior-associate-consultants-production-drilling-at-cambay-asset-3feda2b3": {
   "status": "enriched"
@@ -3454,6 +3524,9 @@
  "frequently-asked-questions-section-controller-cen-03-2026-0b4595a8": {
   "status": "nopdf"
  },
+ "fsl-scientific-assistants-physical-chemical-biology-serology-93cce987": {
+  "status": "nopdf"
+ },
  "gdmo-1d034ba6": {
   "status": "nopdf"
  },
@@ -3464,7 +3537,13 @@
   "status": "fail",
   "tries": 3
  },
+ "general-instructions-for-physical-endurance-test-pet-assistant-superintendent-post-code-32-25-delhi-prisons-c70f5d0a": {
+  "status": "nopdf"
+ },
  "general-manager-e8-company-secretary-55c0fce5": {
+  "status": "nopdf"
+ },
+ "geologist-advt-no-10-of-2026-27-8d0e300c": {
   "status": "nopdf"
  },
  "gnm-admission-2026-27-in-management-quota-at-nti-igh-rourkela-9acbce06": {
@@ -3808,6 +3887,9 @@
  },
  "lecturer-male-female-govt-inter-college-advt-no-a-6-e-1-2025-notice-1fd9e88d": {
   "status": "notext"
+ },
+ "lecturers-in-govt-college-of-physical-education-advt-no-12-of-2026-27-195afb10": {
+  "status": "nopdf"
  },
  "level-1-posts-b5a871df": {
   "status": "nopdf"
@@ -4279,6 +4361,15 @@
  "notification-for-crp-rrb-xv-e4563dc3": {
   "status": "nopdf"
  },
+ "notification-for-engagement-of-graduate-technician-diploma-apprentices-under-apprentices-amendment-act-1973-b2ccd01d": {
+  "status": "nopdf"
+ },
+ "notification-for-engagement-of-interns-under-the-prime-minister-internship-scheme-pmis-569c5343": {
+  "status": "nopdf"
+ },
+ "notification-for-engagement-of-iti-trade-apprentices-under-the-apprentices-act-1961-8233672c": {
+  "status": "nopdf"
+ },
  "notification-for-filling-up-of-drivers-ordinary-grade-through-deputation-absorption-basis-c7ce1520": {
   "status": "nopdf"
  },
@@ -4303,7 +4394,13 @@
  "notification-frequently-asked-questions-regarding-cen-02-2026-technicians-d59ce6dc": {
   "status": "nopdf"
  },
+ "notification-of-online-examination-for-various-post-codes-of-various-departments-27-oct-5-dec-2026-05cd614b": {
+  "status": "nopdf"
+ },
  "ntpc-graduate-posts-b14f3924": {
+  "status": "nopdf"
+ },
+ "odisha-civil-services-examination-2025-advt-no-05-of-2025-26-admission-certificate-instructions-for-main-written-examination-b5863422": {
   "status": "nopdf"
  },
  "offer-of-appointment-for-medical-specialist-ophthalmology-and-pediatrics-advt-no-04-26-158cc8c2": {
@@ -4583,6 +4680,10 @@
  "online-main-exam-call-letter-for-crp-po-mts-xvi-0fb5c342": {
   "status": "nopdf"
  },
+ "online-portal-announcement-for-food-safety-officer-advt-no-25-2026-8b9519eb": {
+  "status": "fail",
+  "tries": 1
+ },
  "online-pre-examination-training-for-pet-candidates-under-crp-po-mts-xvi-10ed5e2e": {
   "status": "nopdf"
  },
@@ -4660,6 +4761,9 @@
  },
  "pre-bid-reply-for-rfp-for-development-of-online-applications-portal-for-candidates-registration-with-grievance-redressal-system-and-hosting-of-ibps-website-fe268cab": {
   "status": "notext"
+ },
+ "preference-selection-for-posts-under-group-25-advt-no-08-2024-ab58711a": {
+  "status": "nopdf"
  },
  "presiding-officer-employees-provident-fund-appellate-tribunal-6f6cdafc": {
   "status": "nopdf"
@@ -5182,6 +5286,12 @@
  "recruitment-of-officer-pfrda-a40ca83c": {
   "status": "nopdf"
  },
+ "recruitment-of-officers-2026-27-e5fba93f": {
+  "status": "notext"
+ },
+ "recruitment-of-officers-2026-bdf36ec6": {
+  "status": "ok"
+ },
  "recruitment-of-officers-in-various-streams-up-to-scale-iv-7c86df84": {
   "status": "nopdf"
  },
@@ -5453,6 +5563,21 @@
  "screening-of-received-applications-is-in-progress-advt-no-154-80cf1b42": {
   "status": "nopdf"
  },
+ "sct-pc-civil-men-women-pc-ar-men-women-firemen-in-apsdrf-warder-men-women-in-prisons-and-correctional-department-210c2a91": {
+  "status": "nopdf"
+ },
+ "sct-pc-communications-men-women-4ea2f507": {
+  "status": "nopdf"
+ },
+ "sct-pc-mechanics-men-sct-pc-drivers-men-e041f740": {
+  "status": "nopdf"
+ },
+ "sct-si-civil-men-women-si-ar-men-women-si-s-p-f-men-fbedc28c": {
+  "status": "nopdf"
+ },
+ "sct-si-communications-men-women-sct-si-pto-men-aaf6ded0": {
+  "status": "nopdf"
+ },
  "section-controller-07e2ea1e": {
   "status": "nopdf"
  },
@@ -5488,6 +5613,9 @@
  },
  "selection-for-the-post-of-director-t-fs-ongc-10c92421": {
   "status": "nopdf"
+ },
+ "selection-methodology-for-recruitment-of-officers-e11e09de": {
+  "status": "ok"
  },
  "selection-of-assistant-commandant-gd-capfs-through-ldce-2024-and-2025-e70647a9": {
   "status": "fail",
@@ -5556,6 +5684,12 @@
  },
  "social-welfare-officer-group-b-social-justice-and-special-assistance-department-advertisement-3e95d51a": {
   "status": "ok"
+ },
+ "speaking-order-assistant-director-horticulture-post-code-28-24-oa-no-3167-2026-e9950e74": {
+  "status": "nopdf"
+ },
+ "speaking-order-preeti-rani-others-vs-gnctd-ans-oa-no-2302-2026-dated-29-06-2026-79e05ed9": {
+  "status": "nopdf"
  },
  "special-recruitment-drive-srd-e398bb01": {
   "status": "nopdf"
@@ -6065,6 +6199,27 @@
  "uttar-pradesh-legislative-department-advt-no-d-6-e-1-2025-notice-12e5c59e": {
   "status": "notext"
  },
+ "vacancy-notification-assistant-manager-finance-on-contract-basis-chengalpattu-c95f6ef1": {
+  "status": "nopdf"
+ },
+ "vacancy-notification-executive-posts-on-regular-basis-agms-manager-dms-0430797c": {
+  "status": "nopdf"
+ },
+ "vacancy-notification-for-selection-of-safety-assistants-on-contract-basis-for-cmsru-77d1e417": {
+  "status": "nopdf"
+ },
+ "vacancy-notification-personal-secretary-trainee-for-istc-5e0ca328": {
+  "status": "nopdf"
+ },
+ "vacancy-notification-selection-of-workmen-posts-on-contract-basis-for-cmsru-c594e6de": {
+  "status": "nopdf"
+ },
+ "vacancy-notification-selection-to-the-post-of-guarantee-engineer-on-contract-basis-at-ship-repair-facility-in-karwar-89e9d923": {
+  "status": "nopdf"
+ },
+ "vacancy-notification-supervisory-posts-on-regular-basis-nesting-mechanical-fa12a2c2": {
+  "status": "nopdf"
+ },
  "various-posts-in-is-division-on-deputation-basis-29a4a4dd": {
   "status": "nopdf"
  },
@@ -6077,11 +6232,17 @@
  "verification-of-compensatory-time-scribe-entitlement-and-document-examination-for-pwbd-candidates-with-locomotor-disability-47cd224c": {
   "status": "ok"
  },
+ "veterinary-assistant-surgeon-additional-veterinary-assistant-surgeon-advt-no-04-of-2026-27-50911cf6": {
+  "status": "nopdf"
+ },
  "veterinary-officer-2025-de0bf0ea": {
   "status": "nopdf"
  },
  "veterinary-officer-up-livestock-department-notice-advt-no-d-6-e-1-2025-f16f4a4c": {
   "status": "notext"
+ },
+ "view-window-advertisement-officers-2026-27-0ba75ccc": {
+  "status": "ok"
  },
  "vigilance-assistant-9b0e8304": {
   "status": "nopdf"
