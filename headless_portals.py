@@ -105,7 +105,7 @@ if __name__ == "__main__":
                 continue
 
             try:
-                jobs = extract_jobs(text, portal_name, url)
+                jobs = extract_jobs(text, portal_name, url, raise_on_failure=True)
             except Exception as e:
                 print(f"[headless_scraper] [{portal_name}] extraction failed: {e}")
                 forget_page_hash(portal_name)

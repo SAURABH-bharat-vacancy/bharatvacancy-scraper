@@ -100,7 +100,9 @@ def _call_groq(prompt: str) -> str | None:
     for api_key in GROQ_API_KEYS:
         body = json.dumps({
             "model": GROQ_MODEL,
-            "max_tokens": 8192,
+            # Groq counts the requested completion size against the per-request token limit, so
+            # a long page plus 8192 gets a 413. The home runner lowers it through the env.
+            "max_tokens": int(os.environ.get("GROQ_MAX_TOKENS", "8192")),
             "reasoning_effort": "low",
             "messages": [{"role": "user", "content": prompt}],
         }).encode("utf-8")
@@ -254,13 +256,17 @@ def _parse_jobs_json(text: str) -> list[dict]:
         raise
 
 
-def extract_jobs(page_text: str, portal_name: str, page_url: str) -> list[dict]:
+def extract_jobs(page_text: str, portal_name: str, page_url: str, raise_on_failure: bool = False) -> list[dict]:
     """Ask Claude to pull every distinct job/exam notification out of raw page text.
 
     Returns [] on no notifications found OR on any extraction failure — callers should
     treat an empty list as "nothing new this run", not necessarily an error, and rely on
     the ingest_log table (populated by ingest.php) to notice a portal that's gone
     persistently quiet.
+
+    With raise_on_failure=True a failed API call or unparseable reply raises RuntimeError
+    instead, so a caller that caches the page hash can forget it and retry next run (an
+    empty list is then a genuine "no notifications on this page").
     """
     prompt = f"""Here is the raw text of the "{portal_name}" notices page ({page_url}). Links found on the page are inlined right after their link text in square brackets, e.g. "Download Advertisement [https://example.gov.in/notice.pdf]" — use these bracketed URLs as the source of source_url and pdf_url values; don't guess a URL that isn't backed by one of these brackets.
 
@@ -298,12 +304,16 @@ PAGE TEXT:
     text = _call_llm_extract(prompt)
     if text is None:
         print(f"[extract_jobs_ai] API call failed for {portal_name} (Anthropic and Groq both unavailable)")
+        if raise_on_failure:
+            raise RuntimeError(f"all extraction providers failed for {portal_name}")
         return []
 
     try:
         jobs = _parse_jobs_json(text)
     except (json.JSONDecodeError, KeyError, IndexError) as e:
         print(f"[extract_jobs_ai] failed to parse response for {portal_name}: {e}")
+        if raise_on_failure:
+            raise RuntimeError(f"unparseable extraction reply for {portal_name}") from e
         return []
 
     # source_url is required downstream, but the model doesn't reliably
