@@ -1,4 +1,7 @@
 {
+ "-012d066d": {
+  "status": "notext"
+ },
  "-021188c5": {
   "status": "ok"
  },
@@ -7,6 +10,9 @@
  },
  "-1c4c38bc": {
   "status": "nopdf"
+ },
+ "-2232e779": {
+  "status": "notext"
  },
  "-26eab2f1": {
   "status": "notext"
@@ -24,6 +30,9 @@
   "status": "notext"
  },
  "-d56dcce0": {
+  "status": "nopdf"
+ },
+ "-dd5d4340": {
   "status": "nopdf"
  },
  "-dfc2d25b": {
@@ -686,6 +695,9 @@
  "advertisement-for-engagement-of-retired-forest-official-retired-surveyor-as-junior-consultants-for-laq-rou-related-jobs-on-contract-basis-84fb283c": {
   "status": "nopdf"
  },
+ "advertisement-for-engagement-of-retired-ongcians-as-junior-associate-consultant-for-pmis-interns-at-ongc-tripura-asset-d1ee2409": {
+  "status": "nopdf"
+ },
  "advertisement-for-engagement-of-retired-revenue-officials-57a69c2d": {
   "status": "nopdf"
  },
@@ -740,11 +752,26 @@
  "advertisement-for-the-position-of-ceo-of-ongc-foundation-034730fd": {
   "status": "nopdf"
  },
+ "advertisement-for-the-post-of-director-operations-business-development-bharat-petroresources-limited-bprl-advertisement-english-859f7d53": {
+  "status": "fail",
+  "tries": 1
+ },
+ "advertisement-for-the-post-of-director-refineries-bpcl-advertisement-english-d90e1fa9": {
+  "status": "fail",
+  "tries": 1
+ },
  "advertisement-for-the-post-of-domain-expert-for-fishing-liner-hanger-operations-and-drilling-fluid-operations-at-ongc-ahmedabad-mehsana-assets-53a58039": {
+  "status": "nopdf"
+ },
+ "advertisement-for-the-posts-of-associate-junior-consultants-at-well-services-ongc-assam-asset-94a8611d": {
   "status": "nopdf"
  },
  "advertisement-for-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-d27b7df0": {
   "status": "enriched"
+ },
+ "advertisement-hindi-f628b32f": {
+  "status": "fail",
+  "tries": 1
  },
  "advertisement-inviting-applications-for-engagement-as-associate-junior-consultant-on-contract-basis-at-ongc-s-tripura-asset-32a73fd5": {
   "status": "nopdf"
@@ -769,6 +796,9 @@
  },
  "advertisement-no-148-cancelled-due-to-inadequate-response-86091f9d": {
   "status": "nopdf"
+ },
+ "advertisement-no-15-2025-for-engagement-of-ceo-for-bcgcl-on-fixed-term-contract-basis-c949ea6a": {
+  "status": "ok"
  },
  "advertisement-no-150-cancelled-958a700d": {
   "status": "nopdf"
@@ -823,6 +853,9 @@
   "status": "ok"
  },
  "advertisement-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-ec36827f": {
+  "status": "enriched"
+ },
+ "advisor-hr-consultant-advt-no-advisor-hr-cs-2026-27-1325-1dd13d29": {
   "status": "enriched"
  },
  "advisor-position-for-ex-executives-at-bhilai-steel-plant-06914ae4": {
@@ -1732,6 +1765,9 @@
  "assistant-public-prosecutor-advt-no-09-of-2026-27-a912e75e": {
   "status": "nopdf"
  },
+ "assistant-public-prosecutor-advt-no-09-of-2026-27-programme-for-preliminary-examination-c366ff25": {
+  "status": "nopdf"
+ },
  "assistant-public-prosecutor-grade-ii-notification-no-18-2025-abe7add7": {
   "status": "nopdf"
  },
@@ -2063,6 +2099,9 @@
   "status": "nopdf"
  },
  "avr-ssr-inet-26-application-live-from-14-mar-2026-3ee2ad58": {
+  "status": "nopdf"
+ },
+ "bio-data-form-and-documents-mtt-posts-a10f87cb": {
   "status": "nopdf"
  },
  "bio-data-form-documents-for-gd-interview-mtt-posts-ee3a4196": {
@@ -2741,6 +2780,9 @@
   "status": "fail",
   "tries": 1
  },
+ "consideration-order-titled-gulzar-ahmad-rather-and-ors-vs-jk-govt-and-ors-filling-up-of-the-post-of-medical-officer-allopathic-in-health-and-family-welfare-department-rejection-of-candidature-there-d70eec95": {
+  "status": "nopdf"
+ },
  "constable-operator-26f4ffbc": {
   "status": "nopdf"
  },
@@ -2839,6 +2881,9 @@
   "status": "nopdf"
  },
  "deficiencies-in-documents-sub-divisional-officer-and-engineer-recruitment-44f27abf": {
+  "status": "nopdf"
+ },
+ "deficiency-of-documents-for-the-the-post-of-assistant-professor-food-science-and-quality-control-in-hed-rejection-of-candidature-for-the-the-post-of-assistant-professor-food-science-and-quality-contro-7454f625": {
   "status": "nopdf"
  },
  "deputy-director-audit-and-assistant-director-audit-1be7e8c0": {
@@ -2984,6 +3029,9 @@
  "diploma-trainees-special-recruitment-drive-for-sc-st-backlog-vacancies-bc309e76": {
   "status": "nopdf"
  },
+ "direct-recruitment-2020-21-special-appeal-for-sub-inspector-pac-platoon-commander-fire-service-officer-6e2268cf": {
+  "status": "ok"
+ },
  "direct-recruitment-for-group-c-civilian-vacancies-in-cgrhq-a-n-9e3d9f01": {
   "status": "notext"
  },
@@ -3019,6 +3067,9 @@
  },
  "director-iist-thiruvananthapuram-advt-no-e-28011-1-2015-v-viii-vol-ii-5d9fafd7": {
   "status": "ok"
+ },
+ "directorate-of-geology-and-mining-uttarakhand-assistant-geologist-mining-officer-and-assistant-chemist-group-b-examination-2026-notification-detailed-notification-check-list-self-declaration-regarding-difference-in-name-1d2c7e8d": {
+  "status": "nopdf"
  },
  "disqualified-candidates-list-school-lecturer-school-edu-2025-biology-d91f1b60": {
   "status": "fail",
@@ -3250,6 +3301,9 @@
  "engagement-of-doctors-on-fixed-term-basis-advt-no-3-2026-r-p-8b66d474": {
   "status": "nopdf"
  },
+ "engagement-of-doctors-on-fixed-term-basis-advt-no-3-2026-r-p-b6d93f47": {
+  "status": "nopdf"
+ },
  "engagement-of-ex-employees-as-ta-consultant-for-visakh-refinery-english-advt-8a303a5d": {
   "status": "notext"
  },
@@ -3308,6 +3362,9 @@
  },
  "engagement-of-retired-revenue-officials-surveyor-as-junior-consultant-e4a76797": {
   "status": "enriched"
+ },
+ "engagement-of-retired-revenue-officials-surveyor-as-junior-consultant-for-land-acquisition-rou-related-jobs-on-contract-basis-311733f6": {
+  "status": "nopdf"
  },
  "engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-51843758": {
   "status": "enriched"
@@ -3429,6 +3486,9 @@
  "expression-of-interest-for-demulsification-of-viraj-ggs-crude-oil-by-dosing-suitable-demulsifier-72f94baf": {
   "status": "nopdf"
  },
+ "facility-of-scribe-and-compensatory-time-for-persons-with-benchmark-disabilities-pwbds-regarding-conduct-of-written-examinations-for-various-posts-in-the-health-and-medical-education-department-f187b1c0": {
+  "status": "nopdf"
+ },
  "fake-news-clarification-constable-recruitment-4e5a255e": {
   "status": "ok"
  },
@@ -3471,6 +3531,23 @@
  "filling-up-of-group-c-civilian-vacant-post-by-direct-recruitment-in-cgrhq-a-n-a65105df": {
   "status": "notext"
  },
+ "filling-up-of-post-of-veterinary-assistant-surgeon-in-sheep-husbandry-department-decision-of-appellate-authority-thereof-filling-up-of-the-posts-of-assistant-professor-backlog-vacancies-in-hed-a82b43e3": {
+  "status": "nopdf"
+ },
+ "filling-up-of-posts-of-assistant-professor-college-director-of-physical-education-and-sports-and-librarians-in-different-disciplines-in-government-degree-colleges-of-jk-in-the-hed-jk-248f6ee5": {
+  "status": "fail",
+  "tries": 1
+ },
+ "filling-up-of-posts-of-assistant-professor-librarian-gcet-backlog-vacancies-in-the-higher-education-department-jk-a3710b30": {
+  "status": "fail",
+  "tries": 1
+ },
+ "filling-up-of-the-post-of-assistant-architect-in-housing-and-urban-development-department-disposal-of-representation-thereof-50ae6b39": {
+  "status": "nopdf"
+ },
+ "filling-up-of-the-post-of-assistant-professor-civil-engineering-gcet-hed-deficiency-of-documents-thereof-filling-up-of-the-post-of-assistant-professor-civil-engineering-gcet-hed-rejection-of-can-ae78ad96": {
+  "status": "nopdf"
+ },
  "filling-up-of-the-post-of-auditor-by-appointment-on-deputation-basis-492dd7ad": {
   "status": "nopdf"
  },
@@ -3480,7 +3557,13 @@
  "filling-up-of-the-post-of-director-deputy-secretary-and-under-secretaries-on-deputation-including-short-term-contract-basis-at-g20-secretariat-48f7216f": {
   "status": "nopdf"
  },
+ "filling-up-of-the-post-of-medical-officer-allopathic-in-health-and-family-welfare-department-rejection-of-candidature-thereof-filling-up-of-the-posts-of-superintendent-jail-in-home-department-edit-e2381de0": {
+  "status": "nopdf"
+ },
  "filling-up-of-the-posts-by-appointment-on-deputation-basis-audit-division-9ae7dd49": {
+  "status": "nopdf"
+ },
+ "filling-up-of-the-posts-of-ad-technical-cadre-and-district-st-coordinator-technical-cadre-in-jk-st-dept-disposal-of-representation-thereof-f2b14ee7": {
   "status": "nopdf"
  },
  "filling-up-of-the-posts-on-deputation-basis-in-epfo-engineering-wing-7784a4ef": {
@@ -3557,6 +3640,10 @@
  },
  "final-personal-interview-results-for-advertisement-no-154-6464f24a": {
   "status": "nopdf"
+ },
+ "final-stage-118-2025-26-additional-city-engineer-civil-class-1-new-municipal-corporations-16413119": {
+  "status": "fail",
+  "tries": 1
  },
  "final-vacancies-of-combined-higher-secondary-10-2-level-examination-2025-as-on-18-06-2026-e97a68a8": {
   "status": "ok"
@@ -3742,6 +3829,9 @@
  "ies-special-recruitment-drive-srd-3f9db4e3": {
   "status": "nopdf"
  },
+ "ii-recommendation-list-47f6d811": {
+  "status": "notext"
+ },
  "iifcl-direct-recruitment-for-the-post-of-dgm-7633f578": {
   "status": "nopdf"
  },
@@ -3874,6 +3964,9 @@
  },
  "invitation-for-retired-ongc-radio-officers-for-junior-associate-consultants-posts-in-chennai-005c28e9": {
   "status": "nopdf"
+ },
+ "invitation-of-application-for-dnb-and-diploma-courses-at-central-hospital-ccl-ranchi-and-bccl-dhanbad-bce11564": {
+  "status": "ok"
  },
  "iob-recruitment-of-generalist-specialist-officers-61444255": {
   "status": "nopdf"
@@ -4356,6 +4449,38 @@
  "nbl-notification-for-the-posts-of-specialist-officers-898bcf06": {
   "status": "nopdf"
  },
+ "nbsp-notification-agriculture-series-a-b-c-d-ac33d51f": {
+  "status": "fail",
+  "tries": 1
+ },
+ "nbsp-notification-botany-series-a-b-c-d-b46965d4": {
+  "status": "fail",
+  "tries": 1
+ },
+ "nbsp-notification-electrical-engineering-series-a-b-c-d-ba4f25fd": {
+  "status": "fail",
+  "tries": 1
+ },
+ "nbsp-notification-environmental-science-series-a-b-c-d-e6f75c31": {
+  "status": "fail",
+  "tries": 1
+ },
+ "nbsp-notification-general-financial-awareness-english-quantitative-aptitude-and-reasoning-series-a-b-c-d-d1bafd52": {
+  "status": "fail",
+  "tries": 1
+ },
+ "nbsp-notification-general-studies-series-a-b-c-d-56d193f8": {
+  "status": "fail",
+  "tries": 1
+ },
+ "nbsp-notification-paper-i-general-ability-and-intelligence-test-series-a-b-c-d-83d5e4c7": {
+  "status": "fail",
+  "tries": 1
+ },
+ "nbsp-notification-physics-series-a-b-c-d-461a52bf": {
+  "status": "fail",
+  "tries": 1
+ },
  "ncc-jun-26-course-618ef729": {
   "status": "nopdf"
  },
@@ -4413,6 +4538,9 @@
  "nmdfc-recruitment-of-company-secretary-cum-chief-manager-registration-c3d298b7": {
   "status": "nopdf"
  },
+ "notication-uploading-of-advertisement-in-ccl-website-for-engagement-of-01-one-advisor-land-revenue-in-ccl-on-contractual-basis-as-per-cil-s-policy-6e6e2cee": {
+  "status": "notext"
+ },
  "notification-214c021d": {
   "status": "nopdf"
  },
@@ -4462,6 +4590,18 @@
  "notification-for-crp-rrb-xv-e4563dc3": {
   "status": "nopdf"
  },
+ "notification-for-engagement-of-1-full-time-advisor-land-and-revenue-in-central-coalfields-limited-ccl-on-contract-basis-2f3d2f66": {
+  "status": "notext"
+ },
+ "notification-for-engagement-of-advisor-mm-in-ecl-on-a-contract-basis-as-per-cil-s-policy-36e730b0": {
+  "status": "ok"
+ },
+ "notification-for-engagement-of-full-time-advisor-finance-on-contractual-basis-at-wcl-0b3245c5": {
+  "status": "notext"
+ },
+ "notification-for-engagement-of-full-time-sr-advisor-finance-in-mcl-on-contract-basis-abb9cb06": {
+  "status": "ok"
+ },
  "notification-for-engagement-of-graduate-technician-diploma-apprentices-under-apprentices-amendment-act-1973-b2ccd01d": {
   "status": "nopdf"
  },
@@ -4470,6 +4610,9 @@
  },
  "notification-for-engagement-of-iti-trade-apprentices-under-the-apprentices-act-1961-8233672c": {
   "status": "nopdf"
+ },
+ "notification-for-engagement-of-task-based-advisor-commercial-boo-boot-projects-on-contract-basis-for-cgil-e28cba39": {
+  "status": "notext"
  },
  "notification-for-filling-up-of-drivers-ordinary-grade-through-deputation-absorption-basis-c7ce1520": {
   "status": "nopdf"
@@ -4492,11 +4635,27 @@
  "notification-for-the-post-of-chairman-schedule-a-cpse-a7c29c98": {
   "status": "enriched"
  },
+ "notification-for-the-post-of-director-technology-field-services-ongc-8087f91e": {
+  "status": "nopdf"
+ },
  "notification-frequently-asked-questions-regarding-cen-02-2026-technicians-d59ce6dc": {
   "status": "nopdf"
  },
+ "notification-no-b-683-for-engagement-of-full-time-advisor-secretarial-in-director-hr-secretariat-cil-3e80d8c6": {
+  "status": "ok"
+ },
  "notification-of-online-examination-for-various-post-codes-of-various-departments-27-oct-5-dec-2026-05cd614b": {
   "status": "nopdf"
+ },
+ "notification-regarding-interview-viva-voce-for-the-post-of-research-assistant-under-finance-budget-department-advt-no-28-2025-dated-30-08-2025-cb53fa76": {
+  "status": "fail",
+  "tries": 1
+ },
+ "notification-regarding-the-04-posts-of-senior-assistant-in-the-office-of-punjab-public-service-commission-patiala-on-transfer-basis-uploaded-on-04-08-2026-71ead2be": {
+  "status": "nopdf"
+ },
+ "notificaton-for-engagement-of-full-time-sr-advisor-finance-in-mcl-on-contract-basis-for-wide-circulation-regd-8326b0cd": {
+  "status": "ok"
  },
  "ntpc-graduate-posts-b14f3924": {
   "status": "nopdf"
@@ -5055,6 +5214,9 @@
  "prosecution-officer-preliminary-competitive-examination-omr-sheets-download-518a707d": {
   "status": "notext"
  },
+ "prosecution-officer-preliminary-omr-sheets-availability-27-10-2026-dd55a750": {
+  "status": "notext"
+ },
  "prosecution-officer-preliminary-omr-sheets-availability-advt-no-13-2026-0fcaf8a8": {
   "status": "notext"
  },
@@ -5112,6 +5274,9 @@
  },
  "publication-of-dates-and-important-information-for-pet-of-uttar-pradesh-home-guards-enrolment-2025-ae7fb1e3": {
   "status": "notext"
+ },
+ "punjab-state-civil-services-appointment-by-combined-competitive-examination-rules-2009-with-amendments-2014-and-2015-31c55380": {
+  "status": "nopdf"
  },
  "punjab-state-civil-services-combined-competitive-examination-pscscce-2025-mains-ac0e862a": {
   "status": "nopdf"
@@ -5233,11 +5398,47 @@
  "recommendations-computer-science-engineering-advertisement-no-156-3a1a66b8": {
   "status": "nopdf"
  },
+ "recruitment-advertisement-assistant-director-farmer-welfare-agriculture-development-field-extension-2025-e9504c6f": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-advertisement-for-assistant-professor-botany-exam-2025-270872a7": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-advertisement-for-assistant-professor-chemistry-exam-2025-9fb1c3ce": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-advertisement-for-assistant-professor-history-exam-2025-c385fd2f": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-advertisement-for-assistant-professor-mathematics-exam-2025-7844d2f5": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-advertisement-for-assistant-professor-physics-exam-2025-d9f9fe64": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-advertisement-for-internal-accounts-examiner-officer-exam-2026-99fc8c68": {
+  "status": "fail",
+  "tries": 1
+ },
  "recruitment-closure-notice-for-scientist-d-advt-no-153-a147f97d": {
   "status": "nopdf"
  },
  "recruitment-for-aeronautical-development-agency-ada-advt-no-128-8f8c433e": {
   "status": "nopdf"
+ },
+ "recruitment-for-entry-level-roles-1-engineering-2-accounts-3-qa-4-secretary-applications-for-entry-level-profiles-open-from-28th-may-2025-click-here-to-view-detailed-advertisement-93e1c5f6": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-for-entry-level-roles-1-official-language-implementation-2-brand-pr-applications-for-entry-level-profiles-open-from-23rd-july-2025-click-here-to-view-detailed-advertisement-f3b607dc": {
+  "status": "fail",
+  "tries": 1
  },
  "recruitment-for-scientist-d-through-deputation-advt-no-153-55eec22a": {
   "status": "nopdf"
@@ -5333,6 +5534,12 @@
   "status": "fail",
   "tries": 3
  },
+ "recruitment-of-engineering-executive-trainees-2027-through-gate-2027-against-ad-11-26-english-ad-859fea9f": {
+  "status": "nopdf"
+ },
+ "recruitment-of-experienced-professionals-in-e-8-grade-through-lateral-entry-35871f2f": {
+  "status": "nopdf"
+ },
  "recruitment-of-generalist-specialist-officers-9202975e": {
   "status": "nopdf"
  },
@@ -5360,7 +5567,13 @@
  "recruitment-of-local-bank-officer-in-jmgs-i-36618dfe": {
   "status": "nopdf"
  },
+ "recruitment-of-management-trainee-through-computer-based-test-cbt-26-edcc7cbf": {
+  "status": "nopdf"
+ },
  "recruitment-of-management-trainees-39aa5d51": {
+  "status": "nopdf"
+ },
+ "recruitment-of-management-trainees-on-the-basis-of-gate-2024-score-a41c15b7": {
   "status": "nopdf"
  },
  "recruitment-of-management-trainees-rcf-e64b3234": {
@@ -5496,10 +5709,16 @@
  "recruitment-to-75-posts-of-junior-auditor-group-b-c4047f17": {
   "status": "nopdf"
  },
+ "recruitment-to-five-posts-of-punjab-civil-services-executive-branch-to-be-filled-from-register-c-for-recruitment-process-year-2026-6d49b27e": {
+  "status": "nopdf"
+ },
  "recruitment-to-four-hundred-eighteen-vacancies-for-the-post-of-enforcement-officer-accounts-officer-in-employees-provident-fund-organisation-ministry-of-labour-employment-14497a5b": {
   "status": "nopdf"
  },
  "recruitment-to-the-post-of-scientist-engineer-sc-electronics-mechanical-and-computer-science-ee64ff30": {
+  "status": "nopdf"
+ },
+ "recruitment-to-twenty-one-posts-of-punjab-civil-services-executive-branch-to-be-filled-from-register-a-2-for-recruitment-process-year-2026-57a54951": {
   "status": "nopdf"
  },
  "recruitment-to-various-group-a-non-faculty-posts-14aabc7a": {
@@ -5527,6 +5746,9 @@
  "rejection-of-candidature-of-mr-aasif-ibni-ahad-for-the-post-of-assistant-mining-engineer-in-department-of-mining-881e3117": {
   "status": "fail",
   "tries": 1
+ },
+ "rejection-of-candidature-of-mr-aasif-ibni-ahad-for-the-post-of-assistant-mining-engineer-in-department-of-mining-consideration-order-titled-gulzar-ahmad-rather-and-ors-vs-jk-govt-and-ors-32e64b25": {
+  "status": "nopdf"
  },
  "rejection-of-candidature-of-mr-gourav-gupta-for-the-post-of-assistant-mining-engineer-in-department-of-mining-ef0e020a": {
   "status": "fail",
@@ -6199,6 +6421,15 @@
  "ssr-medical-inet-26-fba6c2ef": {
   "status": "nopdf"
  },
+ "start-dt-2026-04-09-end-dt-2026-04-23-advt-04-26-eng-ee1885be": {
+  "status": "nopdf"
+ },
+ "start-dt-2026-06-26-end-dt-2026-07-10-advt-09-26-eng-b7e9c8f3": {
+  "status": "nopdf"
+ },
+ "start-dt-2026-10-16-end-dt-2026-10-30-advt-14-26-eng-cb114c05": {
+  "status": "nopdf"
+ },
  "statistical-assistant-transfer-on-deputation-basis-ae806d0c": {
   "status": "nopdf"
  },
@@ -6308,10 +6539,25 @@
  "time-slot-for-competitive-examination-recruitment-to-05-posts-of-research-officer-group-a-913be929": {
   "status": "nopdf"
  },
+ "time-slot-for-competitive-examination-recruitment-to-05-posts-of-research-officer-group-a-in-the-department-of-planning-economic-policy-and-planningboard-government-of-punjab-uploaded-on-25-09-2026-195dd291": {
+  "status": "nopdf"
+ },
+ "time-slot-for-competitive-examination-recruitment-to-08-posts-of-accounts-officer-group-b-in-the-department-of-local-government-municipal-corporation-government-of-punjab-uploaded-on-12-06-2026-002e74cd": {
+  "status": "nopdf"
+ },
+ "time-slot-for-competitive-examination-recruitment-to-11-posts-of-research-officer-group-a-in-the-department-of-planning-state-directorate-of-statistics-government-of-punjab-uploaded-on-19-09-2026-10606c89": {
+  "status": "nopdf"
+ },
  "time-slot-for-competitive-examination-recruitment-to-11-posts-of-research-officer-group-a-planning-directorate-of-statistics-35da926e": {
   "status": "nopdf"
  },
  "time-slot-for-competitive-examination-recruitment-to-30-posts-of-senior-assistant-accounts-group-b-4a2cf1d8": {
+  "status": "nopdf"
+ },
+ "time-slot-for-competitive-examination-recruitment-to-30-posts-of-senior-assistant-accounts-group-b-in-the-department-of-housing-and-urban-development-puda-government-of-punjab-uploaded-on-30-07-2026-53b017bf": {
+  "status": "nopdf"
+ },
+ "time-slot-for-joint-competitive-examination-to-the-posts-of-accountant-grade-ii-group-b-in-the-department-of-local-government-municipal-corporation-and-municipal-council-nagar-panchayats-uploaded-on-1-3bf335ff": {
   "status": "nopdf"
  },
  "trade-apprentices-ta-advertisement-bhilai-steel-plant-fy-2026-27-8c0bb4dc": {
@@ -6393,6 +6639,9 @@
  "uttar-pradesh-legislative-department-advt-no-d-6-e-1-2025-notice-12e5c59e": {
   "status": "notext"
  },
+ "uttarakhand-judicial-service-civil-judge-junior-division-exam-2023-notification-interview-memo-interview-programme-checklist-format-02-03-and-04-and-self-declaration-regarding-difference-in-name-bd6e8113": {
+  "status": "nopdf"
+ },
  "vacancy-notification-assistant-manager-finance-on-contract-basis-chengalpattu-c95f6ef1": {
   "status": "nopdf"
  },
@@ -6469,6 +6718,9 @@
   "status": "ok"
  },
  "walk-in-interview-audiologists-short-term-contract-bokaro-steel-plant-pdf-b753bec5": {
+  "status": "ok"
+ },
+ "walk-in-interview-consultants-doctors-for-bokaro-general-hospital-1cbda0e3": {
   "status": "ok"
  },
  "walk-in-interview-consultants-doctors-for-ogom-mines-advt-no-05-2026-e7bf9f1d": {
@@ -6593,6 +6845,9 @@
   "status": "nopdf"
  },
  "welfare-officer-ef106598": {
+  "status": "nopdf"
+ },
+ "whats-new-filling-up-of-the-post-of-lecturer-ii-non-engineering-office-management-and-computer-application-in-skill-deptt-deficiency-of-documents-thereof-8e4be5e7": {
   "status": "nopdf"
  },
  "window-notification-for-crp-csa-xvi-fa9a3f9c": {
