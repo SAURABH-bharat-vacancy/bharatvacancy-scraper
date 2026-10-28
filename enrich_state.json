@@ -754,11 +754,11 @@
  },
  "advertisement-for-the-post-of-director-operations-business-development-bharat-petroresources-limited-bprl-advertisement-english-859f7d53": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "advertisement-for-the-post-of-director-refineries-bpcl-advertisement-english-d90e1fa9": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "advertisement-for-the-post-of-domain-expert-for-fishing-liner-hanger-operations-and-drilling-fluid-operations-at-ongc-ahmedabad-mehsana-assets-53a58039": {
   "status": "nopdf"
@@ -771,10 +771,13 @@
  },
  "advertisement-hindi-f628b32f": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "advertisement-inviting-applications-for-engagement-as-associate-junior-consultant-on-contract-basis-at-ongc-s-tripura-asset-32a73fd5": {
   "status": "nopdf"
+ },
+ "advertisement-no-12-2025-engagement-of-ceo-for-bcgcl-and-cgil-on-fixed-term-contract-basis-d26db187": {
+  "status": "ok"
  },
  "advertisement-no-137-cancelled-due-to-unavoidable-reasons-ab5aa23c": {
   "status": "nopdf"
@@ -832,6 +835,15 @@
  "advertisement-no-157-lateral-recruitment-of-scientists-updated-status-37d98055": {
   "status": "nopdf"
  },
+ "advertisement-notification-no-b-452-dated-28-05-2025-regarding-engagement-of-full-time-advisor-materials-contract-cil-on-contract-basis-08e79023": {
+  "status": "ok"
+ },
+ "advertisement-notification-no-b-571-dated-14-07-2025-regarding-engagement-of-full-time-advisor-secretarial-in-chairman-secretariat-cil-c7ed7920": {
+  "status": "ok"
+ },
+ "advertisement-notification-no-b-643-dated-25-07-2025-regarding-engagement-of-full-time-advisor-secretarial-in-bd-secretariat-cil-c6df57ee": {
+  "status": "ok"
+ },
  "advertisement-of-recruitment-for-the-post-of-head-constable-education-and-stress-counsellor-2026-3f4a0863": {
   "status": "fail",
   "tries": 1
@@ -854,6 +866,12 @@
  },
  "advertisement-trade-apprentices-ta-at-bhilai-steel-plant-fy-2026-27-ec36827f": {
   "status": "enriched"
+ },
+ "advertisements-no-15-2025-dated-03-10-2025-for-the-engagement-of-ceo-for-bcgcl-on-fixed-term-contract-basis-21bb2bcc": {
+  "status": "ok"
+ },
+ "advertisements-no-16-2025-dated-03-10-2025-for-the-engagement-of-ceo-for-cgil-on-fixed-term-contract-basis-5651309a": {
+  "status": "ok"
  },
  "advisor-hr-consultant-advt-no-advisor-hr-cs-2026-27-1325-1dd13d29": {
   "status": "enriched"
@@ -2100,6 +2118,15 @@
  },
  "avr-ssr-inet-26-application-live-from-14-mar-2026-3ee2ad58": {
   "status": "nopdf"
+ },
+ "b-152-dated-14-02-2025-advertisement-notification-for-engagement-of-advisor-electricity-cil-f4454a9d": {
+  "status": "notext"
+ },
+ "b-153-dated-14-02-2025-advertisement-notification-for-engagement-of-sr-advisor-coal-production-dispatch-cil-8b5c12c2": {
+  "status": "notext"
+ },
+ "b-154-dated-14-02-2025-advertisement-notification-for-engagement-of-sr-advisor-railways-mktg-cil-e4afbb60": {
+  "status": "notext"
  },
  "bio-data-form-and-documents-mtt-posts-a10f87cb": {
   "status": "nopdf"
@@ -3536,11 +3563,11 @@
  },
  "filling-up-of-posts-of-assistant-professor-college-director-of-physical-education-and-sports-and-librarians-in-different-disciplines-in-government-degree-colleges-of-jk-in-the-hed-jk-248f6ee5": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "filling-up-of-posts-of-assistant-professor-librarian-gcet-backlog-vacancies-in-the-higher-education-department-jk-a3710b30": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "filling-up-of-the-post-of-assistant-architect-in-housing-and-urban-development-department-disposal-of-representation-thereof-50ae6b39": {
   "status": "nopdf"
@@ -3643,7 +3670,7 @@
  },
  "final-stage-118-2025-26-additional-city-engineer-civil-class-1-new-municipal-corporations-16413119": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "final-vacancies-of-combined-higher-secondary-10-2-level-examination-2025-as-on-18-06-2026-e97a68a8": {
   "status": "ok"
@@ -4451,35 +4478,35 @@
  },
  "nbsp-notification-agriculture-series-a-b-c-d-ac33d51f": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "nbsp-notification-botany-series-a-b-c-d-b46965d4": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "nbsp-notification-electrical-engineering-series-a-b-c-d-ba4f25fd": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "nbsp-notification-environmental-science-series-a-b-c-d-e6f75c31": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "nbsp-notification-general-financial-awareness-english-quantitative-aptitude-and-reasoning-series-a-b-c-d-d1bafd52": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "nbsp-notification-general-studies-series-a-b-c-d-56d193f8": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "nbsp-notification-paper-i-general-ability-and-intelligence-test-series-a-b-c-d-83d5e4c7": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "nbsp-notification-physics-series-a-b-c-d-461a52bf": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "ncc-jun-26-course-618ef729": {
   "status": "nopdf"
@@ -4593,10 +4620,19 @@
  "notification-for-engagement-of-1-full-time-advisor-land-and-revenue-in-central-coalfields-limited-ccl-on-contract-basis-2f3d2f66": {
   "status": "notext"
  },
+ "notification-for-engagement-of-advisor-e-t-31fd79d2": {
+  "status": "notext"
+ },
  "notification-for-engagement-of-advisor-mm-in-ecl-on-a-contract-basis-as-per-cil-s-policy-36e730b0": {
   "status": "ok"
  },
+ "notification-for-engagement-of-full-time-advisor-e-m-in-ecl-on-contract-basis-4a3f21ba": {
+  "status": "ok"
+ },
  "notification-for-engagement-of-full-time-advisor-finance-on-contractual-basis-at-wcl-0b3245c5": {
+  "status": "notext"
+ },
+ "notification-for-engagement-of-full-time-advisor-finance-on-contractual-basis-at-wcl-f7d8edbe": {
   "status": "notext"
  },
  "notification-for-engagement-of-full-time-sr-advisor-finance-in-mcl-on-contract-basis-abb9cb06": {
@@ -4641,15 +4677,27 @@
  "notification-frequently-asked-questions-regarding-cen-02-2026-technicians-d59ce6dc": {
   "status": "nopdf"
  },
+ "notification-no-b-683-dated-08-08-2025-regarding-engagement-of-full-time-advisor-secretarial-in-director-hr-secretariat-cil-04fe92e8": {
+  "status": "ok"
+ },
  "notification-no-b-683-for-engagement-of-full-time-advisor-secretarial-in-director-hr-secretariat-cil-3e80d8c6": {
   "status": "ok"
+ },
+ "notification-no-b-874-dated-14-10-2025-regarding-engagement-of-full-time-advisor-secretarial-in-director-tech-secretariat-cil-5366be3f": {
+  "status": "ok"
+ },
+ "notification-no-b-909-dated-23-11-2025-regarding-engagement-of-full-time-senior-advisor-ree-cil-on-contract-basis-014a3b6f": {
+  "status": "ok"
+ },
+ "notification-no-ecl-c-5-d-ee-advisor-civil-fmc-25-2088695-2182-dated-03-11-2025-regarding-engagement-of-full-time-advisor-civil-fmc-in-ecl-on-contract-basis-0b82d4b0": {
+  "status": "notext"
  },
  "notification-of-online-examination-for-various-post-codes-of-various-departments-27-oct-5-dec-2026-05cd614b": {
   "status": "nopdf"
  },
  "notification-regarding-interview-viva-voce-for-the-post-of-research-assistant-under-finance-budget-department-advt-no-28-2025-dated-30-08-2025-cb53fa76": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "notification-regarding-the-04-posts-of-senior-assistant-in-the-office-of-punjab-public-service-commission-patiala-on-transfer-basis-uploaded-on-04-08-2026-71ead2be": {
   "status": "nopdf"
@@ -4943,6 +4991,9 @@
  "online-portal-announcement-for-food-safety-officer-advt-no-25-2026-8b9519eb": {
   "status": "fail",
   "tries": 1
+ },
+ "online-portal-for-inviting-online-applications-for-the-post-of-engagement-of-the-ceo-for-bcgcl-and-cgil-on-a-fixed-term-contract-basis-b9351d05": {
+  "status": "nopdf"
  },
  "online-pre-examination-training-for-pet-candidates-under-crp-po-mts-xvi-10ed5e2e": {
   "status": "nopdf"
@@ -5404,27 +5455,27 @@
  },
  "recruitment-advertisement-for-assistant-professor-botany-exam-2025-270872a7": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-advertisement-for-assistant-professor-chemistry-exam-2025-9fb1c3ce": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-advertisement-for-assistant-professor-history-exam-2025-c385fd2f": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-advertisement-for-assistant-professor-mathematics-exam-2025-7844d2f5": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-advertisement-for-assistant-professor-physics-exam-2025-d9f9fe64": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-advertisement-for-internal-accounts-examiner-officer-exam-2026-99fc8c68": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-closure-notice-for-scientist-d-advt-no-153-a147f97d": {
   "status": "nopdf"
@@ -5434,11 +5485,11 @@
  },
  "recruitment-for-entry-level-roles-1-engineering-2-accounts-3-qa-4-secretary-applications-for-entry-level-profiles-open-from-28th-may-2025-click-here-to-view-detailed-advertisement-93e1c5f6": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-for-entry-level-roles-1-official-language-implementation-2-brand-pr-applications-for-entry-level-profiles-open-from-23rd-july-2025-click-here-to-view-detailed-advertisement-f3b607dc": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "recruitment-for-scientist-d-through-deputation-advt-no-153-55eec22a": {
   "status": "nopdf"
@@ -6093,6 +6144,10 @@
  },
  "speaking-order-preeti-rani-others-vs-gnctd-ans-oa-no-2302-2026-dated-29-06-2026-79e05ed9": {
   "status": "nopdf"
+ },
+ "special-recruitment-drive-for-st-diploma-engineer-control-instrumentation-kudgi-advt-kudgi-02-2026-e01de0f7": {
+  "status": "fail",
+  "tries": 1
  },
  "special-recruitment-drive-srd-e398bb01": {
   "status": "nopdf"
