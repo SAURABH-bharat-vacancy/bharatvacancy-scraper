@@ -45,6 +45,9 @@ PORTALS = [
     ("Punjab PSC", "Punjab Public Service Commission", "https://ppsc.gov.in/", "State"),
     ("JKPSC", "Jammu and Kashmir Public Service Commission", "https://jkpsc.nic.in/", "State"),
     ("Assam PSC", "Assam Public Service Commission", "https://apsc.nic.in/", "State"),
+    # EPFO moved to epfo.gov.in and its recruitments page is filled in by script: a plain fetch
+    # returns only ~440 characters (checked 2026-10-28), so it needs the rendered page.
+    ("EPFO", "Employees' Provident Fund Organisation", "https://www.epfo.gov.in/recruitments/", "PSU"),
 ]
 
 

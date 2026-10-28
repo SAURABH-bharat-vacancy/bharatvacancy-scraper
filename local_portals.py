@@ -63,10 +63,9 @@ PORTALS = [
     ("JKPSC", "Jammu and Kashmir Public Service Commission", "https://jkpsc.nic.in/", "State"),
     ("Assam PSC", "Assam Public Service Commission", "https://apsc.nic.in/", "State"),
     # Added 2026-10-28: loaded fine from home while the Bluehost job stayed silent for weeks.
-    # EPFO moved from epfindia.gov.in to epfo.gov.in, so the old URL in cron/run-tier1.php is dead.
+    # (EPFO moved to epfo.gov.in and renders its list by script, so it runs in headless_portals.py.)
     ("ONGC", "Oil and Natural Gas Corporation", "https://www.ongcindia.com/web/eng/career/recruitment-notice", "PSU"),
     ("Rajasthan PSC", "Rajasthan Public Service Commission", "https://rpsc.rajasthan.gov.in/", "State"),
-    ("EPFO", "Employees' Provident Fund Organisation", "https://www.epfo.gov.in/recruitments/", "PSU"),
 ]
 
 
