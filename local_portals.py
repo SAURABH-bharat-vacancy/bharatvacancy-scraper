@@ -62,6 +62,11 @@ PORTALS = [
     ("Punjab PSC", "Punjab Public Service Commission", "https://ppsc.gov.in/", "State"),
     ("JKPSC", "Jammu and Kashmir Public Service Commission", "https://jkpsc.nic.in/", "State"),
     ("Assam PSC", "Assam Public Service Commission", "https://apsc.nic.in/", "State"),
+    # Added 2026-10-28: loaded fine from home while the Bluehost job stayed silent for weeks.
+    # EPFO moved from epfindia.gov.in to epfo.gov.in, so the old URL in cron/run-tier1.php is dead.
+    ("ONGC", "Oil and Natural Gas Corporation", "https://www.ongcindia.com/web/eng/career/recruitment-notice", "PSU"),
+    ("Rajasthan PSC", "Rajasthan Public Service Commission", "https://rpsc.rajasthan.gov.in/", "State"),
+    ("EPFO", "Employees' Provident Fund Organisation", "https://www.epfo.gov.in/recruitments/", "PSU"),
 ]
 
 
