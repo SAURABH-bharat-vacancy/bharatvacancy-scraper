@@ -23,7 +23,7 @@ _KEYWORDS = re.compile(
     r"examination|exam\b",
     re.I,
 )
-_NOISE_START = re.compile(r"^(home|contact|about|login|sitemap|skip to|click here|read more|view all|download|more)\b", re.I)
+_NOISE_START = re.compile(r"^(home|contact|about|login|sitemap|skip to|click here|read more|view all|download|more|start dt)\b", re.I)
 _PDF = re.compile(r"\.pdf(\?|#|$)", re.I)
 
 MAX_JOBS_PER_PAGE = 40
