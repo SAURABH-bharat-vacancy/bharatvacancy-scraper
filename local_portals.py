@@ -26,6 +26,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))  # so the sibling scraper modules import however the script is started
+# A Windows console/log file defaults to cp1252 and would crash on characters in some titles.
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 
 def load_env(path: Path) -> None:

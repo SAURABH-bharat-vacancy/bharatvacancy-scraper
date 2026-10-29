@@ -14,6 +14,10 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
+# A Windows console/log file defaults to cp1252, which cannot print characters such as the
+# non-breaking hyphen found in some notice titles and would crash the run mid-way.
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 
 def load_env(path: Path) -> None:

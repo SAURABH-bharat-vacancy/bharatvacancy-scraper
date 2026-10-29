@@ -21,6 +21,8 @@ import urllib.request
 import urllib.error
 from anthropic import Anthropic
 
+import groq_models
+
 client = Anthropic()  # reads ANTHROPIC_API_KEY from env
 
 GROQ_MODEL = "openai/gpt-oss-120b"
@@ -93,44 +95,14 @@ def _call_groq(prompt: str) -> str | None:
     the limit before ever writing to "content" — indistinguishable from
     "found nothing" unless you inspect the raw response.
     """
-    if not GROQ_API_KEYS:
-        return None
-
-    last_err = None
-    for api_key in GROQ_API_KEYS:
-        body = json.dumps({
-            "model": GROQ_MODEL,
-            # Groq counts the requested completion size against the per-request token limit, so
-            # a long page plus 8192 gets a 413. The home runner lowers it through the env.
-            "max_tokens": int(os.environ.get("GROQ_MAX_TOKENS", "8192")),
-            "reasoning_effort": "low",
-            "messages": [{"role": "user", "content": prompt}],
-        }).encode("utf-8")
-        req = urllib.request.Request(
-            "https://api.groq.com/openai/v1/chat/completions",
-            data=body,
-            method="POST",
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {api_key}",
-                "User-Agent": _BROWSER_UA,
-            },
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=60) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-            return data["choices"][0]["message"]["content"]
-        except urllib.error.HTTPError as e:
-            last_err = e
-            if e.code == 429:
-                continue  # this key's quota is spent, try the next one
-            print(f"[extract_jobs_ai] Groq fallback call failed: {e}")
-            return None
-        except (urllib.error.URLError, TimeoutError, KeyError, ValueError) as e:
-            print(f"[extract_jobs_ai] Groq fallback call failed: {e}")
-            return None
-
-    print(f"[extract_jobs_ai] Groq fallback call failed: all {len(GROQ_API_KEYS)} keys rate-limited ({last_err})")
+    # The whole Groq lineup is tried (each model has its own free allowance), see groq_models.py.
+    # Groq counts the requested completion size against the per-request token limit, so a long
+    # page plus 8192 gets a 413; the home runner lowers it through GROQ_MAX_TOKENS.
+    text, status, model = groq_models.chat(prompt, int(os.environ.get("GROQ_MAX_TOKENS", "8192")))
+    if text is not None:
+        return text
+    print(f"[extract_jobs_ai] Groq fallback call failed: every model and key was {status} "
+          f"({', '.join(groq_models.MODELS)})")
     return None
 
 

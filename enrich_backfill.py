@@ -31,6 +31,8 @@ from pathlib import Path
 import requests
 from pypdf import PdfReader
 
+import groq_models
+
 FEED_URL = "https://bharatvacancy.com/job-urls-feed.php"
 INGEST_URL = os.environ.get("INGEST_URL", "https://bharatvacancy.com/ingest.php")
 INGEST_API_KEY = os.environ.get("INGEST_API_KEY", "")
@@ -113,29 +115,16 @@ def groq_extract(title: str, text: str):
         "Respond with a single JSON object and nothing else.\n"
         f"TITLE: {title}\nTEXT:\n{text[:ENRICH_TEXT_CHARS]}"
     )
-    body = json.dumps({"model": GROQ_MODEL, "max_tokens": ENRICH_MAX_TOKENS, "reasoning_effort": "low",
-                       "messages": [{"role": "user", "content": prompt}]}).encode()
-    for key in GROQ_KEYS:
-        req = urllib.request.Request(
-            "https://api.groq.com/openai/v1/chat/completions", data=body, method="POST",
-            headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}", "User-Agent": UA})
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                content = json.loads(r.read())["choices"][0]["message"]["content"]
-        except urllib.error.HTTPError as e:
-            if e.code == 429:
-                continue  # this key is spent, try the next
-            print(f"  groq HTTP {e.code}", file=sys.stderr)
-            return None
-        except Exception as e:
-            print(f"  groq error {e}", file=sys.stderr)
-            return None
-        m = re.search(r"\{.*\}", content, re.S)
-        try:
-            return json.loads(m.group(0)) if m else {}
-        except json.JSONDecodeError:
-            return {}
-    return "ratelimited"
+    # Every model in Groq's lineup is tried (each has its own free allowance), see groq_models.py.
+    content, status, model = groq_models.chat(prompt, ENRICH_MAX_TOKENS)
+    if content is None:
+        return "ratelimited" if status == groq_models.RATE_LIMITED else None
+    print(f"  (answered by {model})")
+    m = re.search(r"\{.*\}", content, re.S)
+    try:
+        return json.loads(m.group(0)) if m else {}
+    except json.JSONDecodeError:
+        return {}
 
 
 def clean(fields: dict) -> dict:
