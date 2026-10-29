@@ -4,3 +4,5 @@ rem Appends everything to local_runner.log next to this file (git-ignored).
 cd /d "%~dp0"
 echo. >> local_runner.log
 "%LOCALAPPDATA%\Programs\Python\Python312\python.exe" local_portals.py >> local_runner.log 2>&1
+echo --- enrichment --- >> local_runner.log
+"%LOCALAPPDATA%\Programs\Python\Python312\python.exe" local_enrich.py >> local_runner.log 2>&1

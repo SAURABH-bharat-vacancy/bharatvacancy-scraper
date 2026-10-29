@@ -34,7 +34,10 @@ from pypdf import PdfReader
 FEED_URL = "https://bharatvacancy.com/job-urls-feed.php"
 INGEST_URL = os.environ.get("INGEST_URL", "https://bharatvacancy.com/ingest.php")
 INGEST_API_KEY = os.environ.get("INGEST_API_KEY", "")
-STATE_FILE = Path(__file__).parent / "enrich_state.json"
+# The home PC runs this too (local_enrich.py) with its own state file, because it can download
+# the PDFs of portals that refuse GitHub's IPs. Both write to the same server, which only fills
+# columns that are still empty, so overlapping work is harmless.
+STATE_FILE = Path(os.environ.get("ENRICH_STATE_FILE") or Path(__file__).parent / "enrich_state.json")
 PER_RUN_LIMIT = int(os.environ.get("ENRICH_LIMIT", "40"))
 DRY_RUN = os.environ.get("ENRICH_DRY_RUN") == "1"
 MAX_PDF_BYTES = 8 * 1024 * 1024
@@ -49,6 +52,11 @@ BROWSER_HEADERS = {
 GROQ_MODEL = "openai/gpt-oss-120b"
 GROQ_KEYS = [k for k in (os.environ.get(n, "") for n in (
     "GROQ_API_KEY", "GROQ_API_KEY_2", "GROQ_API_KEY_3", "GROQ_API_KEY_4", "GROQ_API_KEY_5")) if k]
+
+# Smaller requests spend less of the free per-minute token allowance, so more pages get
+# enriched per day: eligibility, fee and dates sit in the first pages of a notification.
+ENRICH_TEXT_CHARS = int(os.environ.get("ENRICH_TEXT_CHARS", "7000"))
+ENRICH_MAX_TOKENS = int(os.environ.get("ENRICH_MAX_TOKENS", "1200"))
 
 FIELDS = ["description", "vacancy_count", "min_qualification", "age_limit",
           "application_fee", "pay_scale", "selection_process", "how_to_apply", "apply_last_date"]
@@ -103,9 +111,9 @@ def groq_extract(title: str, text: str):
         "vacancy_count, min_qualification, age_limit, application_fee, pay_scale, "
         "selection_process, how_to_apply, apply_last_date (YYYY-MM-DD). "
         "Respond with a single JSON object and nothing else.\n"
-        f"TITLE: {title}\nTEXT:\n{text[:12000]}"
+        f"TITLE: {title}\nTEXT:\n{text[:ENRICH_TEXT_CHARS]}"
     )
-    body = json.dumps({"model": GROQ_MODEL, "max_tokens": 2000, "reasoning_effort": "low",
+    body = json.dumps({"model": GROQ_MODEL, "max_tokens": ENRICH_MAX_TOKENS, "reasoning_effort": "low",
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     for key in GROQ_KEYS:
         req = urllib.request.Request(
@@ -271,7 +279,8 @@ def main() -> None:
     # MPSC first: it has its own per-run budget so its ~200 advertisements get done
     # in a few days instead of competing with the generic feed loop for Groq quota.
     try:
-        run_mpsc(state)
+        if os.environ.get("ENRICH_SKIP_MPSC") != "1":
+            run_mpsc(state)
     except Exception as e:  # never let the MPSC path take down the generic enrichment below
         print(f"[enrich_backfill] MPSC step failed, continuing with the feed: {e}", file=sys.stderr)
     if not DRY_RUN:
