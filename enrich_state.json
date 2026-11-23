@@ -5,6 +5,9 @@
  "-021188c5": {
   "status": "ok"
  },
+ "-0b8816a0": {
+  "status": "nopdf"
+ },
  "-196d78eb": {
   "status": "ok"
  },
@@ -32,7 +35,19 @@
  "-558634d0": {
   "status": "nopdf"
  },
+ "-591d5b2c": {
+  "status": "notext"
+ },
  "-593d3cac": {
+  "status": "nopdf"
+ },
+ "-5b787cff": {
+  "status": "notext"
+ },
+ "-60432bfa": {
+  "status": "nopdf"
+ },
+ "-6dce0121": {
   "status": "nopdf"
  },
  "-6fb90201": {
@@ -53,6 +68,9 @@
  "-b1da7142": {
   "status": "notext"
  },
+ "-b41ac107": {
+  "status": "nopdf"
+ },
  "-b472e535": {
   "status": "notext"
  },
@@ -69,6 +87,9 @@
   "status": "nopdf"
  },
  "-fc2847bc": {
+  "status": "nopdf"
+ },
+ "1-9461b142": {
   "status": "nopdf"
  },
  "1-e07a7af5": {
@@ -297,6 +318,10 @@
  "2025-1c3eaaae": {
   "status": "nopdf"
  },
+ "2025-2081bdf1": {
+  "status": "fail",
+  "tries": 1
+ },
  "2025-30916b50": {
   "status": "nopdf"
  },
@@ -328,6 +353,9 @@
   "status": "enriched"
  },
  "2025-9f08ded0": {
+  "status": "nopdf"
+ },
+ "2025-ac18af37": {
   "status": "nopdf"
  },
  "2025-b213a11f": {
@@ -393,6 +421,10 @@
  "2025-pet-fae8c8e6": {
   "status": "enriched"
  },
+ "2026-16-11-2026-3a645ae5": {
+  "status": "fail",
+  "tries": 1
+ },
  "2026-amendment-dated-17-04-2026-8e288b1f": {
   "status": "nopdf"
  },
@@ -416,11 +448,11 @@
  },
  "2nd-stage-online-technical-test-cbt-for-diploma-engineer-trainee-mechanical-electrical-ci-advt-no-ntpc-wr-ii-hq-01-2023-7b07431c": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "2nd-stage-online-technical-test-cbt-for-diploma-engineer-trainee-mechanical-electrical-ci-backlog-vacancies-8da709ef": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "5-vacant-positions-in-various-projects-of-ongc-energy-centre-3766bdfe": {
   "status": "enriched"
@@ -463,6 +495,12 @@
   "status": "nopdf"
  },
  "administrative-screening-status-mechanical-aeronautical-aerospace-items-6-8-9-10-11-12-advt-no-152-b7927132": {
+  "status": "nopdf"
+ },
+ "admission-card-for-cbt-assistant-officer-corporate-communication-advt-12-26-e2f1ccb5": {
+  "status": "nopdf"
+ },
+ "admission-letter-for-preliminary-examination-of-cglre-specialist-2025-advt-no-5919-ossc-a5939c6d": {
   "status": "nopdf"
  },
  "admission-letter-for-preliminary-examination-of-combined-technical-services-recruitment-examination-ctsre-2025-ef0049eb": {
@@ -778,7 +816,7 @@
  },
  "advertisement-for-engagement-of-teaching-faculty-on-contract-basis-in-esic-medical-college-hospital-k-k-nagar-chennai-b1763889": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "advertisement-for-engagement-of-trade-apprentices-ta-at-bhilai-steel-plant-for-fy-2026-27-49fbd0a3": {
   "status": "enriched"
@@ -827,10 +865,14 @@
  },
  "advertisement-for-selection-to-the-post-of-sub-inspector-gd-in-capf-through-limited-department-competitive-examination-2026-4303d71a": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "advertisement-for-server-administrator-walk-in-selection-61cd8722": {
   "status": "ok"
+ },
+ "advertisement-for-the-engagement-of-adjunct-faculty-in-radiology-at-esic-mch-k-k-nagar-5b0e92ad": {
+  "status": "fail",
+  "tries": 1
  },
  "advertisement-for-the-engagement-of-senior-resident-3-years-tenure-under-7th-cpc-in-esic-medical-college-and-hospital-k-k-nagar-chennai-cd0ffa95": {
   "status": "fail",
@@ -838,7 +880,7 @@
  },
  "advertisement-for-the-engagement-of-senior-resident-in-esic-mch-k-k-nagar-febd9ad0": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "advertisement-for-the-filling-up-the-posts-on-deputation-basis-in-epfo-fb2253ee": {
   "status": "nopdf"
@@ -1032,6 +1074,9 @@
  },
  "advt-26-2020-d178988e": {
   "status": "notext"
+ },
+ "advt-26-uksssc-2020-advt-61-uksssc-2024-8b5f41fb": {
+  "status": "nopdf"
  },
  "advt-61-93d431c6": {
   "status": "notext"
@@ -1435,6 +1480,9 @@
  "advt-no-70-uksssc-2025-058c1f8e": {
   "status": "notext"
  },
+ "advt-no-70-uksssc-2025-40c4258b": {
+  "status": "ok"
+ },
  "advt-no-70-uksssc-2025-d420954d": {
   "status": "notext"
  },
@@ -1668,12 +1716,22 @@
   "status": "fail",
   "tries": 1
  },
+ "announcement-dated-13-11-2026-regarding-withdrawn-of-advt-no-10-2025-for-the-posts-of-assistant-director-toxicology-in-fsl-madhunban-karnal-haryana-e1dd149c": {
+  "status": "fail",
+  "tries": 1
+ },
  "announcement-for-assistant-district-attorney-advt-no-18-2025-7554290e": {
   "status": "fail",
   "tries": 1
  },
  "announcement-regarding-the-examination-pattern-of-maharashtra-group-c-services-examination-2026-and-the-acceptance-of-applications-from-candidates-appearing-in-the-final-year-of-their-degree-for-the-cadre-of-assistant-fisheries-development-officer-technical-a875f071": {
   "status": "notext"
+ },
+ "answer-booklets-for-combined-civil-services-examination-ii-group-ii-and-iia-services-notification-no-08-2024-dated-20-06-2024-5575d2b9": {
+  "status": "nopdf"
+ },
+ "answer-booklets-for-main-written-examination-combined-civil-services-examination-ii-group-ii-and-iia-services-notification-no-08-2024-d3f20018": {
+  "status": "nopdf"
  },
  "appendix-a-qualified-fe3fc077": {
   "status": "enriched"
@@ -1701,6 +1759,9 @@
  },
  "application-for-the-posts-of-group-a-and-group-b-advt-no-a-26011-1-2025-i-1b9f99fb": {
   "status": "nopdf"
+ },
+ "application-for-walk-in-interviews-on-03-12-2026-for-the-post-of-visiting-part-time-lecturer-669c219c": {
+  "status": "enriched"
  },
  "application-form-format-205d5aa8": {
   "status": "nopdf"
@@ -1769,6 +1830,9 @@
   "status": "enriched"
  },
  "apply-assistant-architect-planner-sports-officer-programmer-grade-2-2026-b0988579": {
+  "status": "nopdf"
+ },
+ "apply-for-advt-no-a-5-e-1-2026-assistant-architect-planner-sports-officer-programmer-57497bc1": {
   "status": "nopdf"
  },
  "apply-online-for-common-recruitment-process-under-crp-csa-xvi-95eecd68": {
@@ -1881,6 +1945,9 @@
  "assistant-engineer-operation-discipline-mechanical-e0-special-recruitment-drive-for-scs-282d9fc1": {
   "status": "nopdf"
  },
+ "assistant-executive-engineer-civil-advt-no-07-of-2026-27-programme-of-preliminary-examination-757f8215": {
+  "status": "nopdf"
+ },
  "assistant-executive-operation-7573e909": {
   "status": "nopdf"
  },
@@ -1958,7 +2025,10 @@
  },
  "assistant-professor-physics-exam-2024-57349255": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
+ },
+ "assistant-professor-physics-exam-2024-interview-arrangement-amended-cf3be27c": {
+  "status": "enriched"
  },
  "assistant-professor-physics-exam-2024-interview-notification-b28d597c": {
   "status": "fail",
@@ -2340,6 +2410,14 @@
  "b-154-dated-14-02-2025-advertisement-notification-for-engagement-of-sr-advisor-railways-mktg-cil-e4afbb60": {
   "status": "notext"
  },
+ "bid-notification-for-150-tables-on-gem-e6888818": {
+  "status": "fail",
+  "tries": 1
+ },
+ "bid-notification-for-20-mobile-lockers-on-gem-3bcf9180": {
+  "status": "fail",
+  "tries": 1
+ },
  "bio-data-form-and-documents-mtt-posts-a10f87cb": {
   "status": "nopdf"
  },
@@ -2386,6 +2464,9 @@
   "status": "nopdf"
  },
  "bpcl-special-recruitment-drive-for-persons-with-benchmark-disabilities-pwbds-divyangjans-2f8cbd3a": {
+  "status": "nopdf"
+ },
+ "bpcl-special-recruitment-drive-for-persons-with-benchmark-disabilities-pwbds-divyangjans-7e5f7c33": {
   "status": "nopdf"
  },
  "bpcl-special-recruitment-drive-for-persons-with-benchmark-disabilities-pwbds-divyangjans-registration-from-09-nov-2026-ee25ddec": {
@@ -2468,6 +2549,9 @@
  "caution-notice-do-not-respond-to-fake-emails-calls-da833d92": {
   "status": "fail",
   "tries": 3
+ },
+ "ccse-iv-group-iv-services-notification-no-07-2025-posts-of-forest-guard-forest-guard-with-driving-licence-forest-watcher-forest-watcher-tribal-youth-8a947d76": {
+  "status": "nopdf"
  },
  "ccse-iv-group-iv-services-onscreen-certificate-verification-for-forest-watcher-98cc6c73": {
   "status": "nopdf"
@@ -2903,6 +2987,9 @@
  "combined-civil-services-examination-iv-group-iv-services-notif-no-01-2024-forest-watcher-onscreen-cv-list-1220707a": {
   "status": "nopdf"
  },
+ "combined-civil-services-examination-iv-group-iv-services-notification-no-01-2024-0c95cdfe": {
+  "status": "nopdf"
+ },
  "combined-civil-services-examination-iv-group-iv-services-notification-no-01-2024-phase-x-cv-74b62a3b": {
   "status": "nopdf"
  },
@@ -2960,6 +3047,9 @@
  "combined-technical-services-examination-diploma-iti-level-notification-no-11-2024-b5c878ff": {
   "status": "nopdf"
  },
+ "combined-technical-services-examination-diploma-iti-level-notification-no-13-2025-dated-03-09-2025-for-the-post-of-field-assistant-attending-physical-test-0c23d56a": {
+  "status": "nopdf"
+ },
  "combined-technical-services-examination-diploma-iti-level-onscreen-cv-ii-list-0b14101b": {
   "status": "nopdf"
  },
@@ -2991,6 +3081,9 @@
   "status": "nopdf"
  },
  "combined-technical-services-examination-iti-level-ii-notification-no-13-2025-f76de76a": {
+  "status": "nopdf"
+ },
+ "combined-technical-services-examination-iti-level-ii-notification-no-13-2025-post-of-field-assistant-physical-test-11-11-2026-to-14-11-2026-3f8ed339": {
   "status": "nopdf"
  },
  "combined-technical-services-examination-non-interview-posts-notification-no-04-2026-12674e4d": {
@@ -3067,6 +3160,10 @@
  "contractual-appointment-of-15-general-duty-medical-officers-4c78edae": {
   "status": "enriched"
  },
+ "contractual-part-time-specialist-senior-resident-medical-officer-esi-society-hospital-mulund-b36c9b9b": {
+  "status": "fail",
+  "tries": 1
+ },
  "crp-csa-xv-86a60fd8": {
   "status": "nopdf"
  },
@@ -3114,6 +3211,9 @@
   "status": "nopdf"
  },
  "cwc-recruitment-of-various-posts-registration-from-17-oct-2026-6f9ee9ce": {
+  "status": "nopdf"
+ },
+ "date-for-preliminary-examination-of-cglre-specialist-2025-advt-no-5919-ossc-dated-30-12-2025-58c461af": {
   "status": "nopdf"
  },
  "dccb-application-for-the-post-of-manager-staff-assistant-5130bc89": {
@@ -3214,6 +3314,12 @@
  },
  "detailed-advertisement-engagement-of-advisors-consultants-2026-27-at-iisco-steel-plant-burnpur-15c02367": {
   "status": "ok"
+ },
+ "detailed-advertisement-for-combined-higher-secondary-10-2-level-or-equivalent-recruitment-examination-for-specialist-posts-services-2026-eb07c1ba": {
+  "status": "nopdf"
+ },
+ "detailed-advertisement-for-combined-higher-secondary-10-2-level-recruitment-examination-for-specialist-posts-services-2026-advt-no-4273-ossc-61e7187b": {
+  "status": "nopdf"
  },
  "detailed-advertisement-for-engagement-of-advisors-consultants-2026-27-at-iisco-steel-plant-fb0e9fcb": {
   "status": "enriched"
@@ -3384,6 +3490,13 @@
   "status": "fail",
   "tries": 3
  },
+ "document-list-for-2nd-stage-online-technical-test-adv-ntpc-wr-ii-hq-01-2023-412a8b22": {
+  "status": "fail",
+  "tries": 1
+ },
+ "document-submission-20-2026-27-deputy-executive-engineer-civil-class-2-gmb-e6131fcd": {
+  "status": "enriched"
+ },
  "documents-certificates-required-for-mtt-candidates-at-the-time-of-interview-f8b96e67": {
   "status": "ok"
  },
@@ -3446,7 +3559,14 @@
  },
  "eligibility-list-interview-10-2025-26-e5c02317": {
   "status": "fail",
+  "tries": 2
+ },
+ "eligibility-list-interview-125-2025-26-deputy-executive-engineer-electrical-class-2-new-municipal-corporations-90a9451c": {
+  "status": "fail",
   "tries": 1
+ },
+ "eligibility-list-interview-19-2026-27-deputy-executive-engineer-mechanical-class-2-gmb-91bfd3a0": {
+  "status": "enriched"
  },
  "eligibility-list-interview-41-2026-27-district-education-officer-district-primary-education-officer-and-equivalent-gujarat-educational-service-class-1-special-recruitment-pwd-second-attempt-e80afb83": {
   "status": "enriched"
@@ -3741,7 +3861,13 @@
  "et-finance-ca-cma-special-recruitment-drive-fb34534c": {
   "status": "nopdf"
  },
+ "exam-district-info-slip-advt-no-d-3-e-1-2023-lecturers-under-u-p-ayush-department-05f91df5": {
+  "status": "nopdf"
+ },
  "exam-district-info-slip-for-advt-no-d-3-e-1-2023-lecturers-under-uttar-pradesh-ayush-ayurveda-department-931a466c": {
+  "status": "nopdf"
+ },
+ "exam-scientific-officer-biology-chemistry-physics-examination-2026-c9c4bcf4": {
   "status": "nopdf"
  },
  "executive-carbon-capture-and-utilization-on-fixed-term-basis-60214399": {
@@ -3951,7 +4077,7 @@
  },
  "final-key-prelim-2-2026-27-dca7b783": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "final-key-prelim-23-2026-27-concerned-subject-research-officer-class-2-gujarat-administrative-department-34c2ac51": {
   "status": "fail",
@@ -3960,6 +4086,18 @@
  "final-key-prelim-24-2026-27-concerned-subject-assistant-engineer-civil-class-2-road-and-building-department-6a676a71": {
   "status": "fail",
   "tries": 3
+ },
+ "final-key-prelim-33-2026-27-senior-drugs-inspector-class-2-f6ac1d08": {
+  "status": "fail",
+  "tries": 1
+ },
+ "final-key-prelim-37-2026-27-legal-officer-class-2-various-municipalities-57fd9be6": {
+  "status": "fail",
+  "tries": 1
+ },
+ "final-key-prelim-38-2026-27-administrative-officer-class-2-various-municipalities-abedd1c0": {
+  "status": "fail",
+  "tries": 1
  },
  "final-key-prelim-41-2026-27-concerned-subject-district-education-officer-district-primary-education-officer-and-equivalent-gujarat-educational-service-class-1-administrative-branch-special-recruitment-pwd-second-attempt-f7b1914d": {
   "status": "fail",
@@ -4181,6 +4319,9 @@
  "hiring-of-fixed-term-employees-at-advanced-training-institute-ati-goa-advt-no-4-2025-r-p-21c296ac": {
   "status": "nopdf"
  },
+ "hiring-services-of-specialists-pt-ft-through-walk-in-interview-on-contractual-basis-in-esic-model-hospital-phulwarisharif-patna-a7314bd7": {
+  "status": "enriched"
+ },
  "hod-positions-various-subjects-departments-in-govt-polytechnics-4a875583": {
   "status": "notext"
  },
@@ -4270,6 +4411,12 @@
   "status": "fail",
   "tries": 3
  },
+ "indian-bank-engagement-of-apprentices-473060ee": {
+  "status": "nopdf"
+ },
+ "indian-bank-engagement-of-apprentices-9ed8eccb": {
+  "status": "nopdf"
+ },
  "indicative-syllabus-assistant-chemist-trainee-advt-no-09-26-34f64c3d": {
   "status": "fail",
   "tries": 3
@@ -4288,7 +4435,7 @@
  },
  "ineligibility-list-interview-124-2025-26-ef3de87f": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "ineligibility-list-interview-54-2026-27-assistant-director-class-1-industries-and-mines-special-recruitment-pwd-third-attempt-abc68bdd": {
   "status": "fail",
@@ -4446,6 +4593,9 @@
  "jkb-recruitment-of-various-posts-4807865a": {
   "status": "nopdf"
  },
+ "jkb-recruitment-of-various-posts-e4bc8516": {
+  "status": "nopdf"
+ },
  "jkb-recruitment-of-various-posts-registration-from-07-nov-2026-a0cf2aa4": {
   "status": "nopdf"
  },
@@ -4512,7 +4662,7 @@
  },
  "law-officer-exam-2026-advt-no-14-2026-50e9adec": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "law-officer-exam-2026-jail-department-advert-no-13-2026-dated-08-10-2026-877c3db7": {
   "status": "fail",
@@ -4728,6 +4878,15 @@
  "live-advertisement-advt-no-a-5-e-1-2026-assistant-architect-planner-sports-officer-programmer-grade-2-21084c4e": {
   "status": "nopdf"
  },
+ "live-advertisement-advt-no-a-6-e-1-2026-u-p-judicial-service-civil-judge-junior-division-exam-2026-dcdd1968": {
+  "status": "nopdf"
+ },
+ "live-advertisement-apply-for-advt-no-a-4-e-1-2026-samiksha-adhikari-sahayak-samiksha-adhikari-gen-spl-rectt-exam-2026-1d08fe0a": {
+  "status": "nopdf"
+ },
+ "live-advertisement-samiksha-adhikari-sahayak-samiksha-adhikari-etc-gen-spl-rectt-exam-2026-d6251bdb": {
+  "status": "nopdf"
+ },
  "maharashtra-gazetted-technical-services-main-examination-2022-notification-013038dd": {
   "status": "ok"
  },
@@ -4798,6 +4957,9 @@
   "status": "nopdf"
  },
  "manager-e5-company-secretary-196f51ac": {
+  "status": "nopdf"
+ },
+ "manit-recruitment-of-various-group-b-c-non-teaching-positions-25dc75fc": {
   "status": "nopdf"
  },
  "manit-recruitment-of-various-group-b-c-non-teaching-positions-55922966": {
@@ -5155,6 +5317,9 @@
  },
  "notification-for-engagement-of-task-based-advisor-commercial-boo-boot-projects-on-contract-basis-for-cgil-e28cba39": {
   "status": "notext"
+ },
+ "notification-for-filling-up-of-19-vacant-posts-of-skilled-artisan-of-mms-kolkata-in-west-bengal-circle-through-direct-recruitment-f91dcc56": {
+  "status": "nopdf"
  },
  "notification-for-filling-up-of-drivers-ordinary-grade-through-deputation-absorption-basis-c7ce1520": {
   "status": "nopdf"
@@ -5567,7 +5732,13 @@
  "paramedical-category-a80b9a50": {
   "status": "nopdf"
  },
+ "personal-assistant-establishment-hon-high-court-exam-2025-8b0da5ed": {
+  "status": "nopdf"
+ },
  "personal-assistant-establishment-hon-high-court-exam-2025-detailed-notification-for-exam-fee-and-formats-02-03-04-72e90582": {
+  "status": "nopdf"
+ },
+ "personal-assistant-establishment-hon-high-court-exam-2025-notification-on-exam-fee-formats-02-04-fc004649": {
   "status": "nopdf"
  },
  "persons-with-disability-recruitment-to-30-posts-of-senior-assistant-accounts-group-b-5fe34219": {
@@ -5834,6 +6005,10 @@
  "proposal-for-approval-of-engagement-of-full-time-sr-advisor-advisor-excavation-in-bccl-5b1226d6": {
   "status": "ok"
  },
+ "proposed-examination-program-2027-94c3801e": {
+  "status": "fail",
+  "tries": 1
+ },
  "prosecution-officer-preliminary-competitive-examination-omr-sheets-download-518a707d": {
   "status": "notext"
  },
@@ -6065,7 +6240,7 @@
  },
  "recruitment-for-assistant-professor-college-cadre-history-advt-no-53-2024-a13d859e": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
  },
  "recruitment-for-entry-level-roles-1-engineering-2-accounts-3-qa-4-secretary-applications-for-entry-level-profiles-open-from-28th-may-2025-click-here-to-view-detailed-advertisement-93e1c5f6": {
   "status": "fail",
@@ -6192,14 +6367,40 @@
  },
  "recruitment-of-experienced-professionals-advt-17-26-b9129f81": {
   "status": "fail",
-  "tries": 2
+  "tries": 3
+ },
+ "recruitment-of-experienced-professionals-fixed-term-for-gas-engine-project-great-nicobar-island-advt-15-26-english-pdf-af3efbfc": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-of-experienced-professionals-fixed-term-gas-engine-project-gni-advt-16-26-840dd26a": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-of-experienced-professionals-fixed-term-gas-engine-project-gni-advt-17-26-cef5b019": {
+  "status": "fail",
+  "tries": 1
  },
  "recruitment-of-experienced-professionals-in-e-8-grade-through-lateral-entry-35871f2f": {
   "status": "nopdf"
  },
+ "recruitment-of-experienced-professionals-in-finance-advt-18-26-5a994f76": {
+  "status": "fail",
+  "tries": 1
+ },
+ "recruitment-of-experienced-professionals-in-finance-advt-18-26-english-pdf-9763ba93": {
+  "status": "fail",
+  "tries": 1
+ },
  "recruitment-of-experienced-professionals-on-fixed-term-basis-advt-15-26-fa46fd9d": {
   "status": "fail",
   "tries": 1
+ },
+ "recruitment-of-experienced-professionals-on-fixed-term-basis-for-gas-engine-based-power-project-at-great-nicobar-island-gni-766e1339": {
+  "status": "nopdf"
+ },
+ "recruitment-of-experienced-professionals-on-fixed-term-basis-for-gas-engine-based-power-project-at-great-nicobar-island-gni-advt-15-26-567b39fd": {
+  "status": "nopdf"
  },
  "recruitment-of-generalist-specialist-officers-9202975e": {
   "status": "nopdf"
@@ -6567,6 +6768,9 @@
  "retired-ongcians-as-junior-consultant-associate-consultant-to-mentor-pmis-interns-e75ecf10": {
   "status": "enriched"
  },
+ "review-officer-assistant-review-officer-in-advocate-general-s-office-nainital-examination-2024-95519d49": {
+  "status": "nopdf"
+ },
  "review-officer-asstt-review-officer-exam-2016-advt-no-a-3-e-1-2016-notice-b55fda65": {
   "status": "notext"
  },
@@ -6597,6 +6801,9 @@
  },
  "rsbl-recruitment-of-clerk-junior-officer-assistant-branch-manager-assistant-manager-it-0574bf89": {
   "status": "nopdf"
+ },
+ "rsp-conduct-of-cbt-for-engagement-of-young-professionals-advt-no-rsp-r-yp-2026-01-1b6b7c3a": {
+  "status": "enriched"
  },
  "rsp-engagement-of-consultant-sports-coach-on-contractual-basis-advt-no-03-2026-5571e291": {
   "status": "ok"
@@ -6815,6 +7022,9 @@
  "selection-of-supervisory-posts-assistant-engineers-for-cksru-kolkata-8d2d16c5": {
   "status": "nopdf"
  },
+ "selection-process-cancelled-for-assistant-officer-corporate-communication-adv-12-26-dbbab201": {
+  "status": "nopdf"
+ },
  "senior-executive-commercial-on-fixed-term-basis-48eca049": {
   "status": "nopdf"
  },
@@ -6823,6 +7033,10 @@
  },
  "senior-geophysicist-group-a-in-the-directorate-of-groundwater-surveys-and-development-agency-advertisement-de760a68": {
   "status": "ok"
+ },
+ "senior-level-experienced-professional-on-fixed-term-adv-16-26-great-nicobar-island-58d89ebd": {
+  "status": "fail",
+  "tries": 1
  },
  "senior-level-experienced-professional-on-fixed-term-basis-for-gas-engine-based-power-project-at-great-nicobar-island-a269c425": {
   "status": "fail",
@@ -6866,11 +7080,11 @@
  },
  "short-advertisement-english-ntpc-recruitment-b74abb8a": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "short-advertisement-for-sc-st-recruitment-drive-adv-13-26-d09dd769": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "short-advertisement-hindi-ed9d1a8c": {
   "status": "fail",
@@ -6878,7 +7092,7 @@
  },
  "short-advertisement-hindi-ntpc-recruitment-7763eb0f": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "social-security-assistant-ssa-direct-recruitment-2023-7a3dabba": {
   "status": "nopdf"
@@ -6946,6 +7160,10 @@
  },
  "special-recruitment-drive-srd-ieb-506c18f9": {
   "status": "nopdf"
+ },
+ "special-recruitment-drive-to-fill-up-st-backlog-vacancy-in-diploma-engineer-control-and-instrumentation-at-ntpc-kudgi-advt-kudgi-02-2026-67edf376": {
+  "status": "fail",
+  "tries": 1
  },
  "sr-scientific-officer-2024-62a6b8a0": {
   "status": "nopdf"
@@ -7325,6 +7543,10 @@
   "status": "fail",
   "tries": 3
  },
+ "submission-of-documents-with-late-fee-assistant-accounts-officer-assistant-director-farmer-welfare-agriculture-development-accounts-establishment-2026-04c30ecd": {
+  "status": "fail",
+  "tries": 1
+ },
  "supplementary-list-of-selected-candidates-advt-no-a-7-e-1-2021-u-p-technical-education-b18550d9": {
   "status": "notext"
  },
@@ -7459,7 +7681,7 @@
  },
  "upcoming-advertisements-to-be-published-in-the-year-2026-by-gujarat-public-service-commission-e80c7dfc": {
   "status": "fail",
-  "tries": 1
+  "tries": 2
  },
  "updated-vacancies-as-on-09-09-2026-for-common-recruitment-process-for-crp-rrbs-xv-0b5057fd": {
   "status": "ok"
@@ -7539,6 +7761,9 @@
  "veterinary-assistant-surgeon-additional-veterinary-assistant-surgeon-advt-no-04-of-2026-27-50911cf6": {
   "status": "nopdf"
  },
+ "veterinary-assistant-surgeon-additional-veterinary-assistant-surgeon-advt-no-04-of-2026-27-download-admission-certificate-instructions-for-written-examination-f67ccc2a": {
+  "status": "nopdf"
+ },
  "veterinary-assistant-surgeon-advt-no-04-of-2026-27-programme-for-written-examination-8c81dc0f": {
   "status": "nopdf"
  },
@@ -7556,6 +7781,9 @@
  },
  "vigilance-assistant-deputation-basis-2d64f924": {
   "status": "nopdf"
+ },
+ "visiting-part-time-lecturers-hourly-esic-college-of-nursing-bengaluru-0325fa25": {
+  "status": "enriched"
  },
  "walk-in-interview-audio-logists-short-term-contract-bokaro-steel-plant-2a1a8a15": {
   "status": "ok"
@@ -7687,6 +7915,9 @@
   "status": "fail",
   "tries": 1
  },
+ "walk-in-interview-for-full-time-specialist-part-time-specialist-senior-resident-at-esic-hospital-tirunelveli-3314c769": {
+  "status": "enriched"
+ },
  "walk-in-interview-for-recruitment-of-professor-associate-professor-assistant-professor-senior-resident-3-year-senior-resident-1-year-medical-officer-for-esic-dcbos-and-part-time-ayurvedic-physician-on-contract-basis-d3f62f93": {
   "status": "fail",
   "tries": 1
@@ -7696,6 +7927,9 @@
   "tries": 3
  },
  "walk-in-interview-for-recruitment-of-teaching-faculty-and-senior-residents-on-contract-basis-at-esic-medical-college-hospital-indore-4d6d6e02": {
+  "status": "enriched"
+ },
+ "walk-in-interview-for-recruitment-of-teaching-faculty-and-senior-residents-on-contract-basis-at-esic-medical-college-hospital-naroda-bapunagar-ahmedabad-de576758": {
   "status": "enriched"
  },
  "walk-in-interview-for-recruitment-to-the-post-of-sr-against-gdmo-on-contract-basis-for-esic-hospital-tinsukia-assam-13a91cdd": {
@@ -7714,6 +7948,9 @@
  "walk-in-interview-for-senior-resident-contractual-specialist-and-contractual-super-specialist-ba901c9d": {
   "status": "fail",
   "tries": 1
+ },
+ "walk-in-interview-for-the-post-of-senior-resident-on-contract-basis-for-01-phulwarisharif-patna-31b1f32b": {
+  "status": "enriched"
  },
  "walk-in-interview-for-visiting-faculty-adjunct-faculty-professor-department-of-neurosurgery-35e42654": {
   "status": "enriched"
